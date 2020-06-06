@@ -10,17 +10,39 @@
     <!-- <link rel="stylesheet" type="text/css" href="styles/style.css"> -->
     <!-- <link rel="shortcut icon" type="image/png" href="favicon.ico"/> -->
 
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="styles/script.js"></script>
+
   </head>
   <body>
 
-    <div class="container">
 
-      <div id="header">
-        <h1>
-          Kappa Theta Pi UMD
-        </h1>
+      <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+      <button class="tablink" onclick="openPage('About', this, 'green')">About</button>
+      <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+      <button class="tablink" onclick="openPage('Membership', this, 'orange')">Membership</button>
+
+
+      <div id="Home" class="tabcontent">
+        <h3>Kappa Theta Pi</h3>
       </div>
-    </div>
+
+      <div id="About" class="tabcontent">
+        <h3>About</h3>
+      </div>
+
+      <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+      </div>
+
+      <div id="Membership" class="tabcontent">
+        <h3>List all the brothers and pledge classes here</h3>
+      </div>
+
+      <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+      </script>
 
   </body>
 </html>
