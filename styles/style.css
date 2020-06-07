@@ -56,6 +56,10 @@ h1 {
   width: 100%;
 }
 
+.blockrow {
+  width: 80%;
+  margin: 20px auto
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -81,3 +85,5 @@ h1 {
     margin-bottom: 20px;
   }
 }
+
+
