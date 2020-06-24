@@ -10,17 +10,106 @@
     <!-- <link rel="stylesheet" type="text/css" href="styles/style.css"> -->
     <!-- <link rel="shortcut icon" type="image/png" href="favicon.ico"/> -->
 
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="styles/script.js"></script>
+
   </head>
   <body>
 
-    <div class="container">
 
-      <div id="header">
-        <h1>
-          Kappa Theta Pi UMD
-        </h1>
+      <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+      <button class="tablink" onclick="openPage('About', this, 'green')">About</button>
+      <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+      <button class="tablink" onclick="openPage('Membership', this, 'orange')">Membership</button>
+
+
+      <div id="Home" class="tabcontent">
+        <h1>Kappa Theta Pi</h1>
       </div>
-    </div>
+
+      <div id="About" class="tabcontent">
+        <h1>About</h1>
+      </div>
+
+      <div id="Contact" class="tabcontent">
+        <h1>Contact</h1>
+
+<!-- The blockrow is defined in CSS to create the sizing for the screen for the profile, still uses the card structure provided -->
+	<div class="blockrow"> 
+	  <div class="card">
+	    <table style="width:100%">
+	      <tr>
+	        <td style="width:25%"><img src = "ninja.jpeg" alt = "KTP Ninja" style="width:300px;height:300px;"></td>
+		<td style="text-align:center,width:75%"><h2>KTP Ninja</h2>I am President!<br>Contact me at: <a href="https://en.wikipedia.org/wiki/Kappa_Theta_Pi">hi@umd.edu</a></td>
+	      </tr>
+	    </table>
+	  </div>
+	</div>
+
+	<div class="blockrow"> 
+	  <div class="card">
+	    <table style="width:100%">
+	      <tr>
+	        <td style="width:25%"><img src = "ktplogo.png" alt = "KTP Logo" style="width:300px;height:300px;"></td>
+		<td style="text-align:center;width:75%"><h2>KTP Logo</h2>I am Vice President!<br>Contact me at: <a href="https://en.wikipedia.org/wiki/Kappa_Theta_Pi">hi2@umd.edu</a></td>
+	      </tr>
+	    </table>
+	  </div>
+	</div>
+<!-- End of the profile cards -->
+      </div>
+
+      <div id="Membership" class="tabcontent">
+
+        <h1>The Brothers of Kappa Theta Pi at the University of Maryland</h1>
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <h2> Founders </h2>
+              Jordyn Berry <br>
+              Alicia Curcuru <br>
+              Garima Dewan <br>
+              Sukhneet Kaur <br>
+              Jonathan Lee <br>
+              Ben Nwokeleme <br>
+              Chantelle Rodriguez <br>
+              Lydia Spurrier <br> <br>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <h2> Alpha </h2>
+              
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <h2> Beta </h2>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <h2> Gamma </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <h2> Delta </h2>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+      </script>
 
   </body>
 </html>
