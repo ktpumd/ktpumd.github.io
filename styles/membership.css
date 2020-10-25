@@ -1,0 +1,89 @@
+body, html {
+  margin: 0;
+  color: black;
+  height: 100%;
+  margin-top: 0;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: black;
+  padding-top: 100px;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.33%;
+  margin-top: 0;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  height: 100%;
+  margin-top: 0;
+}
+
+#Home {background-color: red;}
+#About {background-color: green;}
+#Contact {background-color: blue;}
+#Membership {background-color: orange;}
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 22%;
+  padding: 20px 15px;
+}
+
+.row {
+  width: 100%;
+}
+
+.blockrow {
+  width: 80%;
+  margin: 20px auto
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
