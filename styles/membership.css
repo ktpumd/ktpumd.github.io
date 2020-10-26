@@ -26,6 +26,22 @@ h1 {
   margin-top: 0;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 56%;
+  width: 92%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00277c;
+}
+
+.linkedin:hover .overlay {
+  opacity: .7;
+}
 .tablink:hover {
   background-color: #777;
 }
@@ -44,28 +60,15 @@ h1 {
 #Membership {background-color: orange;}
 
 
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 22%;
-  padding: 20px 15px;
-}
-
-.row {
-  width: 100%;
+.col-centered {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .blockrow {
   width: 80%;
   margin: 20px auto
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Style the counter cards */
@@ -85,5 +88,7 @@ h1 {
     margin-bottom: 20px;
   }
 }
+
+
 
 
