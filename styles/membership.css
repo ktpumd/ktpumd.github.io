@@ -6,6 +6,12 @@ body, html {
   text-decoration: none;
 }
 
+img {
+  width: 400px; /* You can set the dimensions to whatever you want */
+  height: 400px;
+  object-fit: cover;
+}
+
 a {
   text-decoration: none;
   color: black;
