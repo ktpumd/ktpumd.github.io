@@ -12,28 +12,14 @@ h1 {
   padding-top: 100px;
 }
 
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 33.33%;
-  margin-top: 0;
-}
-
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 56%;
-  width: 92%;
+  height: 53%;
+  width: 80%;
   opacity: 0;
   transition: .5s ease;
   background-color: #00277c;
@@ -42,22 +28,6 @@ h1 {
 .linkedin:hover .overlay {
   opacity: .7;
 }
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-  height: 100%;
-  margin-top: 0;
-}
-
-#Home {background-color: red;}
-#About {background-color: green;}
-#Contact {background-color: blue;}
-#Membership {background-color: orange;}
 
 
 .col-centered {
@@ -70,25 +40,3 @@ h1 {
   width: 80%;
   margin: 20px auto
 }
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 10px;
-  text-align: center;
-  color: black;
-  background-color: #f1f1f1;
-}
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 1000px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-
-
-
