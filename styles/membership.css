@@ -3,6 +3,16 @@ body, html {
   color: black;
   height: 100%;
   margin-top: 0;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 h1 {
