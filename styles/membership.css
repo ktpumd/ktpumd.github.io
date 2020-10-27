@@ -12,24 +12,6 @@ h1 {
   padding-top: 100px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 53%;
-  width: 80%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #00277c;
-}
-
-.linkedin:hover .overlay {
-  opacity: .7;
-}
-
-
 .col-centered {
   float: none;
   margin-right: auto;
@@ -39,4 +21,8 @@ h1 {
 .blockrow {
   width: 80%;
   margin: 20px auto
+}
+
+.img-fluid:hover {
+  cursor: pointer;
 }
