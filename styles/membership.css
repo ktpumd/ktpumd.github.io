@@ -11,7 +11,10 @@ img {
   height: 400px;
   object-fit: cover;
 }
-
+a.nav-link{
+  color: rgb(0, 0, 0) !important;
+  font-size: 1.5em !important;
+}
 a {
   text-decoration: none;
   color: black;
