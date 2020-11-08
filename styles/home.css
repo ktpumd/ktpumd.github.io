@@ -38,6 +38,28 @@ h1 {
   margin-top: 0;
 }
 
+/* Navbar style */
+nav img {
+  height: 80px;
+}
+
+nav {
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240, 250, 240);
+}
+
+#title {
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+#title small {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
 #Home {background-color: red;}
 #About {background-color: green;}
 #Contact {background-color: blue;}

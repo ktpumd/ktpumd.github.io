@@ -12,6 +12,29 @@ h1 {
   padding-top: 100px;
 }
 
+
+/* Navbar style */
+nav img {
+  height: 80px;
+}
+
+nav {
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240, 250, 240);
+}
+
+#title {
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+#title small {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
 /* Style tab links */
 .tablink {
   background-color: #555;
