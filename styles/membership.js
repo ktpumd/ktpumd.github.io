@@ -12,5 +12,5 @@ function unhoverBrotherPic(element) {
 
 function redirectBrotherPic(element, link) {
   element.setAttribute('src', brother_pic_src);
-  window.location.href = link;
+  window.open(link);
 }
