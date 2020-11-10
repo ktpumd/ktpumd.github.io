@@ -11,7 +11,7 @@ h1 {
 }
 
 #home-banner {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../assets/jumbotronbg.jpg");
+  background: url("../assets/ktpbanner.jpg");
   background-size: cover;
 }
 
@@ -111,5 +111,3 @@ nav {
     margin-bottom: 20px;
   }
 }
-
-
