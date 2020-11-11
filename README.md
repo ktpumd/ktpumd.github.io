@@ -8,7 +8,6 @@ Please use the "dev" branch for development and only merge with the "master" bra
 ## TO DO:
 
 - SSL certificate for the website
-- Add favicon
 - Change banner image
 - Change fonts to be better than basic Bootstrap
 - Fix site to be more responsive on mobile
