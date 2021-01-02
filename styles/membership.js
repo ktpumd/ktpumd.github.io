@@ -79,11 +79,11 @@ function generateExecEntries () {
 
     // create a new row when previous row is filled
     if (entriesInRow == 0) {
-      htmlExecSection.append('<div class="row justiy-content-center" id="execRow' + rowNum.toString() + '">');
+      htmlExecSection.append('<div class="row justify-content-center" id="execRow' + rowNum.toString() + '">');
     }
 
     rowEl = $( "#execRow" + rowNum.toString() );
-    rowEl.append('<div class="col-sm text-center" id="exec' + i.toString() + '">');
+    rowEl.append('<div class="col-6 col-sm-3 col-md-3 col-lg-3 text-center" id="exec' + i.toString() + '">');
 
     // add brother names and images
     var entry = $( "#exec" + i.toString() );
@@ -115,7 +115,7 @@ function generateExecEntries () {
 
   // fill the alumni div so that the spacing is not off
   while (entriesInRow != 0  && entriesInRow < ENTRIES_PER_ROW) {
-    rowEl.append('<div class="col-sm text-center">');
+    rowEl.append('<div class="col-6 col-sm-3 col-md-2 col-lg-2 text-center">');
     rowEl.append('</div>');
     entriesInRow += 1;
   }
@@ -237,7 +237,7 @@ function generateBrotherEntries () {
     }
 
     rowEl = $( "#brotherRow" + rowNum.toString() );
-    rowEl.append('<div class="col-sm text-center" id="brother' + i.toString() + '">');
+    rowEl.append('<div class="col-lg-2 col-md-2 col-6 text-center" id="brother' + i.toString() + '">');
 
     // add brother names and images
     var entry = $( "#brother" + i.toString() );
@@ -264,7 +264,7 @@ function generateBrotherEntries () {
 
   // fill the alumni div so that the spacing is not off
   while (entriesInRow != 0  && entriesInRow < ENTRIES_PER_ROW) {
-    rowEl.append('<div class="col-sm text-center">');
+    rowEl.append('<div class="col-lg-2 col-md-2 col-6 text-center">');
     rowEl.append('</div>');
     entriesInRow += 1;
   }
@@ -394,7 +394,7 @@ function generateAlumniBoxes () {
 
     // close some of the divs
     classCard.append('<br>');
-    classSection.append('</div>');
+    classSection.append('</div><br>');
     rowEl.append('</div>');
 
     cardsInRow += 1;
@@ -402,7 +402,6 @@ function generateAlumniBoxes () {
     // at the end of a row, close the row div
     if (cardsInRow == CARDS_PER_ROW) {
       htmlAlumniSection.append('</div>');
-      htmlAlumniSection.append('<br>');
       cardsInRow = 0;
       rowNum += 1;
     }
