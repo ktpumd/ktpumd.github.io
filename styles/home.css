@@ -11,12 +11,6 @@ h1 {
   color: black;
 }
 
-#home-banner {
-  background: url("../assets/ktpbanner.jpg");
-  background-size: cover;
-}
-
-
 /* Style tab links */
 .tablink {
   background-color: #555;

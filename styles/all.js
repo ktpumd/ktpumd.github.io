@@ -10,8 +10,8 @@ function generateNavbar (activePage) {
   navbar.append('<a class="navbar-brand" href="index.html" id="navLogo"></a>');
 
   var navLogo = $( "#navLogo" );
-  navLogo.append("<img src=\"assets/ktpninjalogo-removebg-preview.png\" style='width: 10%; height:10%;' class=\"d-inline-block align-top\" alt>");
-  navLogo.append('<b>&ensp; Kappa Theta Pi</b>');
+  navLogo.append("<img src=\"assets/ktpninjalogo-removebg-preview.png\" style='width: 15%; height:15%;' class=\"d-inline-block align-top\" alt>");
+  navLogo.append('<b>&ensp; &Kappa;&Theta;&Pi; </b>');
 
   navbar.append('<button class="navbar-toggler" id="navButton" type="button" data-toggle="collapse" data-target="#navbar1"><span class="navbar-toggler-icon"></span></button>');
 
