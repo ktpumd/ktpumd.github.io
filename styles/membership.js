@@ -88,7 +88,7 @@ function generateExecEntries () {
     // add brother names and images
     var entry = $( "#exec" + i.toString() );
     var item = EXEC[position];
-    entry.append("<img class='img-fluid rounded-circle' src='brothers/" + item[0] + "_" + item[1] + ".jpg' data-holder-rendered='true' onmouseover='hoverBrotherPic(this);' onmouseout='unhoverBrotherPic(this);' onclick='redirectBrotherPic(this, \"" + item[2] + "\");'>");
+    entry.append("<img class='img-fluid rounded-circle' src='assets/brothers/" + item[0] + "_" + item[1] + ".jpg' data-holder-rendered='true' onmouseover='hoverBrotherPic(this);' onmouseout='unhoverBrotherPic(this);' onclick='redirectBrotherPic(this, \"" + item[2] + "\");'>");
     entry.append('<p><b><br>' + item[0] + ' ' + item[1] +'</b></p>');
     entry.append('<p>' + position + '</p>');
 
@@ -241,7 +241,7 @@ function generateBrotherEntries () {
 
     // add brother names and images
     var entry = $( "#brother" + i.toString() );
-    entry.append("<img class='img-fluid rounded-circle' src='brothers/" + item[0] + "_" + item[1] + ".jpg' data-holder-rendered='true' onmouseover='hoverBrotherPic(this);' onmouseout='unhoverBrotherPic(this);' onclick='redirectBrotherPic(this, \"" + item[2] + "\");'>");
+    entry.append("<img class='img-fluid rounded-circle' src='assets/brothers/" + item[0] + "_" + item[1] + ".jpg' data-holder-rendered='true' onmouseover='hoverBrotherPic(this);' onmouseout='unhoverBrotherPic(this);' onclick='redirectBrotherPic(this, \"" + item[2] + "\");'>");
     entry.append('<p>' + item[0] + ' ' + item[1] +'</p>')
 
     rowEl.append('</div>');
