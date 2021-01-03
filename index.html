@@ -32,7 +32,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-light bg-light" id="NAV"></nav>
 
-    <div class = "container">
+    <div class="container" style="width: 85%">
       <!-- HOME BANNER -->
       <br>
       <div class="jumbotron jumboptron-fluid" id="home-banner">
@@ -71,6 +71,8 @@
         </div>
       </div>
       <br><br>
+
+
       <!-- HISTORY -->
       <div class="row justify-content-center">
         <div class="col-sm-4 text-center">
@@ -92,6 +94,8 @@
         </div>
       </div>
       <br><br>
+
+
       <!-- ALUMNI CONNECTIONS -->
       <div class="row justify-content-center text-center">
         <h2>Alumni Connections</h2>
@@ -106,78 +110,20 @@
       </div>
       <br>
 
-      <div class="row text-center text-lg-left">
-        <div class="col-lg-3 col-md-4 col-6">
-          <a href="https://www.google.com" class="d-block mb-4 h-100" target="_blank">
-                <img class="img-fluid img-thumbnail" src="assets/alumni-connections/google.png" alt="Google">
-              </a>
-        </div>
-    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.amazon.com" class="d-block mb-4 h-100" target="_blank">
-            <img class="img-fluid img-thumbnail" src="assets/alumni-connections/amazon.png" alt="Amazon">
-          </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.facebook.com" class="d-block mb-4 h-100" target="_blank">
-            <img class="img-fluid img-thumbnail" src="assets/alumni-connections/facebook.png" alt="Facebook">
-          </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.microsoft.com" class="d-block mb-4 h-100" target="_blank">
-            <img class="img-fluid img-thumbnail" src="assets/alumni-connections/microsoft.png" alt="Microsoft">
-          </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.capitalone.com" class="d-block mb-4 h-100" target="_blank">
-            <img class="img-fluid img-thumbnail" src="assets/alumni-connections/capitalone.png" alt="Capital One">
-          </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.blackstone.com" class="d-block mb-4 h-100" target="_blank">
-            <img class="img-fluid img-thumbnail" src="assets/alumni-connections/blackstone.png" alt="Blackstone">
-          </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.nasa.gov" class="d-block mb-4 h-100" target="_blank">
-            <img class="img-fluid img-thumbnail" src="assets/alumni-connections/nasa.gif" alt="NASA">
-          </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.adobe.com" class="d-block mb-4 h-100" target="_blank">
-            <img class="img-fluid img-thumbnail" src="assets/alumni-connections/adobe.png" alt="Adobe">
-          </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.ibm.com" class="d-block mb-4 h-100" target="_blank">
-            <img class="img-fluid img-thumbnail" src="assets/alumni-connections/ibm.jpg" alt="IBM">
-          </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.chewy.com" class="d-block mb-4 h-100" target="_blank">
-            <img class="img-fluid img-thumbnail" src="assets/alumni-connections/chewy.png" alt="Chewy">
-          </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.twosigma.com" class="d-block mb-4 h-100" target="_blank">
-            <img class="img-fluid img-thumbnail" src="assets/alumni-connections/twosigma.png" alt="Two Sigma">
-          </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.ey.com" class="d-block mb-4 h-100" target="_blank">
-            <img class="img-fluid img-thumbnail" src="assets/alumni-connections/EY.png" alt="Ernst and Young">
-          </a>
-    </div>
-  </div>
+
+      <div class="container">
+        <div class="row text-center text-lg-left" id="COMPANIES"></div>
+      </div>
 
     </div>
 
     <br><br>
 
-
     <footer id="footer" class="section bg"></footer>
 
     <script>
       generateNavbar('Home');
+      generateCompanyBoxes()
       generateFooter();
     </script>
 
