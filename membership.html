@@ -1,507 +1,172 @@
+<!--
+
+=========================================================
+* Now UI Kit - v1.3.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/now-ui-kit
+* Copyright 2019 Creative Tim (http://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md)
+
+* Designed by www.invisionapp.com Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>KTP UMD</title>
-  <meta name="author" content="Kappa Theta Pi">
-  <meta name="description" content="Kappa Theta Pi at the University of Maryland, College Park">
-  <meta name="keywords" content="ktp,kappa,theta,pi,kappathetapi,umd,university,maryland,website">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" type="text/css" href="styles/style.css"> -->
-  <!-- <link rel="shortcut icon" type="image/png" href="favicon.ico"/> -->
-
-
-  <script type="text/javascript" src="styles/membership.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://use.fontawesome.com/0bd7491f1e.js"></script>
-  <link rel="stylesheet" href="styles/membership.css">
-
-  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-1RFZNCXBS4"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'G-1RFZNCXBS4');
- </script>
-
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    KTP UMD
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/now-ui-kit.css?v=1.3.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="assets/demo/demo.css" rel="stylesheet" />
+  <script type="text/javascript" src="assets/js/membership.js"></script>
 </head>
 
-<body>
-
-  <!-- NAVBAR -->
-    <!--
-  <nav class="navbar navbar-expand-lg navbar-light">
-      <!-- left side
-      <ul class="navbar-nav mr-auto">
-        <!-- image
-        <a class="navbar-brand" href="./index.html">
-          <img src="assets/ktpninja.png" class="d-inline-block align-top" alt="KTP Ninja">
-        </a>
-        <a class="navbar-brand" id="title">
-          <strong>KAPPA THETA PI</strong>
-          <small>University of Maryland</small>
-        </a>
-      </ul>
-      <!-- right side
-      <ul class="navbar-nav ml-auto" id="list">
-          <li class="nav-item">
-              <a class="nav-link" href="./index.html">HOME</a>
-            </li>
-          <li class="nav-item">
-              <a class="nav-link" href="./contact.html">CONTACT</a>
-            </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="./membership.html" style="color: #458fff; font-weight: bold">MEMBERSHIP</a>
-        </li>
-      </ul>
-    </nav> -->
-
- <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">
-           <img src="assets/ktpninjalogo-removebg-preview.png" style='width: 10%; height:10%;' class="d-inline-block align-top" alt="">
-            <b>Kappa Theta Pi</b>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar1">
-    <ul class="navbar-nav mr-auto">
-    </ul>
-    <ul class="navbar-nav ">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="membership.html">Membership</a>
-      </li>
-    </ul>
-  </div>
-  </nav>
-
-<div class="container" style="width: 75%">
-<br>
-
-<div style="border-radius: 25px;margin: auto; background-size: cover; width: 75%; height:100%; background-image: linear-gradient(to bottom, rgba(18, 245, 48, 0.6) 0%,rgba(160, 235, 158, 0.9) 100%)">
-  <br>  <br>
-  <h1 class="display-4" style="padding: 10px; font-weight: 500;">Meet the Brothers of Kappa Theta Pi!</h1>
-  <br>  <br>
-</div>
-
-    <br><br>
-    <h2 class = "text-center">Our Executive Board</h2>
-    <br>
+<body class="landing-page sidebar-collapse">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-sm-2 text-center">
-          <img class="img-fluid rounded-circle" alt="100x100"  src="https://media-exp1.licdn.com/dms/image/C5103AQEkkbfm-ttX7g/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=oKGBbayZMgMVlzTqc5E1kdFiQQRIvsHg5cgTw5bPJXY"
-            data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/dominique-r-a853ab123/');">
-          <p><b><br>Dominique Rafael</b></p>
-          <p>President</p>
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="index.html" rel="tooltip" data-placement="bottom">
+          Kappa Theta Pi
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar top-bar"></span>
+          <span class="navbar-toggler-bar middle-bar"></span>
+          <span class="navbar-toggler-bar bottom-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation"
+        data-nav-image="./assets/img/blurred-image-1.jpg">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+              aria-expanded="false">
+              <p>Get Involved</p>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
+              <a class="dropdown-item" href="get_involved_students.html">
+                Students
+              </a>
+              <a class="dropdown-item" target="_blank" href="get_involved_companies.html">
+                Companies
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="membership.html">
+              <p>Members</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom"
+              href="https://twitter.com/KappaThetaPiUMD" target="_blank">
+              <i class="fab fa-twitter"></i>
+              <p class="d-lg-none d-xl-none">Twitter</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom"
+              href="https://www.facebook.com/KappaThetaPiUMD" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+              <p class="d-lg-none d-xl-none">Facebook</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom"
+              href="https://www.instagram.com/ktpumd/" target="_blank">
+              <i class="fab fa-instagram"></i>
+              <p class="d-lg-none d-xl-none">Instagram</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Follow us on LinkedIn" data-placement="bottom"
+              href="https://www.linkedin.com/company/kappa-theta-pi/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+              <p class="d-lg-none d-xl-none">LinkedIn</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <div class="wrapper">
+    <div class="page-header page-header-small">
+      <div class="page-header-image" style="background-image: url('assets/img/bg6new.jpg');">
+      </div>
+      <div class="content-center">
+        <div class="container">
+          <h1 class="title">Meet Our Members</h1>
         </div>
-        <div class="col-sm-2 text-center">
-          <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQEFu5ngWwGVYw/profile-displayphoto-shrink_800_800/0?e=1609977600&v=beta&t=eYfVdKgFWyNB6FIG5m1qt6GSX5_WjLM--Cxw17jHW3U"
-          data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/sahir-mody/');">
-          <p><b><br>Sahir Mody</b></p>
-          <p>Vice President</p>
-        </div>
-        <div class="col-sm-2 text-center">
-          <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQFc04CnTFi6Hg/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=B-KZ7A3HZDwExOr1E72zXSk7MkCosw5FRgDnrhg0u_0"
-          data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/stang10/');">
-          <p><b><br>Samantha Tang</b></p>
-          <p>Director of Membership</p>
-        </div>
+      </div>
+    </div>
+    <div class="section section-team text-center">
+      <div class="container">
+        <h2 class="title">Executive Board</h2>
+        <br>
+        <div class="team" id="exec"></div>
 
-        <div class="col-sm-2 text-center">
-          <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQE_NvUidLcJwA/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=6HRKYDHX8fOwVHDGcEW9y2PpPvM3hFuoeMG4Sx3lk7E"
-          data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/jencorzo/');">
-          <p><b><br>Jenny Corzo</b></p>
-          <p>Director of Standards</p>
-        </div>
+        <h2 class="title">Brothers</h2>
+        <br>
+        <div class="team" id="brothers"></div>
 
+        <h2 class="title">Alumni</h2>
+        <br>
+        <div id="alumni"></div>
 
       </div>
-      <br>
-
-      <!--
-      Need to resize this row so that images become the same size Best way is to probabily get the size of one of the columns and divide it by 2
-      add the margin on the left and the right accordingly not really sure about how to do this effectively though
-       -->
-      <div class="row justify-content-center">
-        <div class="col-sm-2 text-center">
-          <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQFaWRFnApha9A/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=qv3DNJeCF6d_yFm2AYQTpfQP1nfkdAfJ4Uo7owdiUtw"
-          data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/shlokkh/');">
-          <p><b><br>Shlok Khandelwal</b></p>
-          <p>Director of Professional Development</p>
-        </div>
-        <div class="col-sm-2 text-center">
-          <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C5603AQF50Pz3Bi_0Cg/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=iubdK2Cl2ExPZu1yITuhBKIS0cdV0i_J84BVDbTTg48"
-          data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/rida-habib-29065316b/');">
-          <p><b><br>Rida Habib</b></p>
-          <p>Director of Finance</p>
-        </div>
-        <div class="col-sm-2 text-center">
-            <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQFs9mvoZzf1Bg/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=CR1Qh56b5Gum2WOIfvbY-t4Vgh-ro2utDq6Lw2u2YRQ"
-            data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/ummey-hossain/');">
-          <p><b><br>Ummey Hossain</b></p>
-          <p>Director of Philanthropy</p>
-        </div>
-        <div class="col-sm-2 text-center">
-          <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQEZia0pZvQGDQ/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=grwdO5NJtASzlenxgAkEY9oZoa1qxCNSA8Jpdd_rOOg"
-          data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/esther-zhang-036237184/');">
-          <p><b><br>Esther Zhang</b></p>
-          <p>Director of Technology</p>
-        </div>
-        <div class="col-sm-2 text-center">
-          <img class="img-fluid rounded-circle" alt="100x100" src="assets/ktpdefaultmember-removebg-preview.png"
-          data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/devika-govindarajan-043644195/');">
-          <p><b><br>Devika Govindarajan</b></p>
-          <p>Director of Engagement</p>
-        </div>
-      </div>
     </div>
-    <br><br>
-    <h2 class = "text-center"> Our Brothers </h2>
-    <br>
-    <div class="row justify-content-center">
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQHEikUrRcJc6A/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=19B7gNsvqv-aSWMTPEosDVfhtQGctZ4sLJjkEzQKjbY"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/akriti-tripathi/');">
-        <p>Akriti Tripathi</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQE8H3W6THJeSw/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=yTHVxFqce-FUME28vB8Mw-ejb8e0C03QrrHc9yETOrM"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/amandama2300/');">
-        <p>Amanda Ma</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQHMHyoSlNYj3Q/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=Q6Oqr3K88FWsOFjjKMyMI0Bje5JW7-lZOZij5nmPjqo"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/amy--zheng/');">
-        <p>Amy Zheng</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C5603AQEhzrtbyz-cEg/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=uGM0IbFIkYhyY7be9llEd6OWNeKMCAiK8TC4NjHl1pc"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/andrew-cunniff/');">
-        <p>Andrew Cunniff</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQG7O8Kfrba5xA/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=lf27-KO_OMko6vbSK6Gu0sk6LTROvgUiJ4yP8W-Hfqo"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/austin-hwa-574b10156/');">
-        <p>Austin Hwa</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C5603AQEygXCRS3MbKA/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=qCK7uv2lCtJbmy6gPTSqWl-QDeXFaDAH1Gupcs9QgbQ"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/christian-tonti/');">
-        <p>Christian Tonti</p>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQGemsTGo7kFBg/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=9IzEW2Il3UDGXbyhzoDYS9opJPBWnImpUEad6_Z6oAY"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/daniel-holten-5a9250162/');">
-        <p>Daniel Holten</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQH08WBC2Yoquw/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=w6CquDxa2bFHbxAOyVVMzvNtqmsRvE1RHbLbRiH9BHo"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/liedmund/');">
-        <p>Edmund Li</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQFCEmK6lxyNlw/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=msYFKZUZWUHXelq8Xngz131D6dRa3RqHZgbXG9KR934"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/e-chang/');">
-        <p>Emily Chang</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQF-483xM8Wcfw/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=XZzEJkGaj_Vt_hoilUArZKDzjz-bI09Uwutw8mBETBw"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/ethan-smiley-123463181/');">
-        <p>Ethan Smiley</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQHbGsimOT9Zwg/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=uJso38uTinRSmJOc2YEXkWc9ZMEnedLIhPz36UMGXlQ"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/kaur-h/');">
-        <p>Harleen Kaur</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C5603AQFI2b9to2k4ZA/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=D64IxWMu_jJbYPxnWNe53WOWVol4DuwBOemAcyTIPUM"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/h-mahmood/');">
-        <p>Hira Mahmood</p>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQFkvQEq3K3qfw/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=tb-tcdCupAphMdZRcaLckvtPgcNUBkBEPomsbDSVIjc"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/ines-benmohamed-7a1717181/');">
-        <p>Ines Benmohamed</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQEFIVZv_L26zQ/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=yn8vR91J-87fxEhM4Ay9jdhBFVOXImRbnP4OducDXTI"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/batesj98/');">
-        <p>James Bates</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQFVJGgNe-K5ZA/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=SfaNfB-pjjqL7K8BuDC-xYCPpTlWlLz3vBvw7excDBY"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/jasmineokebugwu/');">
-        <p>Jasmine Okebugwu</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQHEsps3k7Q7mw/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=aIaaNajc3jHHxVHpk9ZF3RGXlF5Ng6w8iVFAWuB6-bM"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/jdkerry/');">
-        <p>Jessica Kerry</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQFs9hvuGftcrw/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=G8yx0g6oeGlCS8fy-sXYPbkkTflchiWgxHsKi5nItHA"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/jgao1238/');">
-        <p>John Gao</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQF6x3aeyMlZiw/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=8rGQAm7EDOmYbnubl_QfJXQi3vg07GvpUfun9Q9Whu0"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/joshua--choi/');">
-        <p>Joshua Choi</p>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQH4wrZoDFLwVQ/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=rvpOxV1i26IEaa70al4Tc0LTI6M6RZHi3waAezq0BTg"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/chengzi-tian-ab2923198/');">
-        <p>June Tian</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQFTxC936axrQQ/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=33T7BPJW-0Wz37pZEQDwvCXWK7nV5QutjODVGiUv-oY"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/katrin-sofi-ilieva/');">
-        <p>Kati Ilieva</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQGTy164q1JkVg/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=6GVqYeIrzE68Mkf1rGColfN_pHl38-YDE-1iw4Jl7uw"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/katherineekemp/');">
-        <p>Katie Kemp</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C5603AQF28Ter6T9Msg/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=X-Sdxi0TOtck--x93u_XM2dapQfBcLMHPKSNkr1WSp0"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/katherine-vincler/');">
-        <p>Katie Vincler</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQHmAZTs_jwX6g/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=Yx2QTIQHM3QghKuxaNpxz9GISYKQtQQXXCRZF3t0CWQ"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/lauren-lateef-325446192/');">
-        <p>Lauren LaTeef</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C5603AQFjsKbDRiddCw/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=qEWmiIpOwldNXR2UP1GpHqRVYi_ASoVUiY3IxtvDiNs"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/lillian-nose/');">
-        <p>Lillian Nose</p>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="assets/ktpdefaultmember-removebg-preview.png"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/maggie-zhou-991b93194/');">
-        <p>Maggie Zhou</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="assets/ktpdefaultmember-removebg-preview.png"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/mgouz/');">
-        <p>Matthew Gouzoulis</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQHBmk3iBn8QpQ/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=0hrGD6mDZUhvlVesJFXkIRETCOyqv4OqSXab7LzJ5uc"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/matthew-leins/');">
-        <p>Matthew Leins</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQELlZMAxXak0w/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=dMqbVSgcJN1ayeHumvBSQYpwPLOe3yIRQNFz473cHbw"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/melvynh/');">
-        <p>Melvyn Hullana</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="assets/ktpdefaultmember-removebg-preview.png"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/michael-stripling-898053138/');">
-        <p>Michael Stripling</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQGSWW5ATnUPCQ/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=eRudW3NuX_oYvb0641YARIJBwIrSCOXSTZF7kh6XwBU"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/nik-nair/');">
-        <p>Nik Nair</p>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQHZ-abH9o7zuQ/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=_wEDTrwGO5UNd1uXJtOzlNlZUyBiCCbjJSPl5n6N1cM"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/nithin-richard/');">
-        <p>Nithin Richard</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C5603AQE8XD7LqFz_9w/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=UkQ4ybJVwywdZSaJQnfx-MAJesd38q4LSQsLSe6iUVU"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/pgaur1/');">
-        <p>Prachi Gaur</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQFxSvNTKDvagg/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=7yN7sn9da63r3FkGIybP5DZUMfoQ7KO59UC49TYvD74"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/priyanka-m-kishore/');">
-        <p>Priyanka Kishore</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQEZMcsPmo0N9Q/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=tjgh1t7oJKWfb4P-m7JxYGaBpz3XVqubk9g2vvgPB2E"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/muhammadrafaykhan/');">
-        <p>Rafay Khan</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQG0S3M77ss10A/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=sSzdx_GrDpLoSs_fS1MUFtJ1sZBMLHIQfvxpNqrvw7c"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/rahul-krishnan-/');">
-        <p>Rahul Krishnan</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQHmZAmGM9pf2A/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=NhqfyINM5NGUPtFkOlmZktZbFSzTIbJyFyjf7FCqXxo"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/richard-bui-6ba38719a/');">
-        <p>Richard Bui</p>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQGFfGHmvar5RQ/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=-NN65f6cZ5Qpf5z2ddSGcrsku4_J2vu7IUpr3rX9zlo"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/rrparikh/');">
-        <p>Rishi Parikh</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C5603AQFLXeLkhwlZBQ/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=YVfM1MAGynZ6B9FAYBzpdjEQ5OAXNF7ijlV5BXwrHH0"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/havelr/');">
-        <p>Ryan Havel</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQFvPzV4zN7H4w/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=94-6KeImLza65-BnZU8bsxlxeyMDsyRzhYiZkJSZ9Gk"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/ryan-lam-151b00168/');">
-        <p>Ryan Lam</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQE8Lr8G3sBUQg/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=h8cSgltOiEJgJzPaPcKx6WT6Q44KVHpdWifDp953XpI"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/sayornu/');">
-        <p>Siraj Ayornu</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQGtKBjcGlitQg/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=82YW_CJvwKMDWeg-lwsSTkpQe64KIpx8CZFpcmgVQdQ"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/thy-hoang-8730b81a4/');">
-        <p>Thy Hoang</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C5603AQGlR4DE_GtStA/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=PkIOoS3FoJWwPrOgy7Sgcx8Mic1uo9n6gNMbcgqXJJI"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/timmy-trapaidze/');">
-        <p>Timmy Trapaidze</p>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQGwjk5YchoQGg/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=g5WfmACS0ARmQ26oh1CkFvsZBm4nTDPMu2FOHzj_01Y"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/valeriarriola/');">
-        <p>Val Arriola-Pomasoncco</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C5603AQGm6xCPLmRwiA/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=cCBDdlxJAp2pgk47QDnH80zyM9S5XYHIjfshSz1pyXk"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/vidushivashist/');">
-        <p>Vid Vashist</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4E03AQE_0aXszNYHQQ/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=ioSKQNRewt_rDbWP-k1EGP15gXTixqNjyTnGsXH12JE"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/vikram-adipudi-27025519b/');">
-        <p>Vikram Adipudi</p>
-      </div>
-      <div class="col-sm text-center">
-        <img class="img-fluid rounded-circle" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C4D03AQFkWx5bkwhg-g/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=Se0yDq6is7sZQdhPq97SprT_IF_DBT6RHfGyVv6u4bY"
-        data-holder-rendered="true" onmouseover="hoverBrotherPic(this);" onmouseout="unhoverBrotherPic(this);" onclick="redirectBrotherPic(this, 'https://www.linkedin.com/in/yomi-omo/');">
-        <p>Yomi Omogbehin</p>
-      </div>
-      <div class="col-sm text-center">
-      </div>
-      <div class="col-sm text-center">
-      </div>
-    </div>
-    <br><br>
-    <h2 class = "text-center">Our Alumni </h2>
-    <br>
-    <div class="row">
-      <div class="col-sm text-center">
-        <div class="card">
-          <br>
-          <h2> Founders </h2>
-          <a href="https://www.linkedin.com/in/alicia-curcuru-7745bb108/">Alicia Curcuru</a>
-          <a href="https://www.linkedin.com/in/ben-nwokeleme/">Ben Nwokeleme</a>
-          <a href="https://www.linkedin.com/in/chantellerodriguez/">Chantelle Rodriguez</a>
-          <a href="https://www.linkedin.com/in/garima-dewan-3728b6a7/">Garima Dewan</a>
-          <a href="https://www.linkedin.com/in/jalee2221/">Jonathan Lee</a>
-          <a href="https://www.linkedin.com/in/jordyn-berry/">Jordyn Berry</a>
-          <a href="https://www.linkedin.com/in/lydia-spurrier/">Lydia Spurrier</a>
-          <a href="https://www.linkedin.com/in/sukhneetkaur721/">Sukhneet Kaur</a> <br>
-        </div>
-      </div>
-      <div class="col-sm text-center">
-        <div class="card">
-          <br>
-          <h2> Alpha </h2>
-          <a href="https://www.linkedin.com/in/ava--williams/">Ava Williams</a>
-          <a href="https://www.linkedin.com/in/daniel-aivazov-ab6933139/">Daniel Aivazov</a>
-          <a href="https://www.linkedin.com/in/evinaik/">Ekansh Vinaik</a>
-          <a href="https://www.linkedin.com/in/harry-irvine-iv/">Harry Irvine</a>
-          <a href="https://www.linkedin.com/in/jtfield/">JT Field</a>
-          <a href="https://www.linkedin.com/in/marc-marcelin-6b4aab13b/">Marc Marcelin</a>
-          <a href="https://www.linkedin.com/in/matthew-aird/">Matthew Aird</a>
-          <a href="https://www.linkedin.com/in/niharika-sahay/">Niharika Sahay</a>
-          <a href="https://www.linkedin.com/in/rachitchadha/">Rachit Chadha</a>
-          <a href="https://www.linkedin.com/in/swati-adipudi">Swati Adipudi</a>
-          <a href="https://www.linkedin.com/in/thaddeusleetyson/">Thaddeus Lee-Tyson</a> <br>
-        </div>
-      </div>
-      <div class="col-sm text-center">
-        <div class="card">
-          <br>
-          <h2> Beta </h2>
-          <a href="https://www.linkedin.com/in/ameya-sampath-994819159/">Ameya Sampath</a>
-          <a href="https://www.linkedin.com/in/corie-brown-772ba7154/">Corie Brown</a>
-          <a href="https://www.linkedin.com/in/faatemah-mallick/">Faatemah Mallick</a>
-          <a href="https://www.linkedin.com/in/isabella-stevens/">Isabelle Stevens</a>
-          <a href="https://www.linkedin.com/in/jeffrey-najmi-192a77162/">Jeffrey Najmi</a>
-          <a href="https://www.linkedin.com/in/mwalker1380/">Mike Walker</a>
-          <a href="https://www.linkedin.com/in/ronit-gopalani-7a816a62/">Ronit Gopalani</a>
-          <a href="https://www.linkedin.com/in/ryan-mccarthy-a664b416b/">Ryan McCarthy</a>
-          <a href="https://www.linkedin.com/in/shadikhan/">Shad Khan</a>
-          <a href="https://www.linkedin.com/in/tylerbehr/">Tyler Behr</a> <br>
-        </div>
-      </div>
-      <div class="col-sm text-center">
-        <div class="card">
-          <br>
-          <h2> Gamma </h2>
-          <a href="https://www.linkedin.com/in/dpatl/">Deep Patel</a>
-          <a href="https://www.linkedin.com/in/isaahmad/">Isa Ahmad</a>
-          <a href="https://www.linkedin.com/in/kendall-wong/">Kendall Wong</a> <br>
-        </div>
-      </div>
-    </div>
-
-
-    <br></br>
-    <footer id="footer" class="section bg">
-      <div class="row justify-content-center">
-        <div class="col-sm text-center">
-          <a href="https://www.facebook.com/KappaThetaPiUMD" style="margin:1.25%;color:rgb(16, 98, 250)" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-          <a href="https://www.instagram.com/ktpumd/" style="margin:1.25%;color:rgb(165, 70, 255)" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/company/kappa-theta-pi/" style="margin:1.25%;color:rgb(0, 89, 148)" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-          <a href="https://twitter.com/KappaThetaPiUMD" style="margin:1.25%;color:rgb(57, 136, 255)" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-          <br>
-          <div class="footer-copyright text-center py-3">© 2020 Copyright Kappa Theta Pi Epsilon Chapter
-          </div>
-        </div>
-      </div>
-    </footer>
   </div>
-
+  <script>
+    addExecPositions()
+    addBrothers()
+    addAlumni()
+  </script>
+  <footer class="footer footer-default">
+    <div class="container text-center">
+      <div class="copyright" id="copyright">
+        &copy;
+        <script>
+          document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+        </script>, Designed by Kappa Theta Pi UMD
+      </div>
+    </div>
+  </footer>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="assets/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+  <script src="assets/js/now-ui-kit.js?v=1.3.0" type="text/javascript"></script>
 </body>
-
 
 </html>
