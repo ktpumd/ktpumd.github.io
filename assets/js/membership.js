@@ -176,11 +176,11 @@ BROTHERS = [
   ['Vikram', 'Adipudi', 'https://www.linkedin.com/in/vikram-adipudi-27025519b/'],
 
   ['Vivek', 'Waghray', 'https://www.linkedin.com/in/vivek-waghray-812079208/'],
-  ['',''],
-  ['',''],
-  ['',''],
-  ['',''],
-  ['','']
+  ['blank','blank'],
+  ['blank','blank'],
+  ['blank','blank'],
+  ['blank','blank'],
+  ['blank','blank']
 
 ]
 
@@ -214,7 +214,11 @@ function generateMemberCard(firstName, lastName) {
   img.className = "rounded-circle img-fluid"
   memberName = document.createElement("h5");
   memberName.className = "bold";
-  memberName.textContent = firstName + "\r\n" + lastName;
+  if (firstName == 'blank') {
+    memberName.textContent = "\r\n";
+  } else {
+    memberName.textContent = firstName + "\r\n" + lastName;
+  }
   memberName.setAttribute('style', 'white-space: pre;');
   teamPlayer.appendChild(img);
   teamPlayer.appendChild(memberName);
