@@ -258,6 +258,7 @@ ALUMNI = {
 
   "Alpha": [
     ['Ava', 'Williams', 'https://www.linkedin.com/in/ava--williams/'],
+    ['Chris', 'Truong', 'https://www.linkedin.com/in/christruongumd/'],
     ['Daniel', 'Aivazov', 'https://www.linkedin.com/in/daniel-aivazov-ab6933139/'],
     ['Daniel', 'Holten', 'https://www.linkedin.com/in/daniel-holten-5a9250162/'],
     ['Ekansh', 'Vinaik', 'https://www.linkedin.com/in/evinaik/'],
