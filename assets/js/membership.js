@@ -317,8 +317,8 @@ ALUMNI = {
     ['Matthew', 'Leins', 'https://www.linkedin.com/in/matthew-leins/'],
     ['Melvyn', 'Hullana', 'https://www.linkedin.com/in/melvynh/'],
     ['Nithin', 'Richard', 'https://www.linkedin.com/in/nithin-richard/'],
-    ['Priyanka', 'Kishore', 'https://www.linkedin.com/in/priyanka-m-kishore/'],
-    ['Yomi', 'Omogbehin', 'https://www.linkedin.com/in/yomi-omo/']
+    ['Priyanka', 'Kishore', 'https://www.linkedin.com/in/priyanka-m-kishore/']
+  //  ['Yomi', 'Omogbehin', 'https://www.linkedin.com/in/yomi-omo/']
 
   ]
 
