@@ -24,7 +24,7 @@ var membersList = {
   "Director of Standards": 
     ["Katie", "Kemp"],
   "Director of Professional Development": 
-    ["Sahir", "Mody"],
+    ["Kevin", "Hall"],
   "Director of Finance": 
     ["Edmund", "Li"],
   "Director of Philanthropy": 
@@ -32,7 +32,7 @@ var membersList = {
   "Director of Technology": 
     ["Austin", "Hwa"],
   "Director of Engagement": 
-    ["Janaki", "Patel"]
+    ["Christopher", "Tang"]
 
 },
 
@@ -52,49 +52,60 @@ var membersList = {
 [
 
 
+  ["Abigail", "Miller"],
   ["Akriti", "Tripathi"],
   ["Amanda", "Ma"],
   ["Ananya", "Nadig"],
+  ["Angad", "Singh"],
   ["Andrew", "Stehman"],
+  ["Antonio", "Farias"],
+  ["Arihant", "Gupta"],
   ["Casey", "Puentes"],
+  ["Cassiel", "Arcilla"],
   ["Christian", "Tonti"],
-  ["Christopher", "Tang"],
-  ["Diana", "Kerr"],
   ["Emily", "Chang"],
   ["Eric", "Gorner"],
   ["Esther", "Zhang"],
   ["Ethan", "Smiley"],
+  ["Garrett", "Amos"],
+  ["Grace", "Gellerman"],
   ["Grant", "Tamrakar"],
   ["Harleen", "Kaur"],
   ["Hira", "Mahmood"],
+  ["Hrishi", "Chintagumpala"],
+  ["Janaki", "Patel"],
   ["Jasmine", "Okebugwu"],
   ["Joshua", "Choi"],
   ["June", "Tian"],
   ["Kate", "Vo"],
   ["Katie", "Vincler"],
-  ["Kevin", "Hall"],
-  ["Lauren", "LaTeef"],
   ["Leo", "Wu"],
   ["Lillian", "Nose"],
   ["Lily", "Etareri"],
+  ["Lily", "Le"],
   ["Maggie", "Zhou"],
   ["Mahum", "Qadeer"],
   ["Mei", "Blatchford"],
   ["Nik", "Nair"],
-  ["Rafay", "Khan"],
+  ["Patrick", "Hogan"],
   ["Richard", "Bui"],
   ["Rida", "Habib"],
   ["Rishi", "Papani"],
   ["Rishi", "Parikh"],
+  ["Rishiraj", "Ghosh"],
+  ["Riya", "Boyapati"],
+  ["Sahir", "Mody"],
   ["Shreyas", "Vaderiyattil"],
   ["Sophie", "Jorgensen"],
   ["Steven", "Garrido"],
   ["Suraj", "Narang"],
   ["Thy", "Hoang"],
+  ["Tia", "Tran"],
   ["Tina", "Le"],
   ["Vidit", "Makwana"],
   ["Vikram", "Adipudi"],
-  ["Vivek", "Waghray"]
+  ["Vivek", "Waghray"],
+  ["Zoey", "Anastasiadis"]
 
 
 ],
@@ -167,6 +178,7 @@ var membersList = {
   ["Isa", "Ahmed"],
   ["Jenny", "Corzo"],
   ["Kendall", "Wong"],
+  ["Rafay", "Khan"],
   ["Siraj", "Ayornu"],
   ["Timmy", "Trapaidze"]
 ],
@@ -181,6 +193,7 @@ var membersList = {
 
 "Epsilon": [
   ["John", "Gao"],
+  ["Lauren", "LaTeef"],
   ["Matthew", "Leins"],
   ["Melvyn", "Hullana"],
   ["Nithin", "Richard"],
