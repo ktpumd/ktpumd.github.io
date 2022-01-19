@@ -63,7 +63,6 @@ var membersList = {
   ["Casey", "Puentes"],
   ["Cassiel", "Arcilla"],
   ["Christian", "Tonti"],
-  ["Diana", "Kerr"],
   ["Emily", "Chang"],
   ["Eric", "Gorner"],
   ["Esther", "Zhang"],
