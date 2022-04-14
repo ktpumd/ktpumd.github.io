@@ -5,7 +5,7 @@ Website for Kappa Theta Pi at the University of Maryland
 **DEV PRACTICES**:
 
 - When making a commit, please write the message in the following format: '[SemYear] Message'. For example, '[Fall21] Update Rush Events'
-- Please use the "dev" branch for development and only merge with the "master" branch after receiving approval from the Director of Technology!
+- Please use the "dev" branch for development and only merge with the "master" branch after receiving approval from the Webmaster!
 
 
 
@@ -44,4 +44,3 @@ Website for Kappa Theta Pi at the University of Maryland
     - Finally, move any graduating brothers to the Alumni section and add them to the appropriate pledge class (you may have to add a new section for a pledge class, make sure the pledge classses are in the correct order)
     - Most importantly, PLEASE STICK TO THE FORMAT ESTABLISHED
 - Double check everything and then commit and push
-

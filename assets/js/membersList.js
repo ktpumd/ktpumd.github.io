@@ -15,23 +15,23 @@ var membersList = {
 "ExecBoard":
 {
 
-  "President": 
+  "President":
     ["Samantha", "Tang"],
-  "Vice President": 
+  "Vice President":
     ["Devika", "Govindarajan"],
-  "Director of Membership": 
+  "Director of Membership":
     ["Vid", "Vashist"],
-  "Director of Standards": 
+  "Director of Standards":
     ["Katie", "Kemp"],
-  "Director of Professional Development": 
+  "Director of Professional Development":
     ["Kevin", "Hall"],
-  "Director of Finance": 
+  "Director of Finance":
     ["Edmund", "Li"],
-  "Director of Philanthropy": 
+  "Director of Philanthropy":
     ["Matthew", "Gouzoulis"],
-  "Director of Technology": 
+  "Director of Technology":
     ["Austin", "Hwa"],
-  "Director of Engagement": 
+  "Director of Engagement":
     ["Christopher", "Tang"]
 
 },
@@ -48,7 +48,7 @@ var membersList = {
 */
 
 
-"Brothers": 
+"Brothers":
 [
 
 
@@ -197,7 +197,8 @@ var membersList = {
   ["Matthew", "Leins"],
   ["Melvyn", "Hullana"],
   ["Nithin", "Richard"],
-  ["Priyanka", "Kishore"]
+  ["Priyanka", "Kishore"],
+  ["Yomi", "Omogbehin"]
 ]
 
 
