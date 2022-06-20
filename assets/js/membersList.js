@@ -68,7 +68,6 @@ var membersList = {
   ["Janaki", "Patel"],
   ["Joaquin", "Panambo"],
   ["Julius", "Angelo"],
-  ["Kamelia", "Roy"],
   ["Lily", "Etareri"],
   ["Lily", "Le"],
   ["Maggie", "Zhou"],
