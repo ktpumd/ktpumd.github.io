@@ -82,6 +82,7 @@ var membersList = {
   ["Rishiraj", "Ghosh"],
   ["Riya", "Boyapati"],
   ["Sai", "Posa"],
+  ["Samantha", "Tang"],
   ["Sana", "Choudhry"],
   ["Shreyas", "Vaderiyattil"],
   ["Sophie", "Jorgensen"],
