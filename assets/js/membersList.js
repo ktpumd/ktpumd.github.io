@@ -188,7 +188,6 @@ var membersList = {
   ["Katie", "Vincler"],
   ["Lillian", "Nose"],
   ["Matthew", "Gouzoulis"],
-  ["Samantha", "Tang"],
   ["Ummey", "Hossain"],
   ["Val", "Arriola-Pomasoncco"]
 ],
