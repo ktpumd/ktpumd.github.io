@@ -119,9 +119,9 @@ var membersList = {
     ["Anjali", "Gallacher"],
     ["Bhakti", "Hegde"],
     /*["Vahinreddy", "Palle"],*/
-    /*["Sachin", "Ashok"],*/
+    ["Sachin", "Ashok"],
     /*["Liam", "Moran"],*/
-    /*["Olivia", "Duran"],*/
+    ["Olivia", "Duran"]
   
   ],
   /*
