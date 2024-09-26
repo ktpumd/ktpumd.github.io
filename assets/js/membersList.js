@@ -16,28 +16,27 @@ var membersList = {
   {
   
     "President":
-      ["Antonio", "Farias"],
-    "Vice President":
-      ["Christopher", "Tang"],
-    "Director of Membership":
       ["Angad", "Singh"],
-    "Director of Standards":
-      ["Jacob", "Shapiro"],
+    "Vice President":
+      ["Nikita", "Khapre"],
+    "Director of Membership":
+      ["Kadin", "Fisher"],
+    "Director of Engagement":
+      ["Maya", "Chelar"],
     "Director of Professional Development":
       ["Valerie", "Yen"],
-    "Director of Finance":
-      ["Arihant", "Gupta"],
-    "Director of Philanthropy":
-      ["Maya", "Chelar"],
     "Director of Technology":
-      ["Sana", "Choudhry"],
-    "Director of Engagement":
-      ["Nikita", "Khapre"]
-  
+      ["Zane", "Rawlings"],
+    "Director of Philanthropy":
+      ["Sanika", "Pande"],
+    "Director of Standards":
+      ["Chetanya", "Makkar"],
+    "Director of Finance":
+      ["Shreeni", "Chikyala"],
   },
   
   
-  
+
   /*
   ******************************************************************
   *
@@ -51,63 +50,75 @@ var membersList = {
   
   "Brothers":
   [
-  
-  
+    //Nu Class
+    ["Chinaemelum", "Anadu"],
+    ["Ryan","McGowan"],
+    ["Tanveer", "Singh"],
+    ["Izzy", "Thomas"],
+    ["Siya", "Patel"],
+    ["Nitya", "Chigurupati"],
+    ["Ishita", "Singh"],
+    ["Riya", "Shah"],
+    ["Aadit", "Shah"],
+    ["Himanshu", "Gediya"],
+
+    //Rest
     ["Akshay", "Subramaniam"],
-    ["Ananya", "Nadig"],
+    ["Antonio", "Farias"],
+    // ["Ananya", "Nadig"],
     ["Andrew", "Le"],
-    ["Cassiel", "Arcilla"],
-    ["Diana", "Huynh"],
+    // ["Cassiel", "Arcilla"],
+    // ["Diana", "Huynh"],
     ["Eddie", "Zhang"],
-    ["Garrett", "Amos"],
+    // ["Garrett", "Amos"],
     ["Isabelle", "Summann"],
-    ["Janet", "Chan"],
+    // ["Janet", "Chan"],
     ["Julius", "Angelo"],
-    ["Lily", "Etareri"],
-    ["Malaya", "Heflin"],
-    ["Mickey", "Santomartino"],
+    // ["Lily", "Etareri"],
+    // ["Malaya", "Heflin"],
+    // ["Mickey", "Santomartino"],
     ["Noor", "Qureshi"],
     ["Poojan", "Patel"],
-    ["Rishi", "Papani"],
-    ["Rishiraj", "Ghosh"],
-    ["Riya", "Boyapati"],
-    ["Ron", "Reyes"],
-    ["Sai", "Posa"],
-    ["Samantha", "Tang"],
-    ["Sierra", "Hopkins"],
+    // ["Rishi", "Papani"],
+    // ["Rishiraj", "Ghosh"],
+    // ["Riya", "Boyapati"],
+    // ["Ron", "Reyes"],
+    // ["Sai", "Posa"],
+    // ["Samantha", "Tang"],
+    // ["Sierra", "Hopkins"],
     ["Soojee", "Fee"],
     ["Sriya", "Sogal"],
-    ["Suraj", "Narang"],
+    // ["Suraj", "Narang"],
     ["Taylor", "Wong"],
-    ["Thy", "Hoang"],
-    ["Tia", "Tran"],
-    ["Tina", "Ngo"],
+    // ["Thy", "Hoang"],
+    // ["Tia", "Tran"],
+    // ["Tina", "Ngo"],
     ["Zoe", "Cheng"],
     ["Erin", "Maynard"],
     ["Simmi", "Nirula"],
     ["Victor", "Su"],
     ["Sophia", "Gonzales"],
     ["Gandhar", "Viragi"],
-    ["Zane", "Rawlings"],
-    ["Vikram", "Jasti"],
+    // ["Zane", "Rawlings"],
+    // ["Vikram", "Jasti"],
     ["Eshita", "Mehrotra"],
-    ["Saatvik", "Gangavarapu"],
+    // ["Saatvik", "Gangavarapu"],
     ["Casey", "Majewski"],
     ["Taegon", "Hibbitts"],
-    ["Kadin", "Fisher"],
+    // ["Kadin", "Fisher"],
     ["Jaskaran", "Gill"],
     ["Patrick", "Healy"],
     ["Abhijay", "Shukla"],
-    ["Chetanya", "Makkar"],
+    // ["Chetanya", "Makkar"],
     ["Michelle", "Nguyen"],
     ["Grace","Gellerman"],
-    ["Vivek", "Waghray"],
+    // ["Vivek", "Waghray"],
     ["Deena", "Habash"],
     ["Yusuf", "Khalid"],
     ["Angad", "Bedi"],
-    ["Shreenitha", "Chikyala"],
+    // ["Shreenitha", "Chikyala"],
     ["Addison", "Hanrattie"],
-    ["Sanika", "Pande"],
+    // ["Sanika", "Pande"],
     ["Ari", "Kaplan"],
     ["Arti", "Dhareshwar"],
     ["Patrick", "Hael"],
@@ -118,11 +129,13 @@ var membersList = {
     ["Loren", "Foster"],
     ["Anjali", "Gallacher"],
     ["Bhakti", "Hegde"],
-    /*["Vahinreddy", "Palle"],*/
+    ["Vahin", "Palle"],
     ["Sachin", "Ashok"],
-    /*["Liam", "Moran"],*/
-    ["Olivia", "Duran"]
-  
+    ["Liam", "Moran"],
+    ["Olivia", "Duran"],
+    ["Anu", "Daga"],
+    ["Matt", "Hullana"],
+    ["Anna", "Tzeng"]
   ],
   /*
   ******************************************************************
@@ -249,7 +262,8 @@ var membersList = {
       ["Shreyas", "Vaderiyattil"],
       ["Sophie", "Jorgensen"],
       ["Janaki", "Patel"],
-      ["Eric", "Gorner"]
+      ["Eric", "Gorner"],
+      ["Christopher", "Tang"]
     ],
     
     "Eta": [
@@ -261,7 +275,10 @@ var membersList = {
       ["Vidit", "Makwana"],
       ["Casey", "Puentes"],
       ["Tina", "Le"],
-      ["Mahum", "Qadeer"]
+      ["Mahum", "Qadeer"],
+      ["Ananya", "Nadig"],
+      ["Lily", "Etareri"],
+      ["Vivek", "Waghray"]
     ],
     
     "Theta": [
@@ -270,17 +287,29 @@ var membersList = {
       ["Zoey", "Anastasiadis"],
       ["Lily", "Le"],
       ["Hrishi", "Chintagumpala"],
-      ["Cassiel", "Arcilla"]
-  
+      ["Cassiel", "Arcilla"],
+      ["Riya", "Boyapati"],
+      ["Garrett", "Amos"],
+      ["Rishiraj", "Ghosh"],
+      ["Tia", "Tran"]
     ],
     
     "Iota": [
-      ["Joaquin", "Panambo"]
-    
+      ["Joaquin", "Panambo"],
+      ["Tina", "Ngo"],
+      ["Mickey", "Santomartino"],
+      ["Sai", "Posa"],
+    ],
+
+    "Kappa": [
+      ["Janet", "Chan"],
+      ["Malaya", "Heflin"],
+      ["Ron", "Reyes"],
     ],
     
     "Lambda": [
-      ["Vikram", "Jasti"]
+      ["Vikram", "Jasti"],
+      ["Saatvik", "Gangavarapu"]
     ]
   
     
