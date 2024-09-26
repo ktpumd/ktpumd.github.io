@@ -273,7 +273,6 @@ var membersList = {
       ["Casey", "Puentes"],
       ["Suraj", "Narang"],
       ["Vidit", "Makwana"],
-      ["Casey", "Puentes"],
       ["Tina", "Le"],
       ["Mahum", "Qadeer"],
       ["Ananya", "Nadig"],
@@ -305,6 +304,8 @@ var membersList = {
       ["Janet", "Chan"],
       ["Malaya", "Heflin"],
       ["Ron", "Reyes"],
+      ["Jacob", "Shapiro"],
+      ["Diana", "Huynh"]
     ],
     
     "Lambda": [
