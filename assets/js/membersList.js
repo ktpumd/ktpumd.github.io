@@ -135,7 +135,9 @@ var membersList = {
     ["Olivia", "Duran"],
     ["Anu", "Daga"],
     ["Matt", "Hullana"],
-    ["Anna", "Tzeng"]
+    ["Anna", "Tzeng"],
+    ["Arihant", "Gupta"],
+    ["Sana", "Choudhry"]
   ],
   /*
   ******************************************************************
