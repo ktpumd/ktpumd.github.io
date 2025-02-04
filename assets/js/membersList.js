@@ -20,11 +20,11 @@ var membersList = {
     "Vice President":
       ["Nikita", "Khapre"],
     "Director of Membership":
-      ["Kadin", "Fisher"],
+      ["Liam", "Moran"],
     "Director of Engagement":
       ["Maya", "Chelar"],
     "Director of Professional Development":
-      ["Valerie", "Yen"],
+      ["Sriya", "Sogal"],
     "Director of Technology":
       ["Zane", "Rawlings"],
     "Director of Philanthropy":
@@ -50,6 +50,25 @@ var membersList = {
   
   "Brothers":
   [
+    //Xi Class
+    ["Aditya", "Hardikar"],
+    ["Amogh", "Samaga"],
+    ["Harrison", "Padgett"],
+    ["Soumya", "Jailwala"],
+    ["Kanhav", "Bhatnagar"],
+    ["Viraj", "Bala"],
+    ["Daven", "Chang"],
+    ["Dev", "Patel"],
+    ["Vihan", "Amarasinghe"],
+    ["Shriyans", "Sairy"],
+    ["Harshith", "Kukunuru"],
+    ["Jane", "Lee"],
+    ["Saathu", "Nagareddy"],
+    ["Manan", "Zaveri"],
+    ["Kavya", "Mukkamala"],
+    ["Noah", "Fake"],
+    ["Isabel", "Garcia-Musalem"],
+
     //Nu Class
     ["Chinaemelum", "Anadu"],
     ["Ryan","McGowan"],
@@ -63,6 +82,8 @@ var membersList = {
     ["Himanshu", "Gediya"],
 
     //Rest
+    ["Valerie", "Yen"],
+    ["Kadin", "Fisher"],
     ["Akshay", "Subramaniam"],
     ["Antonio", "Farias"],
     // ["Ananya", "Nadig"],
@@ -300,6 +321,8 @@ var membersList = {
       ["Tina", "Ngo"],
       ["Mickey", "Santomartino"],
       ["Sai", "Posa"],
+      ["Sana", "Choudhry"],
+      ["Eddie", "Zhang"]
     ],
 
     "Kappa": [
