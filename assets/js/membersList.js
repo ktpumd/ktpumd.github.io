@@ -127,7 +127,6 @@ var membersList = {
     ["Casey", "Majewski"],
     ["Taegon", "Hibbitts"],
     // ["Kadin", "Fisher"],
-    ["Jaskaran", "Gill"],
     ["Patrick", "Healy"],
     ["Abhijay", "Shukla"],
     // ["Chetanya", "Makkar"],
