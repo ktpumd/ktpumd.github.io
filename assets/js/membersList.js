@@ -66,7 +66,7 @@ var membersList = {
     ["Rachel", "Park"],
     ["Anjali", "Murthy"],
     ["Matthew", "Wlazlo"],
-    ["Justin", "Lee"]
+    ["Justin", "Lee"],
 
     //Xi Class
     ["Aditya", "Hardikar"],
