@@ -16,21 +16,21 @@ var membersList = {
   {
   
     "President":
-      ["Angad", "Singh"],
+      ["Faith", "Short"],
     "Vice President":
-      ["Nikita", "Khapre"],
+      ["Kadin", "Fisher"],
     "Director of Membership":
       ["Liam", "Moran"],
     "Director of Engagement":
-      ["Maya", "Chelar"],
+      ["Anu", "Daga"],
     "Director of Professional Development":
-      ["Sriya", "Sogal"],
+      ["Abhijay", "Shukla"],
     "Director of Technology":
-      ["Zane", "Rawlings"],
+      ["Saathu", "Nagareddy"],
     "Director of Philanthropy":
       ["Sanika", "Pande"],
     "Director of Standards":
-      ["Chetanya", "Makkar"],
+      ["Ryan", "McGowan"],
     "Director of Finance":
       ["Shreeni", "Chikyala"],
   },
@@ -50,6 +50,24 @@ var membersList = {
   
   "Brothers":
   [
+    //Omicron Class
+    ["Angela", "Yu"],
+    ["Ritvik", "Thakur"],
+    ["Michael", "Yang"],
+    ["Sean", "Garbarini"],
+    ["Tanvi", "Tewary"],
+    ["Jasmine", "Emeruwa"],
+    ["Nikhil", "Shyam"],
+    ["Keith", "Patel"],
+    ["Katherine", "Hall"],
+    ["James", "Barry"],
+    ["Shlok", "Desai"],
+    ["Lauren", "Chipdey"],
+    ["Rachel", "Park"],
+    ["Anjali", "Murthy"],
+    ["Matthew", "Wlazlo"],
+    ["Justin", "Lee"]
+
     //Xi Class
     ["Aditya", "Hardikar"],
     ["Amogh", "Samaga"],
@@ -63,7 +81,7 @@ var membersList = {
     ["Shriyans", "Sairy"],
     ["Harshith", "Kukunuru"],
     ["Jane", "Lee"],
-    ["Saathu", "Nagareddy"],
+    // ["Saathu", "Nagareddy"],
     ["Manan", "Zaveri"],
     ["Kavya", "Mukkamala"],
     ["Noah", "Fake"],
@@ -71,7 +89,7 @@ var membersList = {
 
     //Nu Class
     ["Chinaemelum", "Anadu"],
-    ["Ryan","McGowan"],
+    // ["Ryan","McGowan"],
     ["Tanveer", "Singh"],
     ["Izzy", "Thomas"],
     ["Siya", "Patel"],
@@ -83,7 +101,6 @@ var membersList = {
 
     //Rest
     ["Valerie", "Yen"],
-    ["Kadin", "Fisher"],
     ["Akshay", "Subramaniam"],
     ["Antonio", "Farias"],
     // ["Ananya", "Nadig"],
@@ -128,7 +145,7 @@ var membersList = {
     ["Taegon", "Hibbitts"],
     // ["Kadin", "Fisher"],
     ["Patrick", "Healy"],
-    ["Abhijay", "Shukla"],
+    // ["Abhijay", "Shukla"],
     // ["Chetanya", "Makkar"],
     ["Michelle", "Nguyen"],
     ["Grace","Gellerman"],
@@ -145,15 +162,15 @@ var membersList = {
     ["Amaar", "Trisal"],
     ["Claudia", "Lujan"],
     ["Caroline", "Perret"],
-    ["Faith", "Short"],
+    // ["Faith", "Short"],
     ["Loren", "Foster"],
     ["Anjali", "Gallacher"],
     ["Bhakti", "Hegde"],
     ["Vahin", "Palle"],
     ["Sachin", "Ashok"],
-    ["Liam", "Moran"],
+    // ["Liam", "Moran"],
     ["Olivia", "Duran"],
-    ["Anu", "Daga"],
+    // ["Anu", "Daga"],
     ["Matt", "Hullana"],
     ["Anna", "Tzeng"],
     ["Arihant", "Gupta"],
@@ -170,6 +187,9 @@ var membersList = {
   */
   
   "Alumni" : {
+
+    // TODO: Add Spring 2025 graduates to Alumni section
+    // ["Angad", "Singh"],
   
     "Founders": [
       ["Alicia", "Curcuru"],
