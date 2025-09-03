@@ -13,7 +13,7 @@ Website for Kappa Theta Pi at the University of Maryland
 
 
 - Go to the "get_involved_students.html" file
-- Around line 135, there are sections of code labelled "CURRENT RUSH DESCRIPTION", "RUSH IS OVER DESCRIPTION", and "RUSH SCHEDULE TABLE"
+- Around line 135, there are sections of code labelled "CURRENTLY RUSH DESCRIPTION", "RUSH IS OVER DESCRIPTION", and "RUSH SCHEDULE TABLE"
 - Make sure "RUSH IS OVER DESCRIPTION" is commented out and the other sections are uncommented
 - There is a hyperlink to our interest form, make sure it is updated to the most recent interest form and link
 - Update the Rush Schedule Table with the updated semester's rush schedule (follow the existing table set up and just update event names, times, and locations)
