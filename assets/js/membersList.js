@@ -92,22 +92,22 @@ var membersList = {
     // ["Ryan","McGowan"],
     ["Tanveer", "Singh"],
     ["Izzy", "Thomas"],
-    ["Siya", "Patel"],
+    // ["Siya", "Patel"],
     ["Nitya", "Chigurupati"],
-    ["Ishita", "Singh"],
+    // ["Ishita", "Singh"],
     ["Riya", "Shah"],
     ["Aadit", "Shah"],
     ["Himanshu", "Gediya"],
 
     //Rest
     ["Valerie", "Yen"],
-    ["Akshay", "Subramaniam"],
-    ["Antonio", "Farias"],
+    // ["Akshay", "Subramaniam"],
+    //["Antonio", "Farias"],
     // ["Ananya", "Nadig"],
-    ["Andrew", "Le"],
+    // ["Andrew", "Le"],
     // ["Cassiel", "Arcilla"],
     // ["Diana", "Huynh"],
-    ["Eddie", "Zhang"],
+    // ["Eddie", "Zhang"],
     // ["Garrett", "Amos"],
     ["Isabelle", "Summann"],
     // ["Janet", "Chan"],
@@ -115,7 +115,7 @@ var membersList = {
     // ["Lily", "Etareri"],
     // ["Malaya", "Heflin"],
     // ["Mickey", "Santomartino"],
-    ["Noor", "Qureshi"],
+    //["Noor", "Qureshi"],
     ["Poojan", "Patel"],
     // ["Rishi", "Papani"],
     // ["Rishiraj", "Ghosh"],
@@ -124,16 +124,16 @@ var membersList = {
     // ["Sai", "Posa"],
     // ["Samantha", "Tang"],
     // ["Sierra", "Hopkins"],
-    ["Soojee", "Fee"],
+    // ["Soojee", "Fee"],
     ["Sriya", "Sogal"],
     // ["Suraj", "Narang"],
-    ["Taylor", "Wong"],
+    // ["Taylor", "Wong"],
     // ["Thy", "Hoang"],
     // ["Tia", "Tran"],
     // ["Tina", "Ngo"],
-    ["Zoe", "Cheng"],
+    // ["Zoe", "Cheng"],
     ["Erin", "Maynard"],
-    ["Simmi", "Nirula"],
+    // ["Simmi", "Nirula"],
     ["Victor", "Su"],
     ["Sophia", "Gonzales"],
     ["Gandhar", "Viragi"],
@@ -141,26 +141,26 @@ var membersList = {
     // ["Vikram", "Jasti"],
     ["Eshita", "Mehrotra"],
     // ["Saatvik", "Gangavarapu"],
-    ["Casey", "Majewski"],
+    // ["Casey", "Majewski"],
     ["Taegon", "Hibbitts"],
     // ["Kadin", "Fisher"],
-    ["Patrick", "Healy"],
+    // ["Patrick", "Healy"],
     // ["Abhijay", "Shukla"],
     // ["Chetanya", "Makkar"],
-    ["Michelle", "Nguyen"],
-    ["Grace","Gellerman"],
+    // ["Michelle", "Nguyen"],
+    // ["Grace","Gellerman"],
     // ["Vivek", "Waghray"],
     ["Deena", "Habash"],
-    ["Yusuf", "Khalid"],
+    // ["Yusuf", "Khalid"],
     ["Angad", "Bedi"],
     // ["Shreenitha", "Chikyala"],
     ["Addison", "Hanrattie"],
     // ["Sanika", "Pande"],
-    ["Ari", "Kaplan"],
-    ["Arti", "Dhareshwar"],
-    ["Patrick", "Hael"],
+    // ["Ari", "Kaplan"],
+    // ["Arti", "Dhareshwar"],
+    //["Patrick", "Hael"],
     ["Amaar", "Trisal"],
-    ["Claudia", "Lujan"],
+    //["Claudia", "Lujan"],
     ["Caroline", "Perret"],
     // ["Faith", "Short"],
     ["Loren", "Foster"],
@@ -173,8 +173,8 @@ var membersList = {
     // ["Anu", "Daga"],
     ["Matt", "Hullana"],
     ["Anna", "Tzeng"],
-    ["Arihant", "Gupta"],
-    ["Sana", "Choudhry"]
+    // ["Arihant", "Gupta"],
+    // ["Sana", "Choudhry"]
   ],
   /*
   ******************************************************************
@@ -187,9 +187,6 @@ var membersList = {
   */
   
   "Alumni" : {
-
-    // TODO: Add Spring 2025 graduates to Alumni section
-    // ["Angad", "Singh"],
   
     "Founders": [
       ["Alicia", "Curcuru"],
@@ -332,7 +329,11 @@ var membersList = {
       ["Riya", "Boyapati"],
       ["Garrett", "Amos"],
       ["Rishiraj", "Ghosh"],
-      ["Tia", "Tran"]
+      ["Tia", "Tran"],
+      ["Antonio", "Farias"],
+      ["Grace","Gellerman"],
+      ["Arihant", "Gupta"],
+      ["Angad", "Singh"]
     ],
     
     "Iota": [
@@ -341,7 +342,12 @@ var membersList = {
       ["Mickey", "Santomartino"],
       ["Sai", "Posa"],
       ["Sana", "Choudhry"],
-      ["Eddie", "Zhang"]
+      ["Eddie", "Zhang"],
+      ["Noor", "Qureshi"],
+      ["Zoe", "Cheng"],
+      ["Nikita", "Khapre"],
+      ["Eddie", "Zhang"],
+      ["Akshay", "Subramaniam"]
     ],
 
     "Kappa": [
@@ -349,14 +355,34 @@ var membersList = {
       ["Malaya", "Heflin"],
       ["Ron", "Reyes"],
       ["Jacob", "Shapiro"],
-      ["Diana", "Huynh"]
+      ["Diana", "Huynh"],
+      ["Taylor", "Wong"],
+      ["Soojee", "Fee"],
+      ["Andrew", "Le"]
     ],
     
     "Lambda": [
       ["Vikram", "Jasti"],
-      ["Saatvik", "Gangavarapu"]
+      ["Saatvik", "Gangavarapu"],
+      ["Casey", "Majewski"],
+      ["Patrick", "Healy"],
+      ["Michelle", "Nguyen"],
+      ["Zane", "Rawlings"],
+      ["Simmi", "Nirula"],
+    ],
+
+    "Mu": [
+      ["Patrick", "Hael"],
+      ["Claudia", "Lujan"],
+      ["Ari", "Kaplan"],
+      ["Arti", "Dhareshwar"],
+      ["Yusuf", "Khalid"]
+    ],
+
+    "Nu": [
+      ["Siya", "Patel"],
+      ["Ishita", "Singh"]
     ]
-  
     
     }
     }
