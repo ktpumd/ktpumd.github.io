@@ -19,6 +19,44 @@
   <link href="assets/css/now-ui-kit.css?v=1.3.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
+  <style>
+    /* Make member containers larger and show 4 per row at wide widths.
+       Override theme defaults for team images. */
+    .landing-page .section-team .team .team-player img {
+      max-width: 160px; /* larger circular photo */
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .landing-page .section-team .team-player {
+      margin-bottom: 30px;
+      text-align: center;
+      padding: 12px;
+    }
+
+    /* Ensure the team columns center their contents */
+    .section-team .row > [class*="col-"] {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    @media screen and (max-width: 992px) {
+      .landing-page .section-team .team .team-player img { max-width: 140px; }
+    }
+
+    @media screen and (max-width: 576px) {
+      .landing-page .section-team .team .team-player img { max-width: 120px; }
+    }
+    /* Center wrapped lines (so partial final rows appear centered) on
+       small and medium screens where columns wrap to multiple lines. */
+    @media screen and (max-width: 991px) {
+      .section-team .row {
+        justify-content: center;
+      }
+    }
+  </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1RFZNCXBS4"></script>
   <script>
