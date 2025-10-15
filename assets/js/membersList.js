@@ -136,7 +136,6 @@ var membersList = {
     // ["Simmi", "Nirula"],
     ["Victor", "Su"],
     ["Sophia", "Gonzales"],
-    ["Gandhar", "Viragi"],
     // ["Zane", "Rawlings"],
     // ["Vikram", "Jasti"],
     ["Eshita", "Mehrotra"],
@@ -346,7 +345,6 @@ var membersList = {
       ["Noor", "Qureshi"],
       ["Zoe", "Cheng"],
       ["Nikita", "Khapre"],
-      ["Eddie", "Zhang"],
       ["Akshay", "Subramaniam"]
     ],
 
