@@ -146,7 +146,7 @@ var membersList = {
     // ["Kadin", "Fisher"],
     // ["Patrick", "Healy"],
     // ["Abhijay", "Shukla"],
-    // ["Chetanya", "Makkar"],
+    ["Chetanya", "Makkar"],
     // ["Michelle", "Nguyen"],
     // ["Grace","Gellerman"],
     // ["Vivek", "Waghray"],

@@ -7,7 +7,8 @@ function sortListByLastName(list){
 
 function generateExecCard(firstName, lastName, position) {
   var col = document.createElement("div");
-  col.className = 'col-md-4'
+  // Use a grid that supports 3 per row on large screens, 3 on medium, 2 on small
+  col.className = 'col-lg-4 col-md-4 col-6'
   var teamPlayer = document.createElement("div");
   teamPlayer.className = 'team-player'
   var img = document.createElement("img");
@@ -29,23 +30,14 @@ function generateExecCard(firstName, lastName, position) {
 
 function addExecPositions() {
   const EXEC = membersList.ExecBoard;
-  const ENTRIES_PER_ROW = 3;
   var ExecSection = document.getElementById("exec");
-  var entriesInRow = 0;
-  var i = 0;
-
+  // Create a single row and let Bootstrap's grid wrap columns responsively
+  var currRow = document.createElement("div");
+  currRow.className = "row";
   for(var position in EXEC) {
-    if(entriesInRow == 0) {
-      var currRow = document.createElement("div");
-      currRow.className = "row";
-    }
     currRow.appendChild(generateExecCard(EXEC[position][0], EXEC[position][1], position))
-    entriesInRow += 1
-    if(entriesInRow == ENTRIES_PER_ROW) {
-      ExecSection.appendChild(currRow)
-      entriesInRow = 0
-    }
   }
+  ExecSection.appendChild(currRow);
 
 }
 
@@ -55,37 +47,23 @@ function addExecPositions() {
 function addBrothers() {
   const BROTHERS = membersList.Brothers;
   sortListByLastName(BROTHERS);
-  const ENTRIES_PER_ROW = 6;
   var membersSection = document.getElementById("brothers");
-  var entriesInRow = 0;
-  var currRow = null;
+  // Single row container; Bootstrap will wrap the cols for different breakpoints
+  var currRow = document.createElement("div");
+  currRow.className = "row";
   for(var i = 0; i < BROTHERS.length; i++) {
     var memberInfo = BROTHERS[i];
-    if(entriesInRow == 0) {
-      currRow = document.createElement("div");
-      currRow.className = "row";
-    }
-    currRow.appendChild(generateMemberCard(memberInfo[0], memberInfo[1]))
-    entriesInRow += 1
-    if(entriesInRow == ENTRIES_PER_ROW) {
-      membersSection.appendChild(currRow)
-      entriesInRow = 0
-    }
+    currRow.appendChild(generateMemberCard(memberInfo[0], memberInfo[1]));
   }
-  if (entriesInRow != 6) {
-    while (entriesInRow != ENTRIES_PER_ROW) {
-      currRow.appendChild(generateMemberCard("blank", "blank"));
-      entriesInRow++;
-    }
-    membersSection.appendChild(currRow);
-  }
+  membersSection.appendChild(currRow);
   
 }
 
 
 function generateMemberCard(firstName, lastName) {
   var col = document.createElement("div");
-  col.className = 'col-md-2 col-6'
+  // Support 3 per row on large screens, 3 on medium, 2 on small/mobile
+  col.className = 'col-lg-4 col-md-4 col-6'
   var teamPlayer = document.createElement("div");
   teamPlayer.className = 'team-player'
   var img = document.createElement("img");
