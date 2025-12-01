@@ -1,6 +1,6 @@
 
-function sortListByLastName(list){
-  list.sort(function(a,b){return a[1].localeCompare(b[1]);});
+function sortListByLastName(list) {
+  list.sort(function (a, b) { return a[1].localeCompare(b[1]); });
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -33,12 +33,23 @@ function addExecPositions() {
   var ExecSection = document.getElementById("exec");
   // Create a single row and let Bootstrap's grid wrap columns responsively
   var currRow = document.createElement("div");
-  currRow.className = "row";
-  for(var position in EXEC) {
+  currRow.className = "row justify-content-center";
+  for (var position in EXEC) {
     currRow.appendChild(generateExecCard(EXEC[position][0], EXEC[position][1], position))
   }
   ExecSection.appendChild(currRow);
 
+}
+
+function addChairs() {
+  const CHAIRS = membersList.Chairs;
+  var ChairSection = document.getElementById("chairs");
+  var currRow = document.createElement("div");
+  currRow.className = "row justify-content-center";
+  for (var position in CHAIRS) {
+    currRow.appendChild(generateExecCard(CHAIRS[position][0], CHAIRS[position][1], position))
+  }
+  ChairSection.appendChild(currRow);
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -50,13 +61,13 @@ function addBrothers() {
   var membersSection = document.getElementById("brothers");
   // Single row container; Bootstrap will wrap the cols for different breakpoints
   var currRow = document.createElement("div");
-  currRow.className = "row";
-  for(var i = 0; i < BROTHERS.length; i++) {
+  currRow.className = "row justify-content-center";
+  for (var i = 0; i < BROTHERS.length; i++) {
     var memberInfo = BROTHERS[i];
     currRow.appendChild(generateMemberCard(memberInfo[0], memberInfo[1]));
   }
   membersSection.appendChild(currRow);
-  
+
 }
 
 
@@ -91,7 +102,7 @@ function addAlumni() {
   var alumniSection = document.getElementById("alumni");
   newRow = document.createElement("div");
   newRow.className = "row";
-  for(var key in ALUMNI) {
+  for (var key in ALUMNI) {
     alumniClassName = document.createElement("div");
     alumniClassName.className = "col-lg-2 col-md-6";
     header = document.createElement("h3");
@@ -103,7 +114,7 @@ function addAlumni() {
     alumniNames = document.createElement("p");
     alumniNames.setAttribute('style', 'white-space: pre;');
     sortListByLastName(ALUMNI[key]);
-    for(var alumInfo = 0; alumInfo < ALUMNI[key].length; alumInfo++) {
+    for (var alumInfo = 0; alumInfo < ALUMNI[key].length; alumInfo++) {
       alumniNames.textContent += ALUMNI[key][alumInfo][0] + " " + ALUMNI[key][alumInfo][1] + "\r\n";
     }
     alumniNamesDiv.appendChild(alumniNames);

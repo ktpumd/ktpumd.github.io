@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-touch-icon.png">
@@ -23,7 +24,8 @@
     /* Make member containers larger and show 4 per row at wide widths.
        Override theme defaults for team images. */
     .landing-page .section-team .team .team-player img {
-      max-width: 160px; /* larger circular photo */
+      max-width: 160px;
+      /* larger circular photo */
       width: 100%;
       height: auto;
       object-fit: cover;
@@ -36,19 +38,24 @@
     }
 
     /* Ensure the team columns center their contents */
-    .section-team .row > [class*="col-"] {
+    .section-team .row>[class*="col-"] {
       display: flex;
       justify-content: center;
       align-items: flex-start;
     }
 
     @media screen and (max-width: 992px) {
-      .landing-page .section-team .team .team-player img { max-width: 140px; }
+      .landing-page .section-team .team .team-player img {
+        max-width: 140px;
+      }
     }
 
     @media screen and (max-width: 576px) {
-      .landing-page .section-team .team .team-player img { max-width: 120px; }
+      .landing-page .section-team .team .team-player img {
+        max-width: 120px;
+      }
     }
+
     /* Center wrapped lines (so partial final rows appear centered) on
        small and medium screens where columns wrap to multiple lines. */
     @media screen and (max-width: 991px) {
@@ -61,7 +68,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1RFZNCXBS4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-1RFZNCXBS4');
   </script>
@@ -155,6 +162,10 @@
         <br>
         <div class="team" id="exec"></div>
 
+        <h2 class="title">Chairs</h2>
+        <br>
+        <div class="team" id="chairs"></div>
+
         <h2 class="title">Brothers</h2>
         <br>
         <div class="team" id="brothers"></div>
@@ -168,6 +179,8 @@
   </div>
   <script>
     addExecPositions()
+    addChairs()
+    addBrothers()
     addBrothers()
     addAlumni()
   </script>

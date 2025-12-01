@@ -10,11 +10,11 @@ var membersList = {
    *
    ******************************************************************
    */
-  
-  
+
+
   "ExecBoard":
   {
-  
+
     "President":
       ["Faith", "Short"],
     "Vice President":
@@ -34,8 +34,31 @@ var membersList = {
     "Director of Finance":
       ["Shreeni", "Chikyala"],
   },
-  
-  
+
+  /*
+   ******************************************************************
+   *
+   *
+   * CHAIRS
+   *
+   *
+   ******************************************************************
+   */
+
+  "Chairs": {
+    "External Relations Chair": ["Katherine", "Hall"],
+    "Internal Relations Chair": ["Anjali", "Murthy"],
+    "Quality Assurance Chair": ["Aadit", "Shah"],
+    "Communications Chair": ["Manan", "Zaveri"],
+    "Community Service Chair": ["Amogh", "Samaga"],
+    "Treasury Chair": ["Amogh", "Samaga"],
+    "Marketing Chair": ["Kavya", "Mukkamala"],
+    "Development Operations Chair": ["Harrison", "Padgett"],
+    "Education Chair": ["Michael", "Yang"],
+    "Corporate Chair": ["Justin", "Lee"]
+  },
+
+
 
   /*
   ******************************************************************
@@ -46,90 +69,90 @@ var membersList = {
   *
   ******************************************************************
   */
-  
-  
+
+
   "Brothers":
-  [
-    //Omicron Class
-    ["Angela", "Yu"],
-    ["Ritvik", "Thakur"],
-    ["Michael", "Yang"],
-    ["Sean", "Garbarini"],
-    ["Tanvi", "Tewary"],
-    ["Jasmine", "Emeruwa"],
-    ["Nikhil", "Shyam"],
-    ["Keith", "Patel"],
-    ["Katherine", "Hall"],
-    ["James", "Barry"],
-    ["Shlok", "Desai"],
-    ["Lauren", "Chipdey"],
-    ["Rachel", "Park"],
-    ["Anjali", "Murthy"],
-    ["Matthew", "Wlazlo"],
-    ["Justin", "Lee"],
+    [
+      //Omicron Class
+      ["Angela", "Yu"],
+      ["Ritvik", "Thakur"],
+      // ["Michael", "Yang"],
+      ["Sean", "Garbarini"],
+      ["Tanvi", "Tewary"],
+      ["Jasmine", "Emeruwa"],
+      ["Nikhil", "Shyam"],
+      ["Keith", "Patel"],
+      // ["Katherine", "Hall"],
+      ["James", "Barry"],
+      ["Shlok", "Desai"],
+      ["Lauren", "Chipdey"],
+      ["Rachel", "Park"],
+      // ["Anjali", "Murthy"],
+      ["Matthew", "Wlazlo"],
+      // ["Justin", "Lee"],
 
-    //Xi Class
-    ["Aditya", "Hardikar"],
-    ["Amogh", "Samaga"],
-    ["Harrison", "Padgett"],
-    ["Soumya", "Jailwala"],
-    ["Kanhav", "Bhatnagar"],
-    ["Viraj", "Bala"],
-    ["Daven", "Chang"],
-    ["Dev", "Patel"],
-    ["Vihan", "Amarasinghe"],
-    ["Shriyans", "Sairy"],
-    ["Harshith", "Kukunuru"],
-    ["Jane", "Lee"],
-    // ["Saathu", "Nagareddy"],
-    ["Manan", "Zaveri"],
-    ["Kavya", "Mukkamala"],
-    ["Noah", "Fake"],
-    ["Isabel", "Garcia-Musalem"],
+      //Xi Class
+      ["Aditya", "Hardikar"],
+      // ["Amogh", "Samaga"],
+      // ["Harrison", "Padgett"],
+      ["Soumya", "Jailwala"],
+      ["Kanhav", "Bhatnagar"],
+      ["Viraj", "Bala"],
+      ["Daven", "Chang"],
+      ["Dev", "Patel"],
+      ["Vihan", "Amarasinghe"],
+      ["Shriyans", "Sairy"],
+      ["Harshith", "Kukunuru"],
+      ["Jane", "Lee"],
+      // ["Saathu", "Nagareddy"],
+      // ["Manan", "Zaveri"],
+      // ["Kavya", "Mukkamala"],
+      ["Noah", "Fake"],
+      ["Isabel", "Garcia-Musalem"],
 
-    //Nu Class
-    ["Chinaemelum", "Anadu"],
-    // ["Ryan","McGowan"],
-    ["Tanveer", "Singh"],
-    ["Izzy", "Thomas"],
-    ["Nitya", "Chigurupati"],
-    ["Riya", "Shah"],
-    ["Aadit", "Shah"],
-    ["Himanshu", "Gediya"],
+      //Nu Class
+      ["Chinaemelum", "Anadu"],
+      // ["Ryan","McGowan"],
+      ["Tanveer", "Singh"],
+      ["Izzy", "Thomas"],
+      ["Nitya", "Chigurupati"],
+      ["Riya", "Shah"],
+      // ["Aadit", "Shah"],
+      ["Himanshu", "Gediya"],
 
-    //Rest
-    ["Valerie", "Yen"],
-    ["Isabelle", "Summann"],
-    ["Julius", "Angelo"],
-    ["Poojan", "Patel"],
-    ["Sriya", "Sogal"],
-    ["Erin", "Maynard"],
-    ["Victor", "Su"],
-    ["Sophia", "Gonzales"],
-    ["Eshita", "Mehrotra"],
-    ["Taegon", "Hibbitts"],
-    // ["Kadin", "Fisher"],
-    // ["Abhijay", "Shukla"],
-    ["Chetanya", "Makkar"],
-    ["Deena", "Habash"],
-    ["Angad", "Bedi"],
-    // ["Shreenitha", "Chikyala"],
-    ["Addison", "Hanrattie"],
-    // ["Sanika", "Pande"],
-    ["Amaar", "Trisal"],
-    ["Caroline", "Perret"],
-    // ["Faith", "Short"],
-    ["Loren", "Foster"],
-    ["Anjali", "Gallacher"],
-    ["Bhakti", "Hegde"],
-    ["Vahin", "Palle"],
-    ["Sachin", "Ashok"],
-    // ["Liam", "Moran"],
-    ["Olivia", "Duran"],
-    // ["Anu", "Daga"],
-    ["Matt", "Hullana"],
-    ["Anna", "Tzeng"],
-  ],
+      //Rest
+      ["Valerie", "Yen"],
+      ["Isabelle", "Summann"],
+      ["Julius", "Angelo"],
+      ["Poojan", "Patel"],
+      ["Sriya", "Sogal"],
+      ["Erin", "Maynard"],
+      ["Victor", "Su"],
+      ["Sophia", "Gonzales"],
+      ["Eshita", "Mehrotra"],
+      ["Taegon", "Hibbitts"],
+      // ["Kadin", "Fisher"],
+      // ["Abhijay", "Shukla"],
+      ["Chetanya", "Makkar"],
+      ["Deena", "Habash"],
+      ["Angad", "Bedi"],
+      // ["Shreenitha", "Chikyala"],
+      ["Addison", "Hanrattie"],
+      // ["Sanika", "Pande"],
+      ["Amaar", "Trisal"],
+      ["Caroline", "Perret"],
+      // ["Faith", "Short"],
+      ["Loren", "Foster"],
+      ["Anjali", "Gallacher"],
+      ["Bhakti", "Hegde"],
+      ["Vahin", "Palle"],
+      ["Sachin", "Ashok"],
+      // ["Liam", "Moran"],
+      ["Olivia", "Duran"],
+      // ["Anu", "Daga"],
+      ["Matt", "Hullana"],
+      ["Anna", "Tzeng"],
+    ],
   /*
   ******************************************************************
   *
@@ -145,9 +168,9 @@ var membersList = {
   * 
   ******************************************************************
   */
-  
-  "Alumni" : {
-  
+
+  "Alumni": {
+
     "Founders": [
       ["Alicia", "Curcuru"],
       ["Ben", "Nwokeleme"],
@@ -158,7 +181,7 @@ var membersList = {
       ["Lydia", "Spurrier"],
       ["Sukhneet", "Kaur"]
     ],
-    
+
     "Alpha": [
       ["Ava", "Williams"],
       ["Chris", "Truong"],
@@ -176,7 +199,7 @@ var membersList = {
       ["Swati", "Adipudi"],
       ["Thaddeus", "Lee-Tyson"]
     ],
-    
+
     "Beta": [
       ["Ameya", "Sampath"],
       ["Christian", "Tonti"],
@@ -196,7 +219,7 @@ var membersList = {
       ["Shlok", "Khandelwal"],
       ["Tyler", "Behr"]
     ],
-    
+
     "Gamma": [
       ["Amanda", "Ma"],
       ["Austin", "Hwa"],
@@ -216,7 +239,7 @@ var membersList = {
       ["Siraj", "Ayornu"],
       ["Timmy", "Trapaidze"]
     ],
-    
+
     "Delta": [
       ["Amy", "Zheng"],
       ["Andrew", "Cunniff"],
@@ -231,10 +254,10 @@ var membersList = {
       ["Edmund", "Li"],
       ["Emily", "Chang"],
       ["Devika", "Govindarajan"],
-      ["Harleen","Kaur"],
-      ["Vid","Vashist"]
+      ["Harleen", "Kaur"],
+      ["Vid", "Vashist"]
     ],
-    
+
     "Epsilon": [
       ["Akriti", "Tripathi"],
       ["John", "Gao"],
@@ -251,7 +274,7 @@ var membersList = {
       ["Yomi", "Omogbehin"],
       ["Rishi", "Parikh"]
     ],
-    
+
     "Zeta": [
       ["Andrew", "Stehman"],
       ["Diana", "Kerr"],
@@ -264,7 +287,7 @@ var membersList = {
       ["Eric", "Gorner"],
       ["Christopher", "Tang"]
     ],
-    
+
     "Eta": [
       ["Grant", "Tamrakar"],
       ["Kevin", "Hall"],
@@ -278,7 +301,7 @@ var membersList = {
       ["Lily", "Etareri"],
       ["Vivek", "Waghray"]
     ],
-    
+
     "Theta": [
       ["Patrick", "Hogan"],
       ["Abby", "Miller"],
@@ -291,11 +314,11 @@ var membersList = {
       ["Rishiraj", "Ghosh"],
       ["Tia", "Tran"],
       ["Antonio", "Farias"],
-      ["Grace","Gellerman"],
+      ["Grace", "Gellerman"],
       ["Arihant", "Gupta"],
       ["Angad", "Singh"]
     ],
-    
+
     "Iota": [
       ["Joaquin", "Panambo"],
       ["Tina", "Ngo"],
@@ -319,7 +342,7 @@ var membersList = {
       ["Soojee", "Fee"],
       ["Andrew", "Le"]
     ],
-    
+
     "Lambda": [
       ["Vikram", "Jasti"],
       ["Saatvik", "Gangavarapu"],
@@ -342,7 +365,6 @@ var membersList = {
       ["Siya", "Patel"],
       ["Ishita", "Singh"]
     ]
-    
-    }
-    }
-  
+
+  }
+}
