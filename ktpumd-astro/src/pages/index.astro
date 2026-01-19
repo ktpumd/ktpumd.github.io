@@ -1,0 +1,160 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import PageHeader from '../components/PageHeader.astro';
+import CompanyLogo from '../components/CompanyLogo.astro';
+import members from '../data/members.json';
+---
+
+<Layout title="KTP UMD - Professional Technology Fraternity">
+  <Navbar currentPage="/" />
+  
+  <PageHeader 
+    title="Κ Θ Π"
+    backgroundImage="/img/newheader.jpg"
+  >
+    <p class="hero-subtitle">Professional Technology Fraternity</p>
+  </PageHeader>
+  
+  <main>
+    <!-- About Section -->
+    <section class="section">
+      <div class="container">
+        <div class="content-block text-center">
+          <h2 class="section-title">About Us</h2>
+          <p class="section-text">
+            We are the Epsilon chapter of Kappa Theta Pi at the University of Maryland, College Park.
+            Kappa Theta Pi is the world's first co-educational professional technology fraternity. Our mission is to
+            provide guidance and to cultivate an environment in which our members can grow technically, professionally,
+            and socially. Our members also come from a variety of backgrounds including computer science, engineering,
+            business, economics, and the arts. Kappa Theta Pi UMD is open to all majors - if you have an interest in
+            tech, you will fit right in!
+          </p>
+        </div>
+        
+        <div class="image-showcase animate-on-scroll">
+          <img 
+            src="/img/ktp_professional.jpg" 
+            alt="KTP Professional Event"
+            class="showcase-image"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+    
+    <!-- History Section -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="content-block text-center">
+          <h2 class="section-title">History & Purpose</h2>
+          <p class="section-text">
+            Kappa Theta Pi was originally founded at the University of Michigan in January of 2012. The Epsilon
+            chapter of Kappa Theta Pi was founded at the University of Maryland on November 8th, 2017. Our chapter has
+            been continuously growing since our founding, creating a more diverse and connected community. Through our
+            professional development events, socials, technical workshops, and community outreach, we have cultivated an
+            environment in which all of our members can grow both professionally and socially.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Company Connections Section -->
+    <section class="section">
+      <div class="container">
+        <div class="content-block text-center">
+          <h2 class="section-title">Company Connections</h2>
+          <p class="section-text">
+            The Brothers of Kappa Theta Pi have been fortunate enough to intern and work at some of the
+            best companies in the world. Through our alumni network and our brotherhood's connections, we ensure that
+            our members have an advantage in the job and internship application process. Below is a small selection of
+            companies where our brothers have worked or currently work:
+          </p>
+        </div>
+        
+        <div class="company-grid">
+          {members.companies.map((company, index) => (
+            <div class="animate-on-scroll" style={`animation-delay: ${index * 0.05}s`}>
+              <CompanyLogo src={`/img/alumni-connections/${company.logo}`} alt={company.name} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
+
+<style>
+  .hero-subtitle {
+    color: var(--color-white);
+    font-size: var(--font-size-2xl);
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.9;
+  }
+  
+  .section--alt {
+    background: var(--color-gray-50);
+  }
+  
+  .content-block {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-12);
+  }
+  
+  .section-title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-6);
+    color: var(--color-gray-900);
+  }
+  
+  .section-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-600);
+    line-height: 1.8;
+  }
+  
+  .image-showcase {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    aspect-ratio: 16 / 9;
+    background: var(--color-gray-200);
+  }
+  
+  .showcase-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .company-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-6);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 992px) {
+    .company-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .company-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-subtitle {
+      font-size: var(--font-size-xl);
+    }
+  }
+</style>

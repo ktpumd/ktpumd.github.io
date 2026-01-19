@@ -1,0 +1,37 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+}
+
+const { src, alt } = Astro.props;
+---
+
+<div class="company-logo">
+  <img src={src} alt={alt} loading="lazy" class="company-logo__image" />
+</div>
+
+<style>
+  .company-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-4);
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    aspect-ratio: 3 / 2;
+  }
+  
+  .company-logo:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+  
+  .company-logo__image {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+  }
+</style>

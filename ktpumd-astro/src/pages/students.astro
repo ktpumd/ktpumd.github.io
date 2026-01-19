@@ -1,0 +1,174 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import PageHeader from '../components/PageHeader.astro';
+---
+
+<Layout title="Join Us - KTP UMD">
+  <Navbar currentPage="/students" />
+  
+  <PageHeader 
+    title="Join Us"
+    backgroundImage="/img/rush-bg2.jpg"
+    size="small"
+  />
+  
+  <main>
+    <!-- Rush Info Section -->
+    <section class="section">
+      <div class="container">
+        <div class="content-block text-center">
+          <h2 class="section-title">Fall 2025 Rush</h2>
+          <p class="section-text">
+            <strong>Any undergraduate student at the University of Maryland with an interest in
+            technology is welcome to rush Kappa Theta Pi.</strong> Although rush for this semester is over, 
+            stay tuned for next semester! Thank you for your interest in our fraternity!
+          </p>
+        </div>
+        
+        <!-- Rush Schedule (commented out for now, can be enabled during rush)
+        <div class="schedule-table animate-on-scroll">
+          <table class="rush-schedule">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Information Session #1</td>
+                <td>Feb. 8th @ 7:00 PM</td>
+                <td>Armory 0135</td>
+              </tr>
+              <tr>
+                <td>Information Session #2</td>
+                <td>Feb. 12th @ 7:30 PM</td>
+                <td>Armory 0135</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        -->
+      </div>
+    </section>
+    
+    <!-- Photo Gallery Section -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="photo-grid">
+          <div class="photo-card animate-on-scroll">
+            <img 
+              src="/img/palooza_s25.jpg" 
+              alt="Palooza Spring 2025"
+              loading="lazy"
+            />
+          </div>
+          <div class="photo-card animate-on-scroll delay-2">
+            <img 
+              src="/img/formal_f24.jpg" 
+              alt="Formal Fall 2024"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
+
+<style>
+  .section--alt {
+    background: var(--color-gray-50);
+  }
+  
+  .content-block {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-10);
+  }
+  
+  .section-title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-6);
+    color: var(--color-gray-900);
+  }
+  
+  .section-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-600);
+    line-height: 1.8;
+  }
+  
+  .section-text strong {
+    color: var(--color-gray-800);
+  }
+  
+  /* Schedule Table */
+  .schedule-table {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+  
+  .rush-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .rush-schedule th,
+  .rush-schedule td {
+    padding: var(--spacing-4) var(--spacing-6);
+    text-align: left;
+    border-bottom: 1px solid var(--color-gray-100);
+  }
+  
+  .rush-schedule th {
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-weight: 600;
+  }
+  
+  .rush-schedule tbody tr:hover {
+    background: var(--color-gray-50);
+  }
+  
+  /* Photo Gallery */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-8);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .photo-card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+  }
+  
+  .photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+  }
+  
+  .photo-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .photo-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
