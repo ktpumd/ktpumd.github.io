@@ -1,0 +1,285 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import NetworkAnimation from "../components/NetworkAnimation.astro";
+import CompanyCarousel from "../components/CompanyCarousel.astro";
+---
+
+<Layout title="Kappa Theta Pi UMD">
+  <Navbar currentPage="/" />
+
+  <!-- Hero Section with Network Animation -->
+  <header class="hero">
+    <NetworkAnimation />
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="gradient-text">Κ Θ Π</span>
+      </h1>
+      <p class="hero__subtitle">Professional Technology Fraternity</p>
+      <p class="hero__tagline">University of Maryland, College Park</p>
+      <div class="hero__cta">
+        <a href="/students" class="btn btn-primary">Join Us</a>
+        <a href="/membership" class="btn btn-outline">Meet Our Members</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section class="section">
+      <div class="container">
+        <div class="content-block text-center">
+          <h2 class="section-title">About Us</h2>
+          <p class="section-text">
+            We are the Epsilon chapter of Kappa Theta Pi at the University of
+            Maryland, College Park. Kappa Theta Pi is the world's first
+            co-educational professional technology fraternity. Our mission is to
+            provide guidance and to cultivate an environment in which our
+            members can grow technically, professionally, and socially.
+          </p>
+          <div class="feature-cards">
+            <div class="feature-card card">
+              <div class="feature-card__icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3>Technical Growth</h3>
+              <p>
+                Workshops, hackathons, and hands-on projects to sharpen your
+                skills
+              </p>
+            </div>
+            <div class="feature-card card">
+              <div class="feature-card__icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <h3>Brotherhood</h3>
+              <p>
+                A diverse community of like-minded individuals passionate about
+                tech
+              </p>
+            </div>
+            <div class="feature-card card">
+              <div class="feature-card__icon">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <h3>Professional Development</h3>
+              <p>Resume reviews, mock interviews, and industry connections</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Connections Section -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="content-block text-center">
+          <h2 class="section-title">Where We Work</h2>
+          <p class="section-text">
+            We're proud of what our members go on to achieve. From startups to
+            industry leaders, our community continues to grow and make a
+            meaningful impact.
+          </p>
+        </div>
+      </div>
+      <CompanyCarousel />
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+
+  .hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at center,
+      transparent 0%,
+      var(--color-bg) 70%
+    );
+    z-index: 1;
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: var(--spacing-6);
+  }
+
+  .hero__title {
+    font-size: clamp(4rem, 15vw, 8rem);
+    font-weight: 800;
+    margin-bottom: var(--spacing-4);
+    letter-spacing: 0.1em;
+  }
+
+  .hero__subtitle {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-2);
+    font-weight: 300;
+  }
+
+  .hero__tagline {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-8);
+  }
+
+  .hero__cta {
+    display: flex;
+    gap: var(--spacing-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Content Block */
+  .content-block {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-12);
+  }
+
+  .section-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-muted);
+    line-height: 1.8;
+  }
+
+  /* Feature Cards */
+  .feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6);
+    margin-top: var(--spacing-10);
+  }
+
+  .feature-card {
+    padding: var(--spacing-8);
+    text-align: center;
+  }
+
+  .feature-card__icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto var(--spacing-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-2xl);
+    color: var(--color-bg);
+  }
+
+  .feature-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-3);
+  }
+
+  .feature-card p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    margin: 0;
+  }
+
+  /* Timeline */
+  .timeline {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-8);
+    flex-wrap: wrap;
+    margin-top: var(--spacing-8);
+  }
+
+  .timeline__item {
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    padding: var(--spacing-6);
+    background: var(--color-bg-elevated);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+
+  .timeline__year {
+    font-size: var(--font-size-3xl);
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--spacing-3);
+  }
+
+  .timeline__item p {
+    color: var(--color-gray-400);
+    margin: 0;
+    font-size: var(--font-size-sm);
+  }
+
+  @media (max-width: 992px) {
+    .feature-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .feature-cards {
+      grid-template-columns: 1fr;
+    }
+    .hero__title {
+      font-size: 4rem;
+    }
+    .hero__subtitle {
+      font-size: var(--font-size-xl);
+    }
+    .timeline {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-actions {
+      flex-direction: column;
+    }
+  }
+
+  /* Contact Section */
+  .contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-8);
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-6);
+  }
+
+  .social-links a {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-muted);
+    transition: all var(--transition-base);
+  }
+
+  .social-links a:hover {
+    color: var(--color-primary);
+    transform: translateY(-3px);
+  }
+</style>

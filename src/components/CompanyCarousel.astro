@@ -1,0 +1,238 @@
+---
+// CompanyCarousel.astro - Auto-scrolling company logo carousel
+import members from "../data/members.json";
+---
+
+<div class="carousel-container">
+  <div class="carousel-track" id="carousel-track">
+    <!-- Triple the logos for smoother infinite scroll -->
+    {
+      members.companies.map((company) => (
+        <div
+          class={`carousel-item ${company.shape === "circular" ? "carousel-item--circular" : ""}`}
+        >
+          <img
+            src={`/img/alumni-connections/${company.logo}`}
+            alt={company.name}
+            loading="eager"
+            class="carousel-logo"
+          />
+        </div>
+      ))
+    }
+    {
+      members.companies.map((company) => (
+        <div
+          class={`carousel-item ${company.shape === "circular" ? "carousel-item--circular" : ""}`}
+        >
+          <img
+            src={`/img/alumni-connections/${company.logo}`}
+            alt={company.name}
+            loading="eager"
+            class="carousel-logo"
+          />
+        </div>
+      ))
+    }
+    {
+      members.companies.map((company) => (
+        <div
+          class={`carousel-item ${company.shape === "circular" ? "carousel-item--circular" : ""}`}
+        >
+          <img
+            src={`/img/alumni-connections/${company.logo}`}
+            alt={company.name}
+            loading="eager"
+            class="carousel-logo"
+          />
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: var(--spacing-8) 0;
+
+    /* Variable for mask color based on theme */
+    --mask-visible: white; /* Dark mode (default) uses white for visible parts */
+
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--mask-visible) 20%,
+      var(--mask-visible) 80%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--mask-visible) 20%,
+      var(--mask-visible) 80%,
+      transparent 100%
+    );
+  }
+
+  [data-theme="light"] .carousel-container {
+    --mask-visible: black; /* Light mode uses black for visible parts */
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: var(--spacing-10);
+    width: max-content;
+    align-items: center; /* Ensure logos are centered relative to each other */
+  }
+
+  .carousel-item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-logo {
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    min-width: 120px;
+    width: auto;
+    object-fit: contain;
+    /* Dark Mode: Grayscale + Invert + Brightness */
+    /* This turns dark text white, and complex logos (like NASA) into light-gray values with dark text, preserving detail */
+    filter: grayscale(100%) invert(1) brightness(1.2);
+    opacity: 0.8;
+    transition:
+      filter var(--transition-base),
+      opacity var(--transition-base);
+  }
+
+  /* Specific styling for circular logos to make them appear larger */
+  .carousel-item--circular .carousel-logo {
+    height: 70px; /* Taller height for circular logos */
+    min-height: 70px;
+    max-height: 70px;
+    min-width: 70px; /* Don't force min-width effectively allowing them to be square */
+  }
+
+  .carousel-item:hover .carousel-logo {
+    filter: none;
+    opacity: 1;
+  }
+
+  /* Light mode: Pure grayscale (Black/Dark Gray) */
+  :global([data-theme="light"]) .carousel-logo {
+    filter: grayscale(100%);
+    opacity: 0.8;
+  }
+
+  :global([data-theme="light"]) .carousel-item:hover .carousel-logo {
+    filter: none;
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-logo {
+      height: 35px;
+      min-height: 35px;
+      max-height: 35px;
+      min-width: 80px;
+    }
+
+    .carousel-item--circular .carousel-logo {
+      height: 50px;
+      min-height: 50px;
+      max-height: 50px;
+      min-width: 50px;
+    }
+  }
+
+  /* Reduce motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .carousel-track {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--spacing-4);
+    }
+
+    .carousel-container {
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
+  }
+</style>
+
+<script>
+  function initCarousel() {
+    const track = document.getElementById("carousel-track");
+    if (!track) return;
+
+    // Wait for images to load
+    const images = track.querySelectorAll("img");
+    let loaded = 0;
+
+    function startAnimation() {
+      // Get number of companies in one set
+      const items = track.querySelectorAll(".carousel-item");
+      const itemCount = items.length / 3; // We have 3 sets
+
+      // Calculate width of one set by measuring first N items
+      let oneSetWidth = 0;
+      const gap = parseFloat(getComputedStyle(track).gap) || 0;
+
+      for (let i = 0; i < itemCount; i++) {
+        oneSetWidth += items[i].offsetWidth + gap;
+      }
+
+      // Create CSS animation dynamically with exact pixel value
+      track.style.animation = "none";
+      track.offsetHeight; // Trigger reflow
+
+      // Remove old keyframes if exists
+      const oldStyle = document.getElementById("carousel-keyframes");
+      if (oldStyle) oldStyle.remove();
+
+      const style = document.createElement("style");
+      style.id = "carousel-keyframes";
+      style.textContent = `
+        @keyframes carouselScroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-${oneSetWidth}px); }
+        }
+      `;
+      document.head.appendChild(style);
+
+      track.style.animation = "carouselScroll 45s linear infinite";
+    }
+
+    // Check if images are already loaded
+    images.forEach((img) => {
+      if (img.complete) {
+        loaded++;
+      } else {
+        img.addEventListener("load", () => {
+          loaded++;
+          if (loaded === images.length) startAnimation();
+        });
+      }
+    });
+
+    if (loaded === images.length) {
+      startAnimation();
+    }
+
+    // Check for reduced motion preference
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      track.style.animation = "none";
+    }
+  }
+
+  // Initialize on load
+  initCarousel();
+
+  // Re-initialize after View Transitions
+  document.addEventListener("astro:after-swap", initCarousel);
+</script>

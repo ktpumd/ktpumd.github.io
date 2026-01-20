@@ -1,0 +1,1023 @@
+{
+    "execBoard": [
+        {
+            "role": "President",
+            "firstName": "Faith",
+            "lastName": "Short"
+        },
+        {
+            "role": "Vice President",
+            "firstName": "Kadin",
+            "lastName": "Fisher"
+        },
+        {
+            "role": "Director of Membership",
+            "firstName": "Liam",
+            "lastName": "Moran"
+        },
+        {
+            "role": "Director of Engagement",
+            "firstName": "Anu",
+            "lastName": "Daga"
+        },
+        {
+            "role": "Director of Professional Development",
+            "firstName": "Abhijay",
+            "lastName": "Shukla"
+        },
+        {
+            "role": "Director of Technology",
+            "firstName": "Saathu",
+            "lastName": "Nagareddy"
+        },
+        {
+            "role": "Director of Philanthropy",
+            "firstName": "Sanika",
+            "lastName": "Pande"
+        },
+        {
+            "role": "Director of Standards",
+            "firstName": "Ryan",
+            "lastName": "McGowan"
+        },
+        {
+            "role": "Director of Finance",
+            "firstName": "Shreeni",
+            "lastName": "Chikyala"
+        }
+    ],
+    "chairs": [
+        {
+            "role": "Treasury Chair",
+            "firstName": "Sachin",
+            "lastName": "Ashok"
+        },
+        {
+            "role": "External Relations Chair",
+            "firstName": "Katherine",
+            "lastName": "Hall"
+        },
+        {
+            "role": "Corporate Chair",
+            "firstName": "Justin",
+            "lastName": "Lee"
+        },
+        {
+            "role": "Marketing Chair",
+            "firstName": "Kavya",
+            "lastName": "Mukkamala"
+        },
+        {
+            "role": "Internal Relations Chair",
+            "firstName": "Anjali",
+            "lastName": "Murthy"
+        },
+        {
+            "role": "Development Operations Chair",
+            "firstName": "Harrison",
+            "lastName": "Padgett"
+        },
+        {
+            "role": "Community Service Chair",
+            "firstName": "Amogh",
+            "lastName": "Samaga"
+        },
+        {
+            "role": "Quality Assurance Chair",
+            "firstName": "Aadit",
+            "lastName": "Shah"
+        },
+        {
+            "role": "Education Chair",
+            "firstName": "Michael",
+            "lastName": "Yang"
+        },
+        {
+            "role": "Communications Chair",
+            "firstName": "Manan",
+            "lastName": "Zaveri"
+        }
+    ],
+    "brothers": [
+        {
+            "firstName": "Vihan",
+            "lastName": "Amarasinghe"
+        },
+        {
+            "firstName": "Chinaemelum",
+            "lastName": "Anadu"
+        },
+        {
+            "firstName": "Julius",
+            "lastName": "Angelo"
+        },
+        {
+            "firstName": "Viraj",
+            "lastName": "Bala"
+        },
+        {
+            "firstName": "James",
+            "lastName": "Barry"
+        },
+        {
+            "firstName": "Angad",
+            "lastName": "Bedi"
+        },
+        {
+            "firstName": "Kanhav",
+            "lastName": "Bhatnagar"
+        },
+        {
+            "firstName": "Daven",
+            "lastName": "Chang"
+        },
+        {
+            "firstName": "Maya",
+            "lastName": "Chelar"
+        },
+        {
+            "firstName": "Nitya",
+            "lastName": "Chigurupati"
+        },
+        {
+            "firstName": "Lauren",
+            "lastName": "Chipdey"
+        },
+        {
+            "firstName": "Shlok",
+            "lastName": "Desai"
+        },
+        {
+            "firstName": "Olivia",
+            "lastName": "Duran"
+        },
+        {
+            "firstName": "Jasmine",
+            "lastName": "Emeruwa"
+        },
+        {
+            "firstName": "Noah",
+            "lastName": "Fake"
+        },
+        {
+            "firstName": "Loren",
+            "lastName": "Foster"
+        },
+        {
+            "firstName": "Anjali",
+            "lastName": "Gallacher"
+        },
+        {
+            "firstName": "Isabel",
+            "lastName": "Garcia-Musalem"
+        },
+        {
+            "firstName": "Sean",
+            "lastName": "Garbarini"
+        },
+        {
+            "firstName": "Himanshu",
+            "lastName": "Gediya"
+        },
+        {
+            "firstName": "Sophia",
+            "lastName": "Gonzales"
+        },
+        {
+            "firstName": "Deena",
+            "lastName": "Habash"
+        },
+        {
+            "firstName": "Addison",
+            "lastName": "Hanrattie"
+        },
+        {
+            "firstName": "Aditya",
+            "lastName": "Hardikar"
+        },
+        {
+            "firstName": "Bhakti",
+            "lastName": "Hegde"
+        },
+        {
+            "firstName": "Taegon",
+            "lastName": "Hibbitts"
+        },
+        {
+            "firstName": "Matt",
+            "lastName": "Hullana"
+        },
+        {
+            "firstName": "Soumya",
+            "lastName": "Jailwala"
+        },
+        {
+            "firstName": "Harshith",
+            "lastName": "Kukunuru"
+        },
+        {
+            "firstName": "Jane",
+            "lastName": "Lee"
+        },
+        {
+            "firstName": "Chetanya",
+            "lastName": "Makkar"
+        },
+        {
+            "firstName": "Erin",
+            "lastName": "Maynard"
+        },
+        {
+            "firstName": "Eshita",
+            "lastName": "Mehrotra"
+        },
+        {
+            "firstName": "Vahin",
+            "lastName": "Palle"
+        },
+        {
+            "firstName": "Rachel",
+            "lastName": "Park"
+        },
+        {
+            "firstName": "Dev",
+            "lastName": "Patel"
+        },
+        {
+            "firstName": "Keith",
+            "lastName": "Patel"
+        },
+        {
+            "firstName": "Poojan",
+            "lastName": "Patel"
+        },
+        {
+            "firstName": "Caroline",
+            "lastName": "Perret"
+        },
+        {
+            "firstName": "Shriyans",
+            "lastName": "Sairy"
+        },
+        {
+            "firstName": "Riya",
+            "lastName": "Shah"
+        },
+        {
+            "firstName": "Nikhil",
+            "lastName": "Shyam"
+        },
+        {
+            "firstName": "Tanveer",
+            "lastName": "Singh"
+        },
+        {
+            "firstName": "Sriya",
+            "lastName": "Sogal"
+        },
+        {
+            "firstName": "Victor",
+            "lastName": "Su"
+        },
+        {
+            "firstName": "Isabelle",
+            "lastName": "Summann"
+        },
+        {
+            "firstName": "Tanvi",
+            "lastName": "Tewary"
+        },
+        {
+            "firstName": "Ritvik",
+            "lastName": "Thakur"
+        },
+        {
+            "firstName": "Izzy",
+            "lastName": "Thomas"
+        },
+        {
+            "firstName": "Amaar",
+            "lastName": "Trisal"
+        },
+        {
+            "firstName": "Anna",
+            "lastName": "Tzeng"
+        },
+        {
+            "firstName": "Matthew",
+            "lastName": "Wlazlo"
+        },
+        {
+            "firstName": "Valerie",
+            "lastName": "Yen"
+        },
+        {
+            "firstName": "Angela",
+            "lastName": "Yu"
+        }
+    ],
+    "alumni": {
+        "Founders": [
+            {
+                "firstName": "Alicia",
+                "lastName": "Curcuru"
+            },
+            {
+                "firstName": "Ben",
+                "lastName": "Nwokeleme"
+            },
+            {
+                "firstName": "Chantelle",
+                "lastName": "Rodriguez"
+            },
+            {
+                "firstName": "Garima",
+                "lastName": "Dewan"
+            },
+            {
+                "firstName": "Jonathan",
+                "lastName": "Lee"
+            },
+            {
+                "firstName": "Jordyn",
+                "lastName": "Berry"
+            },
+            {
+                "firstName": "Lydia",
+                "lastName": "Spurrier"
+            },
+            {
+                "firstName": "Sukhneet",
+                "lastName": "Kaur"
+            }
+        ],
+        "Alpha": [
+            {
+                "firstName": "Ava",
+                "lastName": "Williams"
+            },
+            {
+                "firstName": "Chris",
+                "lastName": "Truong"
+            },
+            {
+                "firstName": "Daniel",
+                "lastName": "Aivazov"
+            },
+            {
+                "firstName": "Daniel",
+                "lastName": "Holten"
+            },
+            {
+                "firstName": "Ekansh",
+                "lastName": "Vinaik"
+            },
+            {
+                "firstName": "Harry",
+                "lastName": "Irvine"
+            },
+            {
+                "firstName": "Jessica",
+                "lastName": "Kerry"
+            },
+            {
+                "firstName": "JT",
+                "lastName": "Field"
+            },
+            {
+                "firstName": "Marc",
+                "lastName": "Marcelin"
+            },
+            {
+                "firstName": "Matthew",
+                "lastName": "Aird"
+            },
+            {
+                "firstName": "Niharika",
+                "lastName": "Sahay"
+            },
+            {
+                "firstName": "Rachit",
+                "lastName": "Chadha"
+            },
+            {
+                "firstName": "Ryan",
+                "lastName": "Lam"
+            },
+            {
+                "firstName": "Swati",
+                "lastName": "Adipudi"
+            },
+            {
+                "firstName": "Thaddeus",
+                "lastName": "Lee-Tyson"
+            }
+        ],
+        "Beta": [
+            {
+                "firstName": "Ameya",
+                "lastName": "Sampath"
+            },
+            {
+                "firstName": "Christian",
+                "lastName": "Tonti"
+            },
+            {
+                "firstName": "Corie",
+                "lastName": "Brown"
+            },
+            {
+                "firstName": "Faatemah",
+                "lastName": "Mallick"
+            },
+            {
+                "firstName": "Isabelle",
+                "lastName": "Stevens"
+            },
+            {
+                "firstName": "James",
+                "lastName": "Bates"
+            },
+            {
+                "firstName": "Jeffrey",
+                "lastName": "Najmi"
+            },
+            {
+                "firstName": "Michael",
+                "lastName": "Stripling"
+            },
+            {
+                "firstName": "Mike",
+                "lastName": "Walker"
+            },
+            {
+                "firstName": "Prachi",
+                "lastName": "Gaur"
+            },
+            {
+                "firstName": "Rahul",
+                "lastName": "Krishnan"
+            },
+            {
+                "firstName": "Ronit",
+                "lastName": "Gopalani"
+            },
+            {
+                "firstName": "Ryan",
+                "lastName": "McCarthy"
+            },
+            {
+                "firstName": "Ryan",
+                "lastName": "Havel"
+            },
+            {
+                "firstName": "Shad",
+                "lastName": "Khan"
+            },
+            {
+                "firstName": "Shlok",
+                "lastName": "Khandelwal"
+            },
+            {
+                "firstName": "Tyler",
+                "lastName": "Behr"
+            }
+        ],
+        "Gamma": [
+            {
+                "firstName": "Amanda",
+                "lastName": "Ma"
+            },
+            {
+                "firstName": "Austin",
+                "lastName": "Hwa"
+            },
+            {
+                "firstName": "Deep",
+                "lastName": "Patel"
+            },
+            {
+                "firstName": "Dominique",
+                "lastName": "Rafael"
+            },
+            {
+                "firstName": "Esther",
+                "lastName": "Zhang"
+            },
+            {
+                "firstName": "Ethan",
+                "lastName": "Smiley"
+            },
+            {
+                "firstName": "Ines",
+                "lastName": "Benmohamed"
+            },
+            {
+                "firstName": "Isa",
+                "lastName": "Ahmed"
+            },
+            {
+                "firstName": "Jenny",
+                "lastName": "Corzo"
+            },
+            {
+                "firstName": "Katie",
+                "lastName": "Kemp"
+            },
+            {
+                "firstName": "Kendall",
+                "lastName": "Wong"
+            },
+            {
+                "firstName": "Nik",
+                "lastName": "Nair"
+            },
+            {
+                "firstName": "Rafay",
+                "lastName": "Khan"
+            },
+            {
+                "firstName": "Rida",
+                "lastName": "Habib"
+            },
+            {
+                "firstName": "Sahir",
+                "lastName": "Mody"
+            },
+            {
+                "firstName": "Siraj",
+                "lastName": "Ayornu"
+            },
+            {
+                "firstName": "Timmy",
+                "lastName": "Trapaidze"
+            }
+        ],
+        "Delta": [
+            {
+                "firstName": "Amy",
+                "lastName": "Zheng"
+            },
+            {
+                "firstName": "Andrew",
+                "lastName": "Cunniff"
+            },
+            {
+                "firstName": "Hira",
+                "lastName": "Mahmood"
+            },
+            {
+                "firstName": "Jasmine",
+                "lastName": "Okebugwu"
+            },
+            {
+                "firstName": "Kati",
+                "lastName": "Ilieva"
+            },
+            {
+                "firstName": "Katie",
+                "lastName": "Vincler"
+            },
+            {
+                "firstName": "Lillian",
+                "lastName": "Nose"
+            },
+            {
+                "firstName": "Matthew",
+                "lastName": "Gouzoulis"
+            },
+            {
+                "firstName": "Ummey",
+                "lastName": "Hossain"
+            },
+            {
+                "firstName": "Val",
+                "lastName": "Arriola-Pomasoncco"
+            },
+            {
+                "firstName": "Edmund",
+                "lastName": "Li"
+            },
+            {
+                "firstName": "Emily",
+                "lastName": "Chang"
+            },
+            {
+                "firstName": "Devika",
+                "lastName": "Govindarajan"
+            },
+            {
+                "firstName": "Harleen",
+                "lastName": "Kaur"
+            },
+            {
+                "firstName": "Vid",
+                "lastName": "Vashist"
+            }
+        ],
+        "Epsilon": [
+            {
+                "firstName": "Akriti",
+                "lastName": "Tripathi"
+            },
+            {
+                "firstName": "John",
+                "lastName": "Gao"
+            },
+            {
+                "firstName": "Joshua",
+                "lastName": "Choi"
+            },
+            {
+                "firstName": "June",
+                "lastName": "Tian"
+            },
+            {
+                "firstName": "Lauren",
+                "lastName": "LaTeef"
+            },
+            {
+                "firstName": "Maggie",
+                "lastName": "Zhou"
+            },
+            {
+                "firstName": "Matthew",
+                "lastName": "Leins"
+            },
+            {
+                "firstName": "Melvyn",
+                "lastName": "Hullana"
+            },
+            {
+                "firstName": "Nithin",
+                "lastName": "Richard"
+            },
+            {
+                "firstName": "Priyanka",
+                "lastName": "Kishore"
+            },
+            {
+                "firstName": "Richard",
+                "lastName": "Bui"
+            },
+            {
+                "firstName": "Vikram",
+                "lastName": "Adipudi"
+            },
+            {
+                "firstName": "Yomi",
+                "lastName": "Omogbehin"
+            },
+            {
+                "firstName": "Rishi",
+                "lastName": "Parikh"
+            }
+        ],
+        "Zeta": [
+            {
+                "firstName": "Andrew",
+                "lastName": "Stehman"
+            },
+            {
+                "firstName": "Diana",
+                "lastName": "Kerr"
+            },
+            {
+                "firstName": "Katherine",
+                "lastName": "Vo"
+            },
+            {
+                "firstName": "Leonardo",
+                "lastName": "Wu"
+            },
+            {
+                "firstName": "Mei",
+                "lastName": "Blatchford"
+            },
+            {
+                "firstName": "Shreyas",
+                "lastName": "Vaderiyattil"
+            },
+            {
+                "firstName": "Sophie",
+                "lastName": "Jorgensen"
+            },
+            {
+                "firstName": "Janaki",
+                "lastName": "Patel"
+            },
+            {
+                "firstName": "Eric",
+                "lastName": "Gorner"
+            },
+            {
+                "firstName": "Christopher",
+                "lastName": "Tang"
+            }
+        ],
+        "Eta": [
+            {
+                "firstName": "Grant",
+                "lastName": "Tamrakar"
+            },
+            {
+                "firstName": "Kevin",
+                "lastName": "Hall"
+            },
+            {
+                "firstName": "Steven",
+                "lastName": "Garrido"
+            },
+            {
+                "firstName": "Casey",
+                "lastName": "Puentes"
+            },
+            {
+                "firstName": "Suraj",
+                "lastName": "Narang"
+            },
+            {
+                "firstName": "Vidit",
+                "lastName": "Makwana"
+            },
+            {
+                "firstName": "Tina",
+                "lastName": "Le"
+            },
+            {
+                "firstName": "Mahum",
+                "lastName": "Qadeer"
+            },
+            {
+                "firstName": "Ananya",
+                "lastName": "Nadig"
+            },
+            {
+                "firstName": "Lily",
+                "lastName": "Etareri"
+            },
+            {
+                "firstName": "Vivek",
+                "lastName": "Waghray"
+            }
+        ],
+        "Theta": [
+            {
+                "firstName": "Patrick",
+                "lastName": "Hogan"
+            },
+            {
+                "firstName": "Abby",
+                "lastName": "Miller"
+            },
+            {
+                "firstName": "Zoey",
+                "lastName": "Anastasiadis"
+            },
+            {
+                "firstName": "Lily",
+                "lastName": "Le"
+            },
+            {
+                "firstName": "Hrishi",
+                "lastName": "Chintagumpala"
+            },
+            {
+                "firstName": "Cassiel",
+                "lastName": "Arcilla"
+            },
+            {
+                "firstName": "Riya",
+                "lastName": "Boyapati"
+            },
+            {
+                "firstName": "Garrett",
+                "lastName": "Amos"
+            },
+            {
+                "firstName": "Rishiraj",
+                "lastName": "Ghosh"
+            },
+            {
+                "firstName": "Tia",
+                "lastName": "Tran"
+            },
+            {
+                "firstName": "Antonio",
+                "lastName": "Farias"
+            },
+            {
+                "firstName": "Grace",
+                "lastName": "Gellerman"
+            },
+            {
+                "firstName": "Arihant",
+                "lastName": "Gupta"
+            },
+            {
+                "firstName": "Angad",
+                "lastName": "Singh"
+            }
+        ],
+        "Iota": [
+            {
+                "firstName": "Joaquin",
+                "lastName": "Panambo"
+            },
+            {
+                "firstName": "Tina",
+                "lastName": "Ngo"
+            },
+            {
+                "firstName": "Mickey",
+                "lastName": "Santomartino"
+            },
+            {
+                "firstName": "Sai",
+                "lastName": "Posa"
+            },
+            {
+                "firstName": "Sana",
+                "lastName": "Choudhry"
+            },
+            {
+                "firstName": "Eddie",
+                "lastName": "Zhang"
+            },
+            {
+                "firstName": "Noor",
+                "lastName": "Qureshi"
+            },
+            {
+                "firstName": "Zoe",
+                "lastName": "Cheng"
+            },
+            {
+                "firstName": "Nikita",
+                "lastName": "Khapre"
+            },
+            {
+                "firstName": "Akshay",
+                "lastName": "Subramaniam"
+            }
+        ],
+        "Kappa": [
+            {
+                "firstName": "Janet",
+                "lastName": "Chan"
+            },
+            {
+                "firstName": "Malaya",
+                "lastName": "Heflin"
+            },
+            {
+                "firstName": "Ron",
+                "lastName": "Reyes"
+            },
+            {
+                "firstName": "Jacob",
+                "lastName": "Shapiro"
+            },
+            {
+                "firstName": "Diana",
+                "lastName": "Huynh"
+            },
+            {
+                "firstName": "Taylor",
+                "lastName": "Wong"
+            },
+            {
+                "firstName": "Soojee",
+                "lastName": "Fee"
+            },
+            {
+                "firstName": "Andrew",
+                "lastName": "Le"
+            }
+        ],
+        "Lambda": [
+            {
+                "firstName": "Vikram",
+                "lastName": "Jasti"
+            },
+            {
+                "firstName": "Saatvik",
+                "lastName": "Gangavarapu"
+            },
+            {
+                "firstName": "Casey",
+                "lastName": "Majewski"
+            },
+            {
+                "firstName": "Patrick",
+                "lastName": "Healy"
+            },
+            {
+                "firstName": "Michelle",
+                "lastName": "Nguyen"
+            },
+            {
+                "firstName": "Zane",
+                "lastName": "Rawlings"
+            },
+            {
+                "firstName": "Simmi",
+                "lastName": "Nirula"
+            }
+        ],
+        "Mu": [
+            {
+                "firstName": "Patrick",
+                "lastName": "Hael"
+            },
+            {
+                "firstName": "Claudia",
+                "lastName": "Lujan"
+            },
+            {
+                "firstName": "Ari",
+                "lastName": "Kaplan"
+            },
+            {
+                "firstName": "Arti",
+                "lastName": "Dhareshwar"
+            },
+            {
+                "firstName": "Yusuf",
+                "lastName": "Khalid"
+            }
+        ],
+        "Nu": [
+            {
+                "firstName": "Siya",
+                "lastName": "Patel"
+            },
+            {
+                "firstName": "Ishita",
+                "lastName": "Singh"
+            }
+        ]
+    },
+    "companies": [
+        {
+            "name": "Google",
+            "logo": "google.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "Apple",
+            "logo": "apple.png",
+            "shape": "circular"
+        },
+        {
+            "name": "Amazon",
+            "logo": "amazon.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "Meta",
+            "logo": "meta.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "Microsoft",
+            "logo": "microsoft.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "Capital One",
+            "logo": "capitalone.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "KPMG",
+            "logo": "kpmg.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "NASA",
+            "logo": "nasa.png",
+            "shape": "circular"
+        },
+        {
+            "name": "Adobe",
+            "logo": "adobe.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "IBM",
+            "logo": "ibm.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "Two Sigma",
+            "logo": "twosigma.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "EY",
+            "logo": "ey.png",
+            "shape": "circular"
+        }
+    ]
+}

@@ -1,0 +1,260 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import PageHeader from "../components/PageHeader.astro";
+---
+
+<Layout title="Kappa Theta Pi UMD">
+  <Navbar currentPage="/students" />
+
+  <PageHeader
+    title="Join Us"
+    backgroundImage="/img/rush-bg2.jpg"
+    size="small"
+  />
+
+  <main>
+    <!-- Rush Info Section -->
+    <section class="section">
+      <div class="container">
+        <div class="content-block text-center">
+          <h2 class="section-title">Fall 2025 Rush</h2>
+          <p class="section-text">
+            <strong
+              >Any undergraduate student at the University of Maryland with an
+              interest in technology is welcome to rush Kappa Theta Pi.</strong
+            >
+          </p>
+          <p class="section-text">
+            Although rush for this semester is over, stay tuned for next
+            semester! Thank you for your interest in our fraternity!
+          </p>
+
+          <div class="cta-buttons">
+            <a
+              href="https://linktr.ee/ktpumdcp"
+              class="btn btn-primary"
+              target="_blank"
+            >
+              <i class="fa-solid fa-link"></i>
+              Our Links
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title text-center">What We Offer</h2>
+
+        <div class="benefits-grid">
+          <div class="benefit-card card">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Technical Workshops</h3>
+            <p>
+              Learn new technologies and frameworks from experienced members
+            </p>
+          </div>
+          <div class="benefit-card card">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3>Networking</h3>
+            <p>Connect with alumni at top tech companies</p>
+          </div>
+          <div class="benefit-card card">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>Social Events</h3>
+            <p>
+              Build lasting friendships through formals, game nights, and more
+            </p>
+          </div>
+          <div class="benefit-card card">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3>Community Service</h3>
+            <p>Give back to the community through tech-focused philanthropy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title text-center">Life at KTP</h2>
+        <div class="photo-grid">
+          <div class="photo-card">
+            <img
+              src="/img/palooza_s25.jpg"
+              alt="Palooza Spring 2025"
+              loading="lazy"
+            />
+            <div class="photo-caption">Palooza 2025</div>
+          </div>
+          <div class="photo-card">
+            <img
+              src="/img/formal_f24.jpg"
+              alt="Formal Fall 2024"
+              loading="lazy"
+            />
+            <div class="photo-caption">Fall Formal 2024</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .section-title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-8);
+    position: relative;
+    display: inline-block;
+  }
+
+  .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+  }
+
+  .content-block {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .section-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-400);
+    line-height: 1.8;
+  }
+
+  .section-text strong {
+    color: var(--color-white);
+  }
+
+  .cta-buttons {
+    margin-top: var(--spacing-8);
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-4);
+    flex-wrap: wrap;
+  }
+
+  /* Benefits Grid */
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-6);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .benefit-card {
+    padding: var(--spacing-6);
+    text-align: center;
+  }
+
+  .benefit-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto var(--spacing-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+  }
+
+  .benefit-card h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-2);
+  }
+
+  .benefit-card p {
+    color: var(--color-gray-400);
+    font-size: var(--font-size-sm);
+    margin: 0;
+  }
+
+  @media (max-width: 992px) {
+    .benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Photo Gallery */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-8);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .photo-card {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all var(--transition-base);
+  }
+
+  .photo-card:hover {
+    border-color: var(--color-primary);
+  }
+
+  .photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+  }
+
+  .photo-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--spacing-4);
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: var(--color-white);
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .photo-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

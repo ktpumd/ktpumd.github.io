@@ -1,0 +1,110 @@
+---
+interface Props {
+  firstName: string;
+  lastName: string;
+  role?: string;
+  photoPath?: string;
+}
+
+const { firstName, lastName, role, photoPath } = Astro.props;
+
+// Generate photo path if not provided
+const defaultPhotoPath = `/img/brothers/${firstName}_${lastName}.jpg`;
+const imageSrc = photoPath || defaultPhotoPath;
+---
+
+<article class="member-card">
+  <div class="member-card__image-wrapper">
+    <img
+      src={imageSrc}
+      alt={`${firstName} ${lastName}`}
+      class="member-card__image"
+      loading="lazy"
+      onerror="this.src='/img/placeholder.jpg'"
+    />
+  </div>
+  <div class="member-card__info">
+    <h3 class="member-card__name">{firstName} {lastName}</h3>
+    {role && <p class="member-card__role">{role}</p>}
+  </div>
+</article>
+
+<style>
+  .member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-4);
+  }
+
+  .member-card__image-wrapper {
+    width: 140px;
+    height: 140px;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin-bottom: var(--spacing-4);
+    background: var(--color-bg-elevated);
+    border: 2px solid transparent;
+    transition: all var(--transition-base);
+    position: relative;
+  }
+
+  .member-card__image-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+  }
+
+  .member-card:hover .member-card__image-wrapper::before {
+    opacity: 1;
+  }
+
+  .member-card:hover .member-card__image-wrapper {
+    transform: scale(1.05);
+  }
+
+  .member-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+  }
+
+  .member-card:hover .member-card__image {
+    transform: scale(1.1);
+  }
+
+  .member-card__info {
+    min-height: 60px;
+  }
+
+  .member-card__name {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-text-heading);
+    margin-bottom: var(--spacing-1);
+  }
+
+  .member-card__role {
+    font-size: var(--font-size-sm);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .member-card__image-wrapper {
+      width: 120px;
+      height: 120px;
+    }
+  }
+</style>

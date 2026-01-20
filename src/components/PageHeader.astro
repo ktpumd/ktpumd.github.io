@@ -1,0 +1,103 @@
+---
+interface Props {
+  title: string;
+  backgroundImage?: string;
+  size?: 'small' | 'large';
+}
+
+const { title, backgroundImage, size = 'large' } = Astro.props;
+---
+
+<header class={`page-header ${size === 'small' ? 'page-header--small' : ''}`}>
+  {backgroundImage && (
+    <div class="page-header__background" style={`background-image: url('${backgroundImage}')`}></div>
+  )}
+  <div class="page-header__overlay"></div>
+  <div class="page-header__content">
+    <h1 class="page-header__title">{title}</h1>
+    <slot />
+  </div>
+</header>
+
+<style>
+  .page-header {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--color-bg);
+  }
+  
+  .page-header--small {
+    min-height: 40vh;
+  }
+  
+  .page-header__background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+  }
+  
+  [data-theme="light"] .page-header__background {
+    opacity: 0.3;
+  }
+  
+  .page-header__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      var(--color-bg) 100%
+    );
+  }
+  
+  .page-header__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: var(--spacing-6);
+    max-width: 800px;
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .page-header__title {
+    font-size: var(--font-size-5xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-4);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .page-header {
+      min-height: 50vh;
+    }
+    
+    .page-header--small {
+      min-height: 35vh;
+    }
+    
+    .page-header__title {
+      font-size: var(--font-size-4xl);
+    }
+  }
+</style>
