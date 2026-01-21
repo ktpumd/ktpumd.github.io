@@ -348,9 +348,10 @@ const socialLinks = [
       background: var(--color-bg-card);
       border-left: 1px solid rgba(255, 255, 255, 0.1);
       flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-start; /* Revert to start */
       padding: calc(var(--spacing-20) + var(--spacing-8)) var(--spacing-6);
       transition: right var(--transition-base);
+      text-align: left; /* Revert */
     }
 
     .nav-menu.open {
@@ -359,7 +360,7 @@ const socialLinks = [
 
     .nav-list {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-start; /* Revert to start */
       width: 100%;
     }
 
@@ -367,26 +368,70 @@ const socialLinks = [
       width: 100%;
     }
 
+    .nav-link {
+      width: 100%;
+      justify-content: flex-start; /* Revert */
+    }
+
+    .dropdown-item {
+      display: block;
+      text-align: left; /* Revert */
+      padding: var(--spacing-2) 0;
+    }
+
     .dropdown-menu {
       position: static;
       transform: none;
-      background: transparent;
+      background: transparent; /* No background */
       border: none;
       box-shadow: none;
-      opacity: 1;
-      visibility: visible;
-      padding-left: var(--spacing-4);
+      opacity: 0;
+      visibility: hidden;
+      padding: 0;
+      margin: 0;
       max-height: 0;
       overflow: hidden;
-      transition: max-height var(--transition-base);
+      transition: all var(--transition-base);
+      text-align: left; /* Revert */
+      width: 100%;
+    }
+
+    /* Override desktop hover specificity to prevent "slide left" on close */
+    .has-dropdown:hover .dropdown-menu {
+      transform: none;
+      top: auto;
+      left: auto;
     }
 
     .has-dropdown.open .dropdown-menu {
       max-height: 200px;
+      opacity: 1;
+      visibility: visible;
+      padding: var(--spacing-2) 0;
+      padding-left: var(--spacing-8);
+      margin-top: var(--spacing-2);
+      transform: none;
+      top: auto;
+      left: auto;
+    }
+
+    /* Fix arrow rotation on mobile */
+    .has-dropdown:hover .dropdown-icon {
+      transform: none; /* Disable hover rotation on mobile */
+    }
+
+    .has-dropdown.open .dropdown-icon {
+      transform: rotate(180deg); /* Trigger rotation only on open */
+    }
+
+    .nav-actions {
+      margin-top: var(--spacing-8);
+      width: 100%;
+      justify-content: flex-start; /* Ensure left alignment matches menu */
     }
 
     .nav-social {
-      margin-top: var(--spacing-8);
+      margin-top: 0;
     }
   }
 </style>

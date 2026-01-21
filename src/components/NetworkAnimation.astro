@@ -13,7 +13,7 @@
     overflow: hidden;
     z-index: 0;
   }
-  
+
   #network-canvas {
     width: 100%;
     height: 100%;
@@ -22,14 +22,14 @@
 </style>
 
 <script>
-  const canvas = document.getElementById('network-canvas') as HTMLCanvasElement;
-  const ctx = canvas.getContext('2d');
-  
+  const canvas = document.getElementById("network-canvas") as HTMLCanvasElement;
+  const ctx = canvas.getContext("2d");
+
   let width = 0;
   let height = 0;
   let particles: Particle[] = [];
   let animationId: number;
-  
+
   interface Particle {
     x: number;
     y: number;
@@ -37,16 +37,16 @@
     vy: number;
     radius: number;
   }
-  
+
   const config = {
     particleCount: 80,
     particleRadius: 2,
     lineDistance: 150,
     speed: 0.5,
-    primaryColor: '#00d4aa',
-    secondaryColor: '#0984e3',
+    primaryColor: "#00d4aa",
+    secondaryColor: "#0984e3",
   };
-  
+
   function resize() {
     const container = canvas.parentElement;
     if (container) {
@@ -56,7 +56,7 @@
       canvas.height = height;
     }
   }
-  
+
   function createParticles() {
     particles = [];
     for (let i = 0; i < config.particleCount; i++) {
@@ -69,10 +69,10 @@
       });
     }
   }
-  
+
   function drawParticle(p: Particle, index: number) {
     if (!ctx) return;
-    
+
     // Alternate colors
     const color = index % 2 === 0 ? config.primaryColor : config.secondaryColor;
     ctx.beginPath();
@@ -80,30 +80,32 @@
     ctx.fillStyle = color;
     ctx.fill();
   }
-  
+
   function drawConnections() {
     if (!ctx) return;
-    
+
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
         const dx = particles[i].x - particles[j].x;
         const dy = particles[i].y - particles[j].y;
         const distance = Math.sqrt(dx * dx + dy * dy);
-        
+
         if (distance < config.lineDistance) {
-          const opacity = 1 - (distance / config.lineDistance);
+          const opacity = 1 - distance / config.lineDistance;
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          
+
           // Gradient line color
           const gradient = ctx.createLinearGradient(
-            particles[i].x, particles[i].y,
-            particles[j].x, particles[j].y
+            particles[i].x,
+            particles[i].y,
+            particles[j].x,
+            particles[j].y,
           );
           gradient.addColorStop(0, `rgba(0, 212, 170, ${opacity * 0.4})`);
           gradient.addColorStop(1, `rgba(9, 132, 227, ${opacity * 0.4})`);
-          
+
           ctx.strokeStyle = gradient;
           ctx.lineWidth = 1;
           ctx.stroke();
@@ -111,51 +113,57 @@
       }
     }
   }
-  
+
   function updateParticles() {
     for (const p of particles) {
       p.x += p.vx;
       p.y += p.vy;
-      
+
       // Bounce off edges
       if (p.x < 0 || p.x > width) p.vx *= -1;
       if (p.y < 0 || p.y > height) p.vy *= -1;
-      
+
       // Keep in bounds
       p.x = Math.max(0, Math.min(width, p.x));
       p.y = Math.max(0, Math.min(height, p.y));
     }
   }
-  
+
   function animate() {
     if (!ctx) return;
-    
+
     ctx.clearRect(0, 0, width, height);
-    
+
     drawConnections();
     particles.forEach((p, i) => drawParticle(p, i));
     updateParticles();
-    
+
     animationId = requestAnimationFrame(animate);
   }
-  
+
   function init() {
     resize();
     createParticles();
     animate();
   }
-  
+
   // Initialize
   init();
-  
+
   // Handle resize
-  window.addEventListener('resize', () => {
-    resize();
-    createParticles();
+  let lastWidth = window.innerWidth;
+
+  window.addEventListener("resize", () => {
+    // Only resize if width changes (ignores mobile address bar show/hide)
+    if (window.innerWidth !== lastWidth) {
+      lastWidth = window.innerWidth;
+      resize();
+      createParticles();
+    }
   });
-  
+
   // Cleanup on page navigation (View Transitions)
-  document.addEventListener('astro:before-swap', () => {
+  document.addEventListener("astro:before-swap", () => {
     cancelAnimationFrame(animationId);
   });
 </script>

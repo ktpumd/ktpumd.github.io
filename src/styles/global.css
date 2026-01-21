@@ -563,3 +563,18 @@ p {
 [data-theme="light"] .theme-toggle .icon-moon {
     display: none;
 }
+
+@media (max-width: 992px) {
+    .theme-toggle {
+        background: transparent;
+        border: none;
+        width: auto;
+        height: auto;
+        padding: 0;
+    }
+
+    .theme-toggle:hover {
+        background: transparent;
+        border: none;
+    }
+}
