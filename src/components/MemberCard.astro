@@ -7,10 +7,12 @@ interface Props {
 }
 
 const { firstName, lastName, role, photoPath } = Astro.props;
+const base = import.meta.env.BASE_URL;
 
 // Generate photo path if not provided
-const defaultPhotoPath = `/img/brothers/${firstName}_${lastName}.jpg`;
+const defaultPhotoPath = `${base}img/brothers/${firstName}_${lastName}.jpg`;
 const imageSrc = photoPath || defaultPhotoPath;
+const placeholderPath = `${base}img/placeholder.jpg`;
 ---
 
 <article class="member-card">
@@ -20,7 +22,7 @@ const imageSrc = photoPath || defaultPhotoPath;
       alt={`${firstName} ${lastName}`}
       class="member-card__image"
       loading="lazy"
-      onerror="this.src='/img/placeholder.jpg'"
+      onerror={`this.src='${placeholderPath}'`}
     />
   </div>
   <div class="member-card__info">

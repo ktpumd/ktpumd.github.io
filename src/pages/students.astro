@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import PageHeader from "../components/PageHeader.astro";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Kappa Theta Pi UMD">
@@ -94,7 +96,7 @@ import PageHeader from "../components/PageHeader.astro";
         <div class="photo-grid">
           <div class="photo-card">
             <img
-              src="/img/palooza_s25.jpg"
+              src={`${base}img/palooza_s25.jpg`}
               alt="Palooza Spring 2025"
               loading="lazy"
             />
@@ -102,7 +104,7 @@ import PageHeader from "../components/PageHeader.astro";
           </div>
           <div class="photo-card">
             <img
-              src="/img/formal_f24.jpg"
+              src={`${base}img/formal_f24.jpg`}
               alt="Formal Fall 2024"
               loading="lazy"
             />

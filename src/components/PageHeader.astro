@@ -2,16 +2,25 @@
 interface Props {
   title: string;
   backgroundImage?: string;
-  size?: 'small' | 'large';
+  size?: "small" | "large";
 }
 
-const { title, backgroundImage, size = 'large' } = Astro.props;
+const { title, backgroundImage, size = "large" } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const bgImage = backgroundImage
+  ? `${base}${backgroundImage.replace(/^\//, "")}`
+  : null;
 ---
 
-<header class={`page-header ${size === 'small' ? 'page-header--small' : ''}`}>
-  {backgroundImage && (
-    <div class="page-header__background" style={`background-image: url('${backgroundImage}')`}></div>
-  )}
+<header class={`page-header ${size === "small" ? "page-header--small" : ""}`}>
+  {
+    bgImage && (
+      <div
+        class="page-header__background"
+        style={`background-image: url('${bgImage}')`}
+      />
+    )
+  }
   <div class="page-header__overlay"></div>
   <div class="page-header__content">
     <h1 class="page-header__title">{title}</h1>
@@ -29,11 +38,11 @@ const { title, backgroundImage, size = 'large' } = Astro.props;
     overflow: hidden;
     background: var(--color-bg);
   }
-  
+
   .page-header--small {
     min-height: 40vh;
   }
-  
+
   .page-header__background {
     position: absolute;
     inset: 0;
@@ -42,21 +51,17 @@ const { title, backgroundImage, size = 'large' } = Astro.props;
     background-repeat: no-repeat;
     opacity: 0.4;
   }
-  
+
   [data-theme="light"] .page-header__background {
     opacity: 0.3;
   }
-  
+
   .page-header__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      180deg,
-      transparent 0%,
-      var(--color-bg) 100%
-    );
+    background: linear-gradient(180deg, transparent 0%, var(--color-bg) 100%);
   }
-  
+
   .page-header__content {
     position: relative;
     z-index: 1;
@@ -65,7 +70,7 @@ const { title, backgroundImage, size = 'large' } = Astro.props;
     max-width: 800px;
     animation: fadeInUp 0.8s ease-out;
   }
-  
+
   .page-header__title {
     font-size: var(--font-size-5xl);
     font-weight: 700;
@@ -75,7 +80,7 @@ const { title, backgroundImage, size = 'large' } = Astro.props;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  
+
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -86,16 +91,16 @@ const { title, backgroundImage, size = 'large' } = Astro.props;
       transform: translateY(0);
     }
   }
-  
+
   @media (max-width: 768px) {
     .page-header {
       min-height: 50vh;
     }
-    
+
     .page-header--small {
       min-height: 35vh;
     }
-    
+
     .page-header__title {
       font-size: var(--font-size-4xl);
     }

@@ -1,83 +1,117 @@
 ---
-import ThemeToggle from './ThemeToggle.astro';
+import ThemeToggle from "./ThemeToggle.astro";
 
 interface Props {
   currentPage?: string;
 }
 
-const { currentPage = '' } = Astro.props;
+const { currentPage = "" } = Astro.props;
+const base = import.meta.env.BASE_URL;
 
 const navItems = [
-  { label: 'Home', href: '/' },
-  { 
-    label: 'Get Involved', 
+  { label: "Home", href: base },
+  {
+    label: "Get Involved",
     dropdown: [
-      { label: 'Students', href: '/students' },
-      { label: 'Companies', href: '/companies' }
-    ]
+      { label: "Students", href: `${base}students` },
+      { label: "Companies", href: `${base}companies` },
+    ],
   },
-  { label: 'Members', href: '/membership' }
+  { label: "Members", href: `${base}membership` },
 ];
 
 const socialLinks = [
-  { icon: 'fa-twitter', href: 'https://twitter.com/KappaThetaPiUMD', label: 'Twitter' },
-  { icon: 'fa-facebook', href: 'https://www.facebook.com/KappaThetaPiUMD', label: 'Facebook' },
-  { icon: 'fa-instagram', href: 'https://www.instagram.com/ktpumd/', label: 'Instagram' },
-  { icon: 'fa-linkedin', href: 'https://www.linkedin.com/company/kappa-theta-pi-umd/', label: 'LinkedIn' }
+  {
+    icon: "fa-twitter",
+    href: "https://twitter.com/KappaThetaPiUMD",
+    label: "Twitter",
+  },
+  {
+    icon: "fa-facebook",
+    href: "https://www.facebook.com/KappaThetaPiUMD",
+    label: "Facebook",
+  },
+  {
+    icon: "fa-instagram",
+    href: "https://www.instagram.com/ktpumd/",
+    label: "Instagram",
+  },
+  {
+    icon: "fa-linkedin",
+    href: "https://www.linkedin.com/company/kappa-theta-pi-umd/",
+    label: "LinkedIn",
+  },
 ];
 ---
 
 <nav class="navbar" id="navbar">
   <div class="nav-container">
-    <a href="/" class="nav-brand">
+    <a href={base} class="nav-brand">
       <span class="nav-brand__logo">ΚΘΠ</span>
       <span class="nav-brand__text">Kappa Theta Pi</span>
     </a>
-    
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+
+    <button
+      class="nav-toggle"
+      id="nav-toggle"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+    >
       <span class="hamburger"></span>
     </button>
-    
+
     <div class="nav-menu" id="nav-menu">
       <ul class="nav-list">
-        {navItems.map((item) => (
-          <li class={`nav-item ${item.dropdown ? 'has-dropdown' : ''}`}>
-            {item.dropdown ? (
-              <>
-                <button class="nav-link dropdown-toggle" aria-expanded="false">
+        {
+          navItems.map((item) => (
+            <li class={`nav-item ${item.dropdown ? "has-dropdown" : ""}`}>
+              {item.dropdown ? (
+                <>
+                  <button
+                    class="nav-link dropdown-toggle"
+                    aria-expanded="false"
+                  >
+                    {item.label}
+                    <i class="fa-solid fa-chevron-down dropdown-icon" />
+                  </button>
+                  <ul class="dropdown-menu">
+                    {item.dropdown.map((subItem) => (
+                      <li>
+                        <a href={subItem.href} class="dropdown-item">
+                          {subItem.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : (
+                <a
+                  href={item.href}
+                  class={`nav-link ${currentPage === item.href ? "active" : ""}`}
+                >
                   {item.label}
-                  <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  {item.dropdown.map((subItem) => (
-                    <li>
-                      <a href={subItem.href} class="dropdown-item">{subItem.label}</a>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            ) : (
-              <a href={item.href} class={`nav-link ${currentPage === item.href ? 'active' : ''}`}>
-                {item.label}
-              </a>
-            )}
-          </li>
-        ))}
+                </a>
+              )}
+            </li>
+          ))
+        }
       </ul>
-      
+
       <div class="nav-actions">
         <div class="nav-social">
-          {socialLinks.map((social) => (
-            <a 
-              href={social.href} 
-              class="social-link" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label={social.label}
-            >
-              <i class={`fa-brands ${social.icon}`}></i>
-            </a>
-          ))}
+          {
+            socialLinks.map((social) => (
+              <a
+                href={social.href}
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+              >
+                <i class={`fa-brands ${social.icon}`} />
+              </a>
+            ))
+          }
         </div>
         <ThemeToggle />
       </div>
@@ -93,25 +127,26 @@ const socialLinks = [
     right: 0;
     z-index: 1000;
     background: transparent;
-    transition: background var(--transition-base), box-shadow var(--transition-base);
+    transition:
+      background var(--transition-base),
+      box-shadow var(--transition-base);
   }
-  
+
   .navbar.scrolled {
     background: var(--color-bg-card);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-lg);
     border-bottom: 1px solid var(--color-border);
   }
-  
+
   .nav-container {
-    max-width: var(--container-max);
-    margin: 0 auto;
-    padding: var(--spacing-4) var(--spacing-6);
+    width: 100%;
+    padding: var(--spacing-4) var(--spacing-8);
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .nav-brand {
     display: flex;
     align-items: center;
@@ -119,11 +154,11 @@ const socialLinks = [
     text-decoration: none;
     transition: opacity var(--transition-fast);
   }
-  
+
   .nav-brand:hover {
     opacity: 0.9;
   }
-  
+
   .nav-brand__logo {
     font-size: var(--font-size-xl);
     font-weight: 800;
@@ -132,13 +167,13 @@ const socialLinks = [
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  
+
   .nav-brand__text {
     font-size: var(--font-size-lg);
     font-weight: 600;
     color: var(--color-text-heading);
   }
-  
+
   .nav-toggle {
     display: none;
     background: none;
@@ -146,7 +181,7 @@ const socialLinks = [
     cursor: pointer;
     padding: var(--spacing-2);
   }
-  
+
   .hamburger {
     display: block;
     width: 24px;
@@ -155,10 +190,10 @@ const socialLinks = [
     position: relative;
     transition: background var(--transition-fast);
   }
-  
+
   .hamburger::before,
   .hamburger::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 24px;
     height: 2px;
@@ -166,28 +201,32 @@ const socialLinks = [
     left: 0;
     transition: transform var(--transition-base);
   }
-  
-  .hamburger::before { top: -8px; }
-  .hamburger::after { top: 8px; }
-  
+
+  .hamburger::before {
+    top: -8px;
+  }
+  .hamburger::after {
+    top: 8px;
+  }
+
   .nav-toggle[aria-expanded="true"] .hamburger {
     background: transparent;
   }
-  
+
   .nav-toggle[aria-expanded="true"] .hamburger::before {
     transform: rotate(45deg) translate(5px, 6px);
   }
-  
+
   .nav-toggle[aria-expanded="true"] .hamburger::after {
     transform: rotate(-45deg) translate(5px, -6px);
   }
-  
+
   .nav-menu {
     display: flex;
     align-items: center;
     gap: var(--spacing-8);
   }
-  
+
   .nav-list {
     display: flex;
     align-items: center;
@@ -196,11 +235,11 @@ const socialLinks = [
     margin: 0;
     padding: 0;
   }
-  
+
   .nav-item {
     position: relative;
   }
-  
+
   .nav-link {
     font-size: var(--font-size-base);
     font-weight: 500;
@@ -215,21 +254,21 @@ const socialLinks = [
     align-items: center;
     gap: var(--spacing-2);
   }
-  
+
   .nav-link:hover,
   .nav-link.active {
     color: var(--color-primary);
   }
-  
+
   .dropdown-icon {
     font-size: var(--font-size-xs);
     transition: transform var(--transition-fast);
   }
-  
+
   .has-dropdown:hover .dropdown-icon {
     transform: rotate(180deg);
   }
-  
+
   .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -246,13 +285,13 @@ const socialLinks = [
     visibility: hidden;
     transition: all var(--transition-fast);
   }
-  
+
   .has-dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
   }
-  
+
   .dropdown-item {
     display: block;
     padding: var(--spacing-3) var(--spacing-4);
@@ -260,45 +299,45 @@ const socialLinks = [
     text-decoration: none;
     transition: all var(--transition-fast);
   }
-  
+
   .dropdown-item:hover {
     background: rgba(0, 212, 170, 0.1);
     color: var(--color-primary);
   }
-  
+
   .nav-actions {
     display: flex;
     align-items: center;
     gap: var(--spacing-4);
   }
-  
+
   .nav-social {
     display: flex;
     gap: var(--spacing-4);
   }
-  
+
   .social-link {
     color: var(--color-gray-400);
     font-size: var(--font-size-lg);
     transition: all var(--transition-fast);
   }
-  
+
   .social-link:hover {
     color: var(--color-primary);
     transform: translateY(-2px);
   }
-  
+
   /* Mobile Styles */
   @media (max-width: 992px) {
     .nav-toggle {
       display: block;
       z-index: 1001;
     }
-    
+
     .nav-brand__text {
       display: none;
     }
-    
+
     .nav-menu {
       position: fixed;
       top: 0;
@@ -313,21 +352,21 @@ const socialLinks = [
       padding: calc(var(--spacing-20) + var(--spacing-8)) var(--spacing-6);
       transition: right var(--transition-base);
     }
-    
+
     .nav-menu.open {
       right: 0;
     }
-    
+
     .nav-list {
       flex-direction: column;
       align-items: flex-start;
       width: 100%;
     }
-    
+
     .nav-item {
       width: 100%;
     }
-    
+
     .dropdown-menu {
       position: static;
       transform: none;
@@ -341,11 +380,11 @@ const socialLinks = [
       overflow: hidden;
       transition: max-height var(--transition-base);
     }
-    
+
     .has-dropdown.open .dropdown-menu {
       max-height: 200px;
     }
-    
+
     .nav-social {
       margin-top: var(--spacing-8);
     }
@@ -354,35 +393,35 @@ const socialLinks = [
 
 <script>
   // Navbar scroll effect
-  const navbar = document.getElementById('navbar');
-  
+  const navbar = document.getElementById("navbar");
+
   function handleScroll() {
     if (window.scrollY > 50) {
-      navbar?.classList.add('scrolled');
+      navbar?.classList.add("scrolled");
     } else {
-      navbar?.classList.remove('scrolled');
+      navbar?.classList.remove("scrolled");
     }
   }
-  
-  window.addEventListener('scroll', handleScroll);
+
+  window.addEventListener("scroll", handleScroll);
   handleScroll();
-  
+
   // Mobile menu toggle
-  const navToggle = document.getElementById('nav-toggle');
-  const navMenu = document.getElementById('nav-menu');
-  
-  navToggle?.addEventListener('click', () => {
-    const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-    navToggle.setAttribute('aria-expanded', (!isOpen).toString());
-    navMenu?.classList.toggle('open');
+  const navToggle = document.getElementById("nav-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  navToggle?.addEventListener("click", () => {
+    const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+    navToggle.setAttribute("aria-expanded", (!isOpen).toString());
+    navMenu?.classList.toggle("open");
   });
-  
+
   // Mobile dropdown toggles
-  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-  dropdownToggles.forEach(toggle => {
-    toggle.addEventListener('click', () => {
+  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
       const parent = toggle.parentElement;
-      parent?.classList.toggle('open');
+      parent?.classList.toggle("open");
     });
   });
 </script>

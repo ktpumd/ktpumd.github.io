@@ -1,6 +1,7 @@
 ---
 // CompanyCarousel.astro - Auto-scrolling company logo carousel
 import members from "../data/members.json";
+const base = import.meta.env.BASE_URL;
 ---
 
 <div class="carousel-container">
@@ -12,7 +13,7 @@ import members from "../data/members.json";
           class={`carousel-item ${company.shape === "circular" ? "carousel-item--circular" : ""}`}
         >
           <img
-            src={`/img/alumni-connections/${company.logo}`}
+            src={`${base}img/alumni-connections/${company.logo}`}
             alt={company.name}
             loading="eager"
             class="carousel-logo"
@@ -26,7 +27,7 @@ import members from "../data/members.json";
           class={`carousel-item ${company.shape === "circular" ? "carousel-item--circular" : ""}`}
         >
           <img
-            src={`/img/alumni-connections/${company.logo}`}
+            src={`${base}img/alumni-connections/${company.logo}`}
             alt={company.name}
             loading="eager"
             class="carousel-logo"
@@ -40,7 +41,7 @@ import members from "../data/members.json";
           class={`carousel-item ${company.shape === "circular" ? "carousel-item--circular" : ""}`}
         >
           <img
-            src={`/img/alumni-connections/${company.logo}`}
+            src={`${base}img/alumni-connections/${company.logo}`}
             alt={company.name}
             loading="eager"
             class="carousel-logo"
