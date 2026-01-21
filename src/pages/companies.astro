@@ -1,54 +1,62 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
-import PageHeader from '../components/PageHeader.astro';
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import PageHeader from "../components/PageHeader.astro";
 ---
 
 <Layout title="Kappa Theta Pi UMD">
   <Navbar currentPage="/companies" />
-  
-  <PageHeader 
+
+  <PageHeader
     title="Connect With Us"
     backgroundImage="/img/contact-us/companies2.jpg"
     size="small"
   />
-  
+
   <main>
     <section class="section">
       <div class="container">
         <div class="content-block text-center">
           <h2 class="section-title">Partner With Us</h2>
           <p class="section-text">
-            Kappa Theta Pi is always looking for companies and organizations to host events with
-            our members. If your company is interested in holding a tech talk, resume review, information session
-            or any other kind of professional event with us, please contact us directly.
+            Kappa Theta Pi is always looking for companies and organizations to
+            host events with our members. If your company is interested in
+            holding a tech talk, resume review, information session or any other
+            kind of professional event with us, please contact us directly.
           </p>
-          
+
           <div class="contact-options">
             <div class="contact-card card">
               <div class="contact-icon">
                 <i class="fa-solid fa-envelope"></i>
               </div>
               <h3>Email Us</h3>
-              <p>Reach out directly to our team</p>
-              <a href="mailto:kappathetapiumd@gmail.com" class="btn btn-primary">
+              <p>Reach out directly to our board</p>
+              <a
+                href="mailto:kappathetapiumd@gmail.com"
+                class="btn btn-primary"
+              >
                 kappathetapiumd@gmail.com
               </a>
             </div>
-            
+
             <div class="contact-card card">
               <div class="contact-icon">
                 <i class="fa-brands fa-linkedin"></i>
               </div>
               <h3>LinkedIn</h3>
               <p>Connect with us professionally</p>
-              <a href="https://www.linkedin.com/company/kappa-theta-pi-umd/" class="btn btn-outline" target="_blank">
+              <a
+                href="https://www.linkedin.com/company/kappa-theta-pi-umd/"
+                class="btn btn-outline"
+                target="_blank"
+              >
                 View Profile
               </a>
             </div>
           </div>
-          
+
           <p class="closing-text">
             Thank you and we look forward to hearing from you!
           </p>
@@ -56,7 +64,7 @@ import PageHeader from '../components/PageHeader.astro';
       </div>
     </section>
   </main>
-  
+
   <Footer />
 </Layout>
 
@@ -67,9 +75,9 @@ import PageHeader from '../components/PageHeader.astro';
     position: relative;
     display: inline-block;
   }
-  
+
   .section-title::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -8px;
     left: 50%;
@@ -79,31 +87,31 @@ import PageHeader from '../components/PageHeader.astro';
     background: var(--gradient-primary);
     border-radius: var(--radius-full);
   }
-  
+
   .content-block {
     max-width: 800px;
     margin: 0 auto;
   }
-  
+
   .section-text {
     font-size: var(--font-size-lg);
     color: var(--color-gray-400);
     line-height: 1.8;
     margin-bottom: var(--spacing-10);
   }
-  
+
   .contact-options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-6);
     margin-bottom: var(--spacing-10);
   }
-  
+
   .contact-card {
     padding: var(--spacing-8);
     text-align: center;
   }
-  
+
   .contact-icon {
     width: 60px;
     height: 60px;
@@ -116,29 +124,29 @@ import PageHeader from '../components/PageHeader.astro';
     font-size: var(--font-size-2xl);
     color: var(--color-white);
   }
-  
+
   .contact-card h3 {
     font-size: var(--font-size-xl);
     margin-bottom: var(--spacing-2);
   }
-  
+
   .contact-card p {
     color: var(--color-gray-400);
     margin-bottom: var(--spacing-4);
   }
-  
+
   .contact-card .btn {
     width: 100%;
     justify-content: center;
   }
-  
+
   .closing-text {
     font-size: var(--font-size-lg);
     color: var(--color-gray-300);
     font-style: italic;
     margin: 0;
   }
-  
+
   @media (max-width: 768px) {
     .contact-options {
       grid-template-columns: 1fr;

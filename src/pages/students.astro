@@ -21,7 +21,7 @@ const base = import.meta.env.BASE_URL;
     <section class="section">
       <div class="container">
         <div class="content-block text-center">
-          <h2 class="section-title">Fall 2025 Rush</h2>
+          <h2 class="section-title">Spring 2026 Rush</h2>
           <p class="section-text">
             <strong
               >Any undergraduate student at the University of Maryland with an
@@ -29,18 +29,23 @@ const base = import.meta.env.BASE_URL;
             >
           </p>
           <p class="section-text">
-            Although rush for this semester is over, stay tuned for next
-            semester! Thank you for your interest in our fraternity!
+            Stay tuned for our upcoming rush events! We look forward to meeting
+            you.
           </p>
 
           <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">
+              <i class="fa-solid fa-calendar-days"></i>
+              Rush Schedule
+            </a>
             <a
               href="https://linktr.ee/ktpumdcp"
-              class="btn btn-primary"
+              class="btn btn-outline"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fa-solid fa-link"></i>
-              Our Links
+              Other Links
             </a>
           </div>
         </div>
@@ -208,7 +213,58 @@ const base = import.meta.env.BASE_URL;
         </div>
       </div>
     </section>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+    </div>
   </main>
+
+  <script>
+    // Lightbox functionality
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById(
+      "lightbox-img",
+    ) as HTMLImageElement;
+    const closeBtn = document.querySelector(".lightbox-close");
+    const photos = document.querySelectorAll(".photo-card img");
+
+    // Open lightbox
+    photos.forEach((photo) => {
+      photo.addEventListener("click", () => {
+        const img = photo as HTMLImageElement;
+        if (lightbox && lightboxImg) {
+          lightbox.classList.add("active");
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          document.body.style.overflow = "hidden"; // Prevent scrolling
+        }
+      });
+    });
+
+    // Close lightbox functions
+    const closeLightbox = () => {
+      if (lightbox) {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = ""; // Restore scrolling
+      }
+    };
+
+    // Event listeners for closing
+    closeBtn?.addEventListener("click", closeLightbox);
+
+    lightbox?.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox?.classList.contains("active")) {
+        closeLightbox();
+      }
+    });
+  </script>
 
   <Footer />
 </Layout>
@@ -399,6 +455,7 @@ const base = import.meta.env.BASE_URL;
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all var(--transition-base);
+    cursor: pointer;
   }
 
   .photo-card:hover {
@@ -440,6 +497,59 @@ const base = import.meta.env.BASE_URL;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  /* Lightbox Styles */
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+    backdrop-filter: blur(5px);
+  }
+
+  .lightbox.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .lightbox-content {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    transform: scale(0.9);
+    transition: transform var(--transition-base);
+  }
+
+  .lightbox.active .lightbox-content {
+    transform: scale(1);
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: var(--spacing-8);
+    right: var(--spacing-8);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color var(--transition-fast);
+    z-index: 2001;
+    line-height: 1;
+  }
+
+  .lightbox-close:hover {
+    color: var(--color-primary);
   }
 
   .placeholder-content {

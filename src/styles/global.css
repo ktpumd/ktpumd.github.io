@@ -341,14 +341,16 @@ p {
 }
 
 .btn-primary {
-    background: var(--gradient-primary);
-    color: #ffffff;
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
 }
 
 .btn-primary:hover {
+    background: var(--color-primary);
+    color: var(--color-bg);
     transform: translateY(-2px);
     box-shadow: var(--shadow-xl);
-    color: #ffffff;
 }
 
 .btn-outline {
@@ -360,6 +362,8 @@ p {
 .btn-outline:hover {
     background: var(--color-primary);
     color: var(--color-bg);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
 }
 
 /* ============================================
