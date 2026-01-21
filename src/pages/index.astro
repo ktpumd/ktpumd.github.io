@@ -20,7 +20,7 @@ const base = import.meta.env.BASE_URL;
         <span class="gradient-text">Κ Θ Π</span>
       </h1>
       <p class="hero__subtitle">Professional Technology Fraternity</p>
-      <p class="hero__tagline">University of Maryland, College Park</p>
+      <p class="hero__tagline">Epsilon Chapter · University of Maryland</p>
       <div class="hero__cta">
         <a href={`${base}students`} class="btn btn-primary">Join Us</a>
         <a href={`${base}membership`} class="btn btn-outline"
@@ -28,14 +28,14 @@ const base = import.meta.env.BASE_URL;
         >
       </div>
     </div>
-    <div class="scroll-indicator">
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to content">
       <i class="fa-solid fa-chevron-down"></i>
-    </div>
+    </a>
   </header>
 
   <main>
     <!-- About Section -->
-    <section class="section">
+    <section class="section" id="about">
       <div class="container">
         <div class="content-block text-center">
           <h2 class="section-title">About Us</h2>
@@ -166,11 +166,21 @@ const base = import.meta.env.BASE_URL;
     animation: bounce 2s ease-in-out infinite;
     opacity: 0.8;
     cursor: pointer;
-    transition: opacity var(--transition-fast);
+    transition: opacity var(--transition-base);
+    text-decoration: none;
+  }
+
+  .scroll-indicator.hidden {
+    opacity: 0;
+    pointer-events: none;
   }
 
   .scroll-indicator:hover {
     opacity: 1;
+  }
+
+  #about {
+    scroll-margin-top: 100px;
   }
 
   @keyframes bounce {
@@ -324,3 +334,28 @@ const base = import.meta.env.BASE_URL;
     transform: translateY(-3px);
   }
 </style>
+
+<script>
+  // Hide scroll indicator on scroll
+  const scrollIndicator = document.querySelector(".scroll-indicator");
+
+  function handleScroll() {
+    if (window.scrollY > 100) {
+      scrollIndicator?.classList.add("hidden");
+    } else {
+      scrollIndicator?.classList.remove("hidden");
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll();
+
+  // Smooth scroll to about section
+  scrollIndicator?.addEventListener("click", (e) => {
+    e.preventDefault();
+    const target = document.getElementById("about");
+    if (!target) return;
+
+    target.scrollIntoView({ behavior: "smooth" });
+  });
+</script>

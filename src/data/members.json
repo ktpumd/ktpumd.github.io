@@ -3,7 +3,8 @@
         {
             "role": "President",
             "firstName": "Faith",
-            "lastName": "Short"
+            "lastName": "Short",
+            "pledgeClass": "Mu"
         },
         {
             "role": "Vice President",
@@ -50,270 +51,334 @@
         {
             "role": "Treasury Chair",
             "firstName": "Sachin",
-            "lastName": "Ashok"
+            "lastName": "Ashok",
+            "pledgeClass": "Mu"
         },
         {
             "role": "External Relations Chair",
             "firstName": "Katherine",
-            "lastName": "Hall"
+            "lastName": "Hall",
+            "pledgeClass": "Omicron"
         },
         {
             "role": "Corporate Chair",
             "firstName": "Justin",
-            "lastName": "Lee"
+            "lastName": "Lee",
+            "pledgeClass": "Omicron"
         },
         {
             "role": "Marketing Chair",
             "firstName": "Kavya",
-            "lastName": "Mukkamala"
+            "lastName": "Mukkamala",
+            "pledgeClass": "Xi"
         },
         {
             "role": "Internal Relations Chair",
             "firstName": "Anjali",
-            "lastName": "Murthy"
+            "lastName": "Murthy",
+            "pledgeClass": "Omicron"
         },
         {
             "role": "Development Operations Chair",
             "firstName": "Harrison",
-            "lastName": "Padgett"
+            "lastName": "Padgett",
+            "pledgeClass": "Xi"
         },
         {
             "role": "Community Service Chair",
             "firstName": "Amogh",
-            "lastName": "Samaga"
+            "lastName": "Samaga",
+            "pledgeClass": "Xi"
         },
         {
             "role": "Quality Assurance Chair",
             "firstName": "Aadit",
-            "lastName": "Shah"
+            "lastName": "Shah",
+            "pledgeClass": "Nu"
         },
         {
             "role": "Education Chair",
             "firstName": "Michael",
-            "lastName": "Yang"
+            "lastName": "Yang",
+            "pledgeClass": "Omicron"
         },
         {
             "role": "Communications Chair",
             "firstName": "Manan",
-            "lastName": "Zaveri"
+            "lastName": "Zaveri",
+            "pledgeClass": "Xi"
         }
     ],
     "brothers": [
         {
             "firstName": "Vihan",
-            "lastName": "Amarasinghe"
+            "lastName": "Amarasinghe",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Chinaemelum",
-            "lastName": "Anadu"
+            "lastName": "Anadu",
+            "pledgeClass": "Nu"
         },
         {
             "firstName": "Julius",
-            "lastName": "Angelo"
+            "lastName": "Angelo",
+            "pledgeClass": "Theta"
         },
         {
             "firstName": "Viraj",
-            "lastName": "Bala"
+            "lastName": "Bala",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "James",
-            "lastName": "Barry"
+            "lastName": "Barry",
+            "pledgeClass": "Omicron"
         },
         {
             "firstName": "Angad",
-            "lastName": "Bedi"
+            "lastName": "Bedi",
+            "pledgeClass": "Mu"
         },
         {
             "firstName": "Kanhav",
-            "lastName": "Bhatnagar"
+            "lastName": "Bhatnagar",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Daven",
-            "lastName": "Chang"
+            "lastName": "Chang",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Maya",
-            "lastName": "Chelar"
+            "lastName": "Chelar",
+            "pledgeClass": "Kappa"
         },
         {
             "firstName": "Nitya",
-            "lastName": "Chigurupati"
+            "lastName": "Chigurupati",
+            "pledgeClass": "Nu"
         },
         {
             "firstName": "Lauren",
-            "lastName": "Chipdey"
+            "lastName": "Chipdey",
+            "pledgeClass": "Omicron"
         },
         {
             "firstName": "Shlok",
-            "lastName": "Desai"
+            "lastName": "Desai",
+            "pledgeClass": "Omicron"
         },
         {
             "firstName": "Olivia",
-            "lastName": "Duran"
+            "lastName": "Duran",
+            "pledgeClass": "Mu"
         },
         {
             "firstName": "Jasmine",
-            "lastName": "Emeruwa"
+            "lastName": "Emeruwa",
+            "pledgeClass": "Omicron"
         },
         {
             "firstName": "Noah",
-            "lastName": "Fake"
+            "lastName": "Fake",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Loren",
-            "lastName": "Foster"
+            "lastName": "Foster",
+            "pledgeClass": "Mu"
         },
         {
             "firstName": "Anjali",
-            "lastName": "Gallacher"
+            "lastName": "Gallacher",
+            "pledgeClass": "Mu"
         },
         {
             "firstName": "Isabel",
-            "lastName": "Garcia-Musalem"
+            "lastName": "Garcia-Musalem",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Sean",
-            "lastName": "Garbarini"
+            "lastName": "Garbarini",
+            "pledgeClass": "Omicron"
         },
         {
             "firstName": "Himanshu",
-            "lastName": "Gediya"
+            "lastName": "Gediya",
+            "pledgeClass": "Nu"
         },
         {
             "firstName": "Sophia",
-            "lastName": "Gonzales"
+            "lastName": "Gonzales",
+            "pledgeClass": "Lambda"
         },
         {
             "firstName": "Deena",
-            "lastName": "Habash"
+            "lastName": "Habash",
+            "pledgeClass": "Mu"
         },
         {
             "firstName": "Addison",
-            "lastName": "Hanrattie"
+            "lastName": "Hanrattie",
+            "pledgeClass": "Mu"
         },
         {
             "firstName": "Aditya",
-            "lastName": "Hardikar"
+            "lastName": "Hardikar",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Bhakti",
-            "lastName": "Hegde"
+            "lastName": "Hegde",
+            "pledgeClass": "Mu"
         },
         {
             "firstName": "Taegon",
-            "lastName": "Hibbitts"
+            "lastName": "Hibbitts",
+            "pledgeClass": "Lambda"
         },
         {
             "firstName": "Matt",
-            "lastName": "Hullana"
+            "lastName": "Hullana",
+            "pledgeClass": "Nu"
         },
         {
             "firstName": "Soumya",
-            "lastName": "Jailwala"
+            "lastName": "Jailwala",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Harshith",
-            "lastName": "Kukunuru"
+            "lastName": "Kukunuru",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Jane",
-            "lastName": "Lee"
+            "lastName": "Lee",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Chetanya",
-            "lastName": "Makkar"
+            "lastName": "Makkar",
+            "pledgeClass": "Lambda"
         },
         {
             "firstName": "Erin",
-            "lastName": "Maynard"
+            "lastName": "Maynard",
+            "pledgeClass": "Lambda"
         },
         {
             "firstName": "Eshita",
-            "lastName": "Mehrotra"
+            "lastName": "Mehrotra",
+            "pledgeClass": "Lambda"
         },
         {
             "firstName": "Vahin",
-            "lastName": "Palle"
+            "lastName": "Palle",
+            "pledgeClass": "Mu"
         },
         {
             "firstName": "Rachel",
-            "lastName": "Park"
+            "lastName": "Park",
+            "pledgeClass": "Omicron"
         },
         {
             "firstName": "Dev",
-            "lastName": "Patel"
+            "lastName": "Patel",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Keith",
-            "lastName": "Patel"
+            "lastName": "Patel",
+            "pledgeClass": "Omicron"
         },
         {
             "firstName": "Poojan",
-            "lastName": "Patel"
+            "lastName": "Patel",
+            "pledgeClass": "Kappa"
         },
         {
             "firstName": "Caroline",
-            "lastName": "Perret"
+            "lastName": "Perret",
+            "pledgeClass": "Mu"
         },
         {
             "firstName": "Shriyans",
-            "lastName": "Sairy"
+            "lastName": "Sairy",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Riya",
-            "lastName": "Shah"
+            "lastName": "Shah",
+            "pledgeClass": "Nu"
         },
         {
             "firstName": "Nikhil",
-            "lastName": "Shyam"
+            "lastName": "Shyam",
+            "pledgeClass": "Omicron"
         },
         {
             "firstName": "Tanveer",
-            "lastName": "Singh"
+            "lastName": "Singh",
+            "pledgeClass": "Nu"
         },
         {
             "firstName": "Sriya",
-            "lastName": "Sogal"
+            "lastName": "Sogal",
+            "pledgeClass": "Kappa"
         },
         {
             "firstName": "Victor",
-            "lastName": "Su"
+            "lastName": "Su",
+            "pledgeClass": "Lambda"
         },
         {
             "firstName": "Isabelle",
-            "lastName": "Summann"
+            "lastName": "Summann",
+            "pledgeClass": "Kappa"
         },
         {
             "firstName": "Tanvi",
-            "lastName": "Tewary"
+            "lastName": "Tewary",
+            "pledgeClass": "Omicron"
         },
         {
             "firstName": "Ritvik",
-            "lastName": "Thakur"
+            "lastName": "Thakur",
+            "pledgeClass": "Omicron"
         },
         {
             "firstName": "Izzy",
-            "lastName": "Thomas"
+            "lastName": "Thomas",
+            "pledgeClass": "Nu"
         },
         {
             "firstName": "Amaar",
-            "lastName": "Trisal"
+            "lastName": "Trisal",
+            "pledgeClass": "Mu"
         },
         {
             "firstName": "Anna",
-            "lastName": "Tzeng"
+            "lastName": "Tzeng",
+            "pledgeClass": "Nu"
         },
         {
             "firstName": "Matthew",
-            "lastName": "Wlazlo"
+            "lastName": "Wlazlo",
+            "pledgeClass": "Omicron"
         },
         {
             "firstName": "Valerie",
-            "lastName": "Yen"
+            "lastName": "Yen",
+            "pledgeClass": "Lambda"
         },
         {
             "firstName": "Angela",
-            "lastName": "Yu"
+            "lastName": "Yu",
+            "pledgeClass": "Omicron"
         }
     ],
     "alumni": {
