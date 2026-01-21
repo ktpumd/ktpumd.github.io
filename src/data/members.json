@@ -1055,6 +1055,31 @@
             "shape": "rectangular"
         },
         {
+            "name": "Booz Allen Hamilton",
+            "logo": "boozallen.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "Uber",
+            "logo": "uber.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "PwC",
+            "logo": "pwc.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "Citigroup",
+            "logo": "citi.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "Databricks",
+            "logo": "databricks.png",
+            "shape": "rectangular"
+        },
+        {
             "name": "KPMG",
             "logo": "kpmg.png",
             "shape": "rectangular"
@@ -1070,9 +1095,24 @@
             "shape": "rectangular"
         },
         {
+            "name": "Jane Street",
+            "logo": "janestreet.png",
+            "shape": "rectangular"
+        },
+        {
+            "name": "JP Morgan & Chase",
+            "logo": "jpmorganchase.png",
+            "shape": "rectangular"
+        },
+        {
             "name": "IBM",
             "logo": "ibm.png",
             "shape": "rectangular"
+        },
+        {
+            "name": "Goldman Sachs",
+            "logo": "goldmansachs.png",
+            "shape": "circular"
         },
         {
             "name": "Two Sigma",
