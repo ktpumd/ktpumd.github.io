@@ -26,7 +26,6 @@ const { src, alt } = Astro.props;
   }
 
   .company-logo:hover {
-    transform: translateY(-4px);
     border-color: var(--color-primary);
   }
 
@@ -34,10 +33,5 @@ const { src, alt } = Astro.props;
     width: 80%;
     height: 80%;
     object-fit: contain;
-    transition: all var(--transition-base);
-  }
-
-  .company-logo:hover .company-logo__image {
-    transform: scale(1.05);
   }
 </style>
