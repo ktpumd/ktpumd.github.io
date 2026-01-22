@@ -1,0 +1,261 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import PageHeader from "../components/PageHeader.astro";
+
+const base = import.meta.env.BASE_URL;
+
+// FAQ data structure for easy editing
+const faqs = [
+    {
+        question: "What is Kappa Theta Pi?",
+        answer: "Kappa Theta Pi is a professional technology fraternity founded at the University of Michigan in 2012. Our chapter at the University of Maryland is dedicated to fostering a community of students passionate about technology, providing professional development opportunities, and building lasting connections.",
+    },
+    {
+        question: "Who can rush Kappa Theta Pi?",
+        answer: "Any undergraduate student at the University of Maryland with an interest in technology is welcome to rush! You don't need to be a Computer Science major—we welcome students from all majors who are passionate about tech.",
+    },
+    {
+        question: "What is the time commitment?",
+        answer: "Active members typically attend weekly chapter meetings and participate in various events throughout the semester. We say that it is equivalent to a 2 credit course. During rush, there are several events over 1-2 weeks that we encourage prospective members to attend.",
+    },
+    {
+        question: "Do I need prior coding experience?",
+        answer: "No prior coding experience is required! We value passion and willingness to learn over existing technical skills. Our workshops and mentorship programs are designed to help members of all skill levels grow.",
+    },
+    {
+        question: "What are the membership dues?",
+        answer: "Membership dues cover chapter operations, events, and national affiliation. Specific amounts are discussed during the rush process. We believe financial constraints should not prevent anyone from joining—please reach out if you have concerns.",
+    },
+    {
+        question: "What happens during rush?",
+        answer: "Rush consists of several events over 1-2 weeks including info sessions, meet-and-greets with current members, and social events. It's a great opportunity to learn about our fraternity and see if we're the right fit for you!",
+    },
+    {
+        question: "How is KTP different from other tech organizations?",
+        answer: "As a professional fraternity, KTP emphasizes both professional development and genuine brotherhood. We offer a tight-knit community, alumni network at top tech companies, and a balance of professional and social activities that set us apart from clubs or purely academic organizations.",
+    },
+    {
+        question: "What professional opportunities does KTP offer?",
+        answer: "Members gain access to our alumni network at companies like Google, Meta, Amazon, and Microsoft. We offer resume reviews, mock interviews, referrals, technical workshops, and company info sessions throughout the year.",
+    },
+];
+---
+
+<Layout title="FAQ | Kappa Theta Pi UMD">
+    <Navbar currentPage="/faq" />
+
+    <PageHeader title="Frequently Asked Questions" size="small" />
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="faq-intro text-center">
+                    <p class="intro-text">
+                        Have questions about Kappa Theta Pi? Find answers to our
+                        most commonly asked questions below. If you don't see
+                        your question here, feel free to reach out to us!
+                    </p>
+                </div>
+
+                <div class="faq-container">
+                    {
+                        faqs.map((faq, index) => (
+                            <div class="faq-item">
+                                <button
+                                    class="faq-question"
+                                    aria-expanded="false"
+                                    aria-controls={`faq-answer-${index}`}
+                                >
+                                    <span class="faq-question-text">
+                                        {faq.question}
+                                    </span>
+                                    <span class="faq-icon">
+                                        <i class="fa-solid fa-plus" />
+                                    </span>
+                                </button>
+                                <div
+                                    class="faq-answer"
+                                    id={`faq-answer-${index}`}
+                                >
+                                    <div class="faq-answer-inner">
+                                        <p>{faq.answer}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+
+                <div class="faq-cta text-center">
+                    <h3>Still have questions?</h3>
+                    <p>We'd love to hear from you! Reach out to us directly.</p>
+                    <a href="mailto:ktpumd@gmail.com" class="btn btn-primary">
+                        <i class="fa-solid fa-envelope"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // FAQ accordion functionality
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach((item) => {
+            const question = item.querySelector(".faq-question");
+            const answer = item.querySelector(".faq-answer");
+
+            question?.addEventListener("click", () => {
+                const isOpen =
+                    question.getAttribute("aria-expanded") === "true";
+
+                // Close all other items
+                faqItems.forEach((otherItem) => {
+                    const otherQuestion =
+                        otherItem.querySelector(".faq-question");
+                    const otherAnswer = otherItem.querySelector(".faq-answer");
+                    if (otherItem !== item) {
+                        otherQuestion?.setAttribute("aria-expanded", "false");
+                        otherAnswer?.classList.remove("open");
+                    }
+                });
+
+                // Toggle current item
+                question.setAttribute("aria-expanded", (!isOpen).toString());
+                answer?.classList.toggle("open");
+            });
+        });
+    </script>
+
+    <Footer />
+</Layout>
+
+<style>
+    .faq-intro {
+        max-width: 700px;
+        margin: 0 auto var(--spacing-12);
+    }
+
+    .intro-text {
+        font-size: var(--font-size-lg);
+        color: var(--color-text-muted);
+        line-height: 1.8;
+    }
+
+    .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-4);
+    }
+
+    .faq-item {
+        background: var(--color-bg-card);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        transition: all var(--transition-base);
+    }
+
+    .faq-item:hover {
+        border-color: var(--color-primary);
+    }
+
+    .faq-question {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--spacing-4);
+        padding: var(--spacing-5) var(--spacing-6);
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    .faq-question-text {
+        font-size: var(--font-size-lg);
+        font-weight: 600;
+        color: var(--color-text-heading);
+        flex: 1;
+    }
+
+    .faq-icon {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-bg-elevated);
+        border-radius: var(--radius-full);
+        color: var(--color-primary);
+        font-size: var(--font-size-sm);
+        transition: all var(--transition-base);
+        flex-shrink: 0;
+    }
+
+    .faq-question[aria-expanded="true"] .faq-icon {
+        background: var(--gradient-primary);
+        color: var(--color-bg);
+        transform: rotate(45deg);
+    }
+
+    .faq-answer {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows var(--transition-base);
+    }
+
+    .faq-answer.open {
+        grid-template-rows: 1fr;
+    }
+
+    .faq-answer-inner {
+        overflow: hidden;
+    }
+
+    .faq-answer p {
+        padding: 0 var(--spacing-6) var(--spacing-6);
+        color: var(--color-text-muted);
+        line-height: 1.8;
+        margin: 0;
+    }
+
+    .faq-cta {
+        margin-top: var(--spacing-16);
+        padding: var(--spacing-12);
+        background: var(--color-bg-card);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-xl);
+    }
+
+    .faq-cta h3 {
+        font-size: var(--font-size-2xl);
+        color: var(--color-text-heading);
+        margin-bottom: var(--spacing-2);
+    }
+
+    .faq-cta p {
+        color: var(--color-text-muted);
+        margin-bottom: var(--spacing-6);
+    }
+
+    @media (max-width: 768px) {
+        .faq-question {
+            padding: var(--spacing-4) var(--spacing-5);
+        }
+
+        .faq-question-text {
+            font-size: var(--font-size-base);
+        }
+
+        .faq-answer p {
+            padding: 0 var(--spacing-5) var(--spacing-5);
+        }
+    }
+</style>
