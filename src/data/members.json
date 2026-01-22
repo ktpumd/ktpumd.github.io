@@ -9,42 +9,50 @@
         {
             "role": "Vice President",
             "firstName": "Kadin",
-            "lastName": "Fisher"
+            "lastName": "Fisher",
+            "pledgeClass": "Lambda"
         },
         {
             "role": "Director of Membership",
             "firstName": "Liam",
-            "lastName": "Moran"
+            "lastName": "Moran",
+            "pledgeClass": "Mu"
         },
         {
             "role": "Director of Engagement",
             "firstName": "Anu",
-            "lastName": "Daga"
+            "lastName": "Daga",
+            "pledgeClass": "Nu"
         },
         {
             "role": "Director of Professional Development",
             "firstName": "Abhijay",
-            "lastName": "Shukla"
+            "lastName": "Shukla",
+            "pledgeClass": "Mu"
         },
         {
             "role": "Director of Technology",
             "firstName": "Saathu",
-            "lastName": "Nagareddy"
+            "lastName": "Nagareddy",
+            "pledgeClass": "Xi"
         },
         {
             "role": "Director of Philanthropy",
             "firstName": "Sanika",
-            "lastName": "Pande"
+            "lastName": "Pande",
+            "pledgeClass": "Mu"
         },
         {
             "role": "Director of Standards",
             "firstName": "Ryan",
-            "lastName": "McGowan"
+            "lastName": "McGowan",
+            "pledgeClass": "Nu"
         },
         {
             "role": "Director of Finance",
             "firstName": "Shreeni",
-            "lastName": "Chikyala"
+            "lastName": "Chikyala",
+            "pledgeClass": "Mu"
         }
     ],
     "chairs": [
