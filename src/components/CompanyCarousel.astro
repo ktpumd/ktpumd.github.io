@@ -119,10 +119,20 @@ const base = import.meta.env.BASE_URL;
     min-width: 70px; /* Don't force min-width effectively allowing them to be square */
   }
 
+  .carousel-item:hover .carousel-logo {
+    filter: none;
+    opacity: 1;
+  }
+
   /* Light mode: Pure grayscale (Black/Dark Gray) */
   :global([data-theme="light"]) .carousel-logo {
     filter: grayscale(100%);
     opacity: 0.8;
+  }
+
+  :global([data-theme="light"]) .carousel-item:hover .carousel-logo {
+    filter: none;
+    opacity: 1;
   }
 
   @media (max-width: 768px) {
