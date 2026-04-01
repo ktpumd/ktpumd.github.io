@@ -9,6 +9,33 @@ import members from "../data/members.json";
 const alumniClasses = Object.keys(
   members.alumni,
 ) as (keyof typeof members.alumni)[];
+
+const pledgeClassOrder = [
+  "Pi", "Omicron", "Xi", "Nu", "Mu", "Lambda", "Kappa", "Iota", "Theta", 
+  "Eta", "Zeta", "Epsilon", "Delta", "Gamma", "Beta", "Alpha", "Founders"
+];
+
+const brothersByClass: Record<string, typeof members.brothers> = {};
+members.brothers.forEach((brother) => {
+  if (!brothersByClass[brother.pledgeClass]) {
+    brothersByClass[brother.pledgeClass] = [];
+  }
+  brothersByClass[brother.pledgeClass].push(brother);
+});
+
+const sortedClasses = Object.keys(brothersByClass).sort((a, b) => {
+  const indexA = pledgeClassOrder.indexOf(a);
+  const indexB = pledgeClassOrder.indexOf(b);
+  return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB);
+});
+
+sortedClasses.forEach((className) => {
+  brothersByClass[className].sort((a, b) => 
+    a.firstName.localeCompare(b.firstName)
+  );
+});
+
+const sortedBrothers = sortedClasses.flatMap(className => brothersByClass[className]);
 ---
 
 <Layout title="Kappa Theta Pi UMD">
@@ -65,7 +92,7 @@ const alumniClasses = Object.keys(
         <h2 class="section-title text-center">Brothers</h2>
         <div class="member-grid member-grid--brothers">
           {
-            members.brothers.map((member) => (
+            sortedBrothers.map((member) => (
               <MemberCard
                 firstName={member.firstName}
                 lastName={member.lastName}
