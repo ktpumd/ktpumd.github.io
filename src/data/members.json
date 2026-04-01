@@ -26,8 +26,8 @@
         },
         {
             "role": "Director of Professional Development",
-            "firstName": "Abhijay",
-            "lastName": "Shukla",
+            "firstName": "Vahin",
+            "lastName": "Palle",
             "pledgeClass": "Mu"
         },
         {
@@ -119,6 +119,16 @@
     ],
     "brothers": [
         {
+            "firstName": "Adeshola",
+            "lastName": "Adeleke",
+            "pledgeClass": "Pi"
+        },
+        {
+            "firstName": "Joshua",
+            "lastName": "Akoda",
+            "pledgeClass": "Pi"
+        },
+        {
             "firstName": "Vihan",
             "lastName": "Amarasinghe",
             "pledgeClass": "Xi"
@@ -139,6 +149,11 @@
             "pledgeClass": "Xi"
         },
         {
+            "firstName": "Kelly",
+            "lastName": "Barrow",
+            "pledgeClass": "Pi"
+        },
+        {
             "firstName": "James",
             "lastName": "Barry",
             "pledgeClass": "Omicron"
@@ -154,6 +169,11 @@
             "pledgeClass": "Xi"
         },
         {
+            "firstName": "Gurnake",
+            "lastName": "Chadha",
+            "pledgeClass": "Pi"
+        },
+        {
             "firstName": "Daven",
             "lastName": "Chang",
             "pledgeClass": "Xi"
@@ -162,6 +182,11 @@
             "firstName": "Maya",
             "lastName": "Chelar",
             "pledgeClass": "Kappa"
+        },
+        {
+            "firstName": "Raymond",
+            "lastName": "Chen",
+            "pledgeClass": "Pi"
         },
         {
             "firstName": "Nitya",
@@ -179,6 +204,11 @@
             "pledgeClass": "Omicron"
         },
         {
+            "firstName": "Rakshana",
+            "lastName": "Devalla",
+            "pledgeClass": "Pi"
+        },
+        {
             "firstName": "Olivia",
             "lastName": "Duran",
             "pledgeClass": "Mu"
@@ -194,6 +224,11 @@
             "pledgeClass": "Xi"
         },
         {
+            "firstName": "Sarah",
+            "lastName": "Fitz",
+            "pledgeClass": "Pi"
+        },
+        {
             "firstName": "Loren",
             "lastName": "Foster",
             "pledgeClass": "Mu"
@@ -204,14 +239,14 @@
             "pledgeClass": "Mu"
         },
         {
-            "firstName": "Isabel",
-            "lastName": "Garcia-Musalem",
-            "pledgeClass": "Xi"
-        },
-        {
             "firstName": "Sean",
             "lastName": "Garbarini",
             "pledgeClass": "Omicron"
+        },
+        {
+            "firstName": "Isabel",
+            "lastName": "Garcia-Musalem",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Himanshu",
@@ -227,6 +262,11 @@
             "firstName": "Deena",
             "lastName": "Habash",
             "pledgeClass": "Mu"
+        },
+        {
+            "firstName": "Batool",
+            "lastName": "Haider",
+            "pledgeClass": "Pi"
         },
         {
             "firstName": "Addison",
@@ -259,6 +299,11 @@
             "pledgeClass": "Xi"
         },
         {
+            "firstName": "Rithvik",
+            "lastName": "Juluru",
+            "pledgeClass": "Pi"
+        },
+        {
             "firstName": "Harshith",
             "lastName": "Kukunuru",
             "pledgeClass": "Xi"
@@ -269,9 +314,24 @@
             "pledgeClass": "Xi"
         },
         {
+            "firstName": "Noah",
+            "lastName": "Leibovitz",
+            "pledgeClass": "Pi"
+        },
+        {
             "firstName": "Chetanya",
             "lastName": "Makkar",
             "pledgeClass": "Lambda"
+        },
+        {
+            "firstName": "Teddy",
+            "lastName": "Marine",
+            "pledgeClass": "Pi"
+        },
+        {
+            "firstName": "Christa",
+            "lastName": "Mathew",
+            "pledgeClass": "Pi"
         },
         {
             "firstName": "Erin",
@@ -282,11 +342,6 @@
             "firstName": "Eshita",
             "lastName": "Mehrotra",
             "pledgeClass": "Lambda"
-        },
-        {
-            "firstName": "Vahin",
-            "lastName": "Palle",
-            "pledgeClass": "Mu"
         },
         {
             "firstName": "Rachel",
@@ -329,6 +384,11 @@
             "pledgeClass": "Omicron"
         },
         {
+            "firstName": "Ajay",
+            "lastName": "Singaraju",
+            "pledgeClass": "Pi"
+        },
+        {
             "firstName": "Tanveer",
             "lastName": "Singh",
             "pledgeClass": "Nu"
@@ -369,9 +429,19 @@
             "pledgeClass": "Mu"
         },
         {
+            "firstName": "Samantha",
+            "lastName": "Tyles",
+            "pledgeClass": "Pi"
+        },
+        {
             "firstName": "Anna",
             "lastName": "Tzeng",
             "pledgeClass": "Nu"
+        },
+        {
+            "firstName": "Pratham",
+            "lastName": "Verma",
+            "pledgeClass": "Pi"
         },
         {
             "firstName": "Matthew",
@@ -1018,6 +1088,10 @@
             {
                 "firstName": "Yusuf",
                 "lastName": "Khalid"
+            },
+            {
+                "firstName": "Abhijay",
+                "lastName": "Shukla"
             }
         ],
         "Nu": [

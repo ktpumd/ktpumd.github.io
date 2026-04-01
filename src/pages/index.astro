@@ -36,44 +36,67 @@ const base = import.meta.env.BASE_URL;
   <main>
     <!-- About Section -->
     <section class="section" id="about">
-      <div class="container">
-        <div class="content-block text-center">
-          <h2 class="section-title">About Us</h2>
-          <p class="section-text">
-            We are the Epsilon chapter of Kappa Theta Pi at the University of
-            Maryland, College Park. Kappa Theta Pi is the world's first
-            co-educational professional technology fraternity. Our mission is to
-            provide guidance and to cultivate an environment in which our
-            members can grow technically, professionally, and socially.
-          </p>
-          <div class="feature-cards">
-            <div class="feature-card card">
-              <div class="feature-card__icon">
-                <i class="fa-solid fa-laptop-code"></i>
-              </div>
-              <h3>Technical Growth</h3>
-              <p>
-                Workshops, hackathons, and hands-on projects to sharpen your
-                skills
-              </p>
+      <div class="container" style="max-width: 1600px;">
+        <div class="about-layout">
+          <!-- Left Image -->
+          <div class="about-image">
+            <img
+              src={`${base}img/ktp_professional.jpg`}
+              alt="KTP Professional Event"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Center Content -->
+          <div class="about-content text-center">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-text">
+              We are the Epsilon Chapter of Kappa Theta Pi at the University of
+              Maryland, College Park. Kappa Theta Pi is the world's first
+              co-educational professional technology fraternity. Our mission is
+              to provide guidance and to cultivate an environment in which our
+              members can grow technically, professionally, and socially.
+            </p>
+          </div>
+
+          <!-- Right Image -->
+          <div class="about-image">
+            <img
+              src={`${base}img/social/formal/formal_f24.jpg`}
+              alt="KTP Formal Fall 2024"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- Feature Cards -->
+        <div class="feature-cards">
+          <div class="feature-card card">
+            <div class="feature-card__icon">
+              <i class="fa-solid fa-laptop-code"></i>
             </div>
-            <div class="feature-card card">
-              <div class="feature-card__icon">
-                <i class="fa-solid fa-users"></i>
-              </div>
-              <h3>Brotherhood</h3>
-              <p>
-                A diverse community of like-minded individuals passionate about
-                tech
-              </p>
+            <h3>Technical Growth</h3>
+            <p>
+              Workshops, hackathons, and hands-on projects to sharpen your
+              skills
+            </p>
+          </div>
+          <div class="feature-card card">
+            <div class="feature-card__icon">
+              <i class="fa-solid fa-users"></i>
             </div>
-            <div class="feature-card card">
-              <div class="feature-card__icon">
-                <i class="fa-solid fa-briefcase"></i>
-              </div>
-              <h3>Professional Development</h3>
-              <p>Resume reviews, mock interviews, and industry connections</p>
+            <h3>Brotherhood</h3>
+            <p>
+              A diverse community of like-minded individuals passionate about
+              tech
+            </p>
+          </div>
+          <div class="feature-card card">
+            <div class="feature-card__icon">
+              <i class="fa-solid fa-briefcase"></i>
             </div>
+            <h3>Professional Development</h3>
+            <p>Resume reviews, mock interviews, and industry connections</p>
           </div>
         </div>
       </div>
@@ -82,7 +105,11 @@ const base = import.meta.env.BASE_URL;
     <!-- Company Connections Section -->
     <section class="section section--alt">
       <div class="container">
-        <div class="content-block text-center">
+        <!-- Center Content -->
+        <div
+          class="companies-content text-center"
+          style="margin-bottom: var(--spacing-8);"
+        >
           <h2 class="section-title">Where We Work</h2>
           <p class="section-text">
             We're proud of what our members go on to achieve. From startups to
@@ -211,6 +238,121 @@ const base = import.meta.env.BASE_URL;
     line-height: 1.8;
   }
 
+  /* About Layout - Three Column */
+  .about-layout {
+    display: grid;
+    grid-template-columns: 2.5fr 2fr 2.5fr;
+    gap: var(--spacing-12);
+    align-items: center;
+    margin-bottom: var(--spacing-16);
+  }
+
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .about-image {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-image--placeholder {
+    aspect-ratio: 3 / 4;
+    background: var(--color-bg-elevated);
+    border: 1px dashed var(--color-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-3);
+    color: var(--color-text-muted);
+  }
+
+  .about-image--placeholder i {
+    font-size: var(--font-size-4xl);
+    opacity: 0.4;
+  }
+
+  .about-image--placeholder span {
+    font-size: var(--font-size-sm);
+  }
+
+  /* Companies Layout - Three Column */
+  .companies-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: var(--spacing-8);
+    align-items: center;
+    margin-bottom: var(--spacing-8);
+  }
+
+  .companies-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .companies-image {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+  }
+
+  .companies-image--placeholder {
+    aspect-ratio: 3 / 4;
+    background: var(--color-bg-card);
+    border: 1px dashed var(--color-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-3);
+    color: var(--color-text-muted);
+  }
+
+  .companies-image--placeholder i {
+    font-size: var(--font-size-4xl);
+    opacity: 0.4;
+  }
+
+  .companies-image--placeholder span {
+    font-size: var(--font-size-sm);
+  }
+
+  @media (max-width: 992px) {
+    .about-layout,
+    .companies-layout {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .about-content,
+    .companies-content {
+      grid-column: 1 / -1;
+      order: -1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-layout,
+    .companies-layout {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-6);
+    }
+
+    .about-image,
+    .companies-image {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+
   /* Feature Cards */
   .feature-cards {
     display: grid;
@@ -220,8 +362,34 @@ const base = import.meta.env.BASE_URL;
   }
 
   .feature-card {
-    padding: var(--spacing-8);
+    padding: var(--spacing-6);
     text-align: center;
+  }
+
+  .feature-card__image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    margin-bottom: var(--spacing-4);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .feature-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .feature-card__placeholder {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    font-size: var(--font-size-3xl);
   }
 
   .feature-card__icon {
@@ -231,7 +399,7 @@ const base = import.meta.env.BASE_URL;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--gradient-primary);
+    background-color: var(--color-primary);
     border-radius: var(--radius-lg);
     font-size: var(--font-size-2xl);
     color: var(--color-bg);
@@ -246,6 +414,84 @@ const base = import.meta.env.BASE_URL;
     color: var(--color-text-muted);
     font-size: var(--font-size-sm);
     margin: 0;
+  }
+
+  /* Photo Showcase */
+  .photo-showcase {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-6);
+    max-width: 1000px;
+    margin: var(--spacing-8) auto 0;
+  }
+
+  .photo-showcase__main {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--color-border);
+  }
+
+  .photo-showcase__main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .photo-showcase__placeholder {
+    display: none;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-3);
+    background: var(--color-bg-elevated);
+    color: var(--color-text-muted);
+  }
+
+  .photo-showcase__placeholder i {
+    font-size: var(--font-size-4xl);
+    opacity: 0.5;
+  }
+
+  .photo-showcase__placeholder span {
+    font-size: var(--font-size-sm);
+  }
+
+  .photo-showcase__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-4);
+  }
+
+  .photo-showcase__item {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--color-border);
+    aspect-ratio: 1;
+  }
+
+  .photo-showcase__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .photo-showcase__item .photo-showcase__placeholder {
+    min-height: unset;
+  }
+
+  @media (max-width: 768px) {
+    .photo-showcase {
+      grid-template-columns: 1fr;
+    }
+
+    .photo-showcase__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   /* Timeline */
@@ -271,10 +517,7 @@ const base = import.meta.env.BASE_URL;
   .timeline__year {
     font-size: var(--font-size-3xl);
     font-weight: 800;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-primary);
     margin-bottom: var(--spacing-3);
   }
 

@@ -10,18 +10,14 @@ const base = import.meta.env.BASE_URL;
 <Layout title="Kappa Theta Pi UMD">
   <Navbar currentPage="/students" />
 
-  <PageHeader
-    title="Join Us"
-    backgroundImage="/img/rush-bg2.jpg"
-    size="small"
-  />
+  <PageHeader title="Join Us" backgroundImage="/img/rush_bg.jpg" size="small" />
 
   <main>
     <!-- Rush Info Section -->
     <section class="section">
       <div class="container">
         <div class="content-block text-center">
-          <h2 class="section-title">Spring 2026 Rush</h2>
+          <h2 class="section-title">Spring 2026 Rush (Closed)</h2>
           <p class="section-text">
             <strong
               >Any undergraduate student at the University of Maryland with an
@@ -29,15 +25,11 @@ const base = import.meta.env.BASE_URL;
             >
           </p>
           <p class="section-text">
-            Stay tuned for our upcoming rush events! We look forward to meeting
-            you.
+            Our Spring 2026 Rush is currently closed. Thank you to everyone who
+            attended! Please stay tuned for our future rush events.
           </p>
 
           <div class="cta-buttons">
-            <a href="#" class="btn btn-primary">
-              <i class="fa-solid fa-calendar-days"></i>
-              Rush Schedule
-            </a>
             <a
               href="https://linktr.ee/ktpumdcp"
               class="btn btn-outline"
@@ -52,41 +44,37 @@ const base = import.meta.env.BASE_URL;
       </div>
     </section>
 
-    <!-- What We Offer Header -->
-    <section class="section section--alt">
-      <div class="container">
-        <h2 class="section-title text-center">What We Offer</h2>
-        <p class="section-subtitle text-center">
-          Everything you need to grow technically, professionally, and
-          personally.
-        </p>
-      </div>
-    </section>
-
-    <!-- Technical Workshops -->
+    <!-- What We Offer / Professional Development -->
     <section class="section offer-section">
       <div class="container">
+        <div class="text-center" style="margin-bottom: var(--spacing-12);">
+          <h2 class="section-title">What We Offer</h2>
+        </div>
         <div class="offer-content">
           <div class="offer-text">
             <div class="offer-icon">
               <i class="fa-solid fa-code"></i>
             </div>
-            <h3 class="offer-title">Technical Workshops</h3>
+            <h3 class="offer-title">Professional Development</h3>
             <p class="offer-description">
-              Learn cutting-edge technologies from experienced members. Our
-              workshops cover web development, machine learning, cloud
-              computing, mobile apps, and more. Whether you're a beginner or
-              advanced, there's always something new to learn.
+              We're focused on helping brothers succeed professionally. From
+              mock interview practice to resume reviews, we provide the
+              resources and support you need to land your dream role and grow
+              your career.
             </p>
             <ul class="offer-highlights">
-              <li>Weekly hands-on coding sessions</li>
-              <li>Project-based learning</li>
-              <li>Industry-relevant skills</li>
+              <li>Mock interview prep sessions</li>
+              <li>Resume and portfolio workshops</li>
+              <li>Technical skill workshops</li>
+              <li>Alumni panels and career guidance</li>
             </ul>
           </div>
-          <div class="offer-image offer-image--placeholder">
-            <i class="fa-solid fa-image"></i>
-            <span>Workshop photo</span>
+          <div class="offer-image">
+            <img
+              src={`${base}img/social/panels/pctktp_1.png`}
+              alt="Workshop photo"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -102,20 +90,23 @@ const base = import.meta.env.BASE_URL;
             </div>
             <h3 class="offer-title">Networking</h3>
             <p class="offer-description">
-              Connect with our alumni network at Google, Meta, Amazon,
-              Microsoft, and other top tech companies. Get referrals, resume
-              reviews, mock interviews, and career guidance from people who've
-              been in your shoes.
+              Build meaningful connections with our alumni network and fellow
+              brothers. Whether you're looking for mentorship, career advice, or
+              just want to meet people who share your interests, our community
+              is here to support you.
             </p>
             <ul class="offer-highlights">
-              <li>Alumni mentorship program</li>
+              <li>Extensive alumni network</li>
               <li>Company info sessions</li>
-              <li>Career fairs and panels</li>
+              <li>Networking events and socials</li>
             </ul>
           </div>
-          <div class="offer-image offer-image--placeholder">
-            <i class="fa-solid fa-image"></i>
-            <span>Networking photo</span>
+          <div class="offer-image">
+            <img
+              src={`${base}img/social/panels/pwc_f25.jpg`}
+              alt="Networking photo"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -132,18 +123,21 @@ const base = import.meta.env.BASE_URL;
             <h3 class="offer-title">Social Events</h3>
             <p class="offer-description">
               Build lifelong friendships with driven, like-minded peers. From
-              formals and game nights to retreats and study sessions, we're more
-              than just a professional fraternity—we're a family.
+              social events that span the semester, we're more than just a
+              professional fraternity!
             </p>
             <ul class="offer-highlights">
-              <li>Semester formals and semi-formals</li>
-              <li>Game nights and socials</li>
+              <li>Formals and socials</li>
+              <li>Fraternity-wide events</li>
               <li>Brotherhood retreats</li>
             </ul>
           </div>
-          <div class="offer-image offer-image--placeholder">
-            <i class="fa-solid fa-image"></i>
-            <span>Social event photo</span>
+          <div class="offer-image">
+            <img
+              src={`${base}img/social/hike_spr25.jpg`}
+              alt="KTP Hike Social Event"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -169,14 +163,19 @@ const base = import.meta.env.BASE_URL;
               <li>Nonprofit partnerships</li>
             </ul>
           </div>
-          <div class="offer-image offer-image--placeholder">
-            <i class="fa-solid fa-image"></i>
-            <span>Service photo</span>
+          <div class="offer-image">
+            <img
+              src={`${base}img/social/philanthropy/waterfront_s25.jpg`}
+              alt="Community Service"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
     </section>
 
+    {
+      /*
     <!-- Photo Gallery Section -->
     <section class="section">
       <div class="container">
@@ -218,6 +217,8 @@ const base = import.meta.env.BASE_URL;
       <span class="lightbox-close">&times;</span>
       <img class="lightbox-content" id="lightbox-img" />
     </div>
+    */
+    }
   </main>
 
   <script>
@@ -285,12 +286,12 @@ const base = import.meta.env.BASE_URL;
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: var(--gradient-primary);
+    background-color: var(--color-primary);
     border-radius: var(--radius-full);
   }
 
   .content-block {
-    max-width: 700px;
+    max-width: 1100px;
     margin: 0 auto;
   }
 
@@ -353,7 +354,7 @@ const base = import.meta.env.BASE_URL;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--gradient-primary);
+    background-color: var(--color-primary);
     border-radius: var(--radius-lg);
     font-size: var(--font-size-2xl);
     color: var(--color-bg);

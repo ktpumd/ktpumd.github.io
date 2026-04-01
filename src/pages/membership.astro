@@ -6,7 +6,9 @@ import PageHeader from "../components/PageHeader.astro";
 import MemberCard from "../components/MemberCard.astro";
 import members from "../data/members.json";
 
-const alumniClasses = Object.keys(members.alumni);
+const alumniClasses = Object.keys(
+  members.alumni,
+) as (keyof typeof members.alumni)[];
 ---
 
 <Layout title="Kappa Theta Pi UMD">
@@ -14,7 +16,7 @@ const alumniClasses = Object.keys(members.alumni);
 
   <PageHeader
     title="Meet Our Members"
-    backgroundImage="/img/bg6new.jpg"
+    backgroundImage="/img/background.jpg"
     size="small"
   />
 
@@ -61,7 +63,7 @@ const alumniClasses = Object.keys(members.alumni);
     <section class="section">
       <div class="container">
         <h2 class="section-title text-center">Brothers</h2>
-        <div class="member-grid">
+        <div class="member-grid member-grid--brothers">
           {
             members.brothers.map((member) => (
               <MemberCard
@@ -119,7 +121,7 @@ const alumniClasses = Object.keys(members.alumni);
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: var(--gradient-primary);
+    background-color: var(--color-primary);
     border-radius: var(--radius-full);
   }
 
@@ -128,6 +130,17 @@ const alumniClasses = Object.keys(members.alumni);
     grid-template-columns: repeat(5, 1fr);
     gap: var(--spacing-4);
     justify-items: center;
+  }
+
+  .member-grid--brothers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .member-grid--brothers > :global(*) {
+    width: calc(20% - var(--spacing-4));
+    min-width: 180px;
   }
 
   .member-grid--exec {
@@ -147,6 +160,9 @@ const alumniClasses = Object.keys(members.alumni);
     .member-grid--chairs {
       grid-template-columns: repeat(4, 1fr);
     }
+    .member-grid--brothers > :global(*) {
+      width: calc(25% - var(--spacing-4));
+    }
   }
 
   @media (max-width: 992px) {
@@ -157,6 +173,9 @@ const alumniClasses = Object.keys(members.alumni);
     .member-grid--chairs {
       grid-template-columns: repeat(3, 1fr);
     }
+    .member-grid--brothers > :global(*) {
+      width: calc(33.333% - var(--spacing-4));
+    }
   }
 
   @media (max-width: 768px) {
@@ -164,6 +183,9 @@ const alumniClasses = Object.keys(members.alumni);
     .member-grid--exec,
     .member-grid--chairs {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .member-grid--brothers > :global(*) {
+      width: calc(50% - var(--spacing-4));
     }
   }
 
@@ -180,10 +202,7 @@ const alumniClasses = Object.keys(members.alumni);
 
   .class-title {
     font-size: var(--font-size-xl);
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-primary);
     margin-bottom: var(--spacing-4);
     text-align: center;
   }
