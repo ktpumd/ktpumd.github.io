@@ -1,0 +1,43 @@
+---
+// ThemeToggle.astro - Dark/Light mode toggle button
+---
+
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+  <i class="fa-solid fa-sun icon-sun"></i>
+  <i class="fa-solid fa-moon icon-moon"></i>
+</button>
+
+<script>
+  function initTheme() {
+    const toggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    
+    // Check for saved preference or system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    // Set initial theme
+    if (savedTheme) {
+      html.setAttribute('data-theme', savedTheme);
+    } else if (systemPrefersDark) {
+      html.setAttribute('data-theme', 'dark');
+    } else {
+      html.setAttribute('data-theme', 'dark'); // Default to dark
+    }
+    
+    // Toggle handler
+    toggle?.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  }
+  
+  // Run on initial load
+  initTheme();
+  
+  // Re-run after View Transitions
+  document.addEventListener('astro:after-swap', initTheme);
+</script>
