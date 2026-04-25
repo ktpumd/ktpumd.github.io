@@ -93,9 +93,20 @@
    LIGHT MODE
    ============================================ */
 [data-theme="light"] {
+    /* Darkened primary palette for better contrast on white */
+    --color-primary: #059669;
+    --color-primary-dark: #047857;
+    --color-primary-light: #10b981;
+    --color-secondary: #0764b8;
+    --color-secondary-dark: #054a8a;
+    --color-secondary-light: #3b82f6;
+    --color-accent: #5b4cdb;
+
+    --gradient-primary: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+
     --color-bg: #f8f9fa;
     --color-bg-card: #ffffff;
-    --color-bg-elevated: #ffffff;
+    --color-bg-elevated: #f1f3f5;
     --color-text: #343a40;
     --color-text-muted: #6c757d;
     --color-text-heading: #212529;
@@ -105,7 +116,7 @@
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    --shadow-glow: 0 0 20px rgba(0, 212, 170, 0.2);
+    --shadow-glow: 0 0 20px rgba(5, 150, 105, 0.25);
 
     --logo-filter: none;
     --logo-bg: #ffffff;
