@@ -1,46 +1,55 @@
-# ktpumd.github.io
+# KTP UMD Website
 
-Website for Kappa Theta Pi at the University of Maryland
+Website for Kappa Theta Pi at the University of Maryland. Built with Astro.
 
-**DEV PRACTICES**:
+## Development
 
-- When making a commit, please write the message in the following format: '[SemYear] Message'. For example, '[Fall21] Update Rush Events'
-- Please use the "dev" branch for development and only merge with the "master" branch after receiving approval from the Webmaster!
+### Getting Started
 
+```bash
+npm install
+npm run dev
+```
 
+The dev server runs at `http://localhost:4321`.
 
-**INSTRUCTIONS TO UPDATE WEBSITE BEFORE RUSH**:
+### Project Structure
 
+```
+src/
+  components/    # Reusable UI components (Navbar, Footer, MemberCard, etc.)
+  data/          # Member data (members.json)
+  layouts/       # Page layout wrapper (Layout.astro)
+  pages/         # Route pages (index, membership, students, companies, faq)
+  styles/        # Global CSS and design tokens (global.css)
+public/          # Static assets (images, fonts)
+```
 
-- Go to the "get_involved_students.html" file
-- Around line 135, there are sections of code labelled "CURRENTLY RUSH DESCRIPTION", "RUSH IS OVER DESCRIPTION", and "RUSH SCHEDULE TABLE"
-- Make sure "RUSH IS OVER DESCRIPTION" is commented out and the other sections are uncommented
-- There is a hyperlink to our interest form, make sure it is updated to the most recent interest form and link
-- Update the Rush Schedule Table with the updated semester's rush schedule (follow the existing table set up and just update event names, times, and locations)
-- Update the semester of rush in the header (should be around line 133)
+### Key Files
 
+- `src/styles/global.css` — Design system tokens, dark/light theme variables, and base styles.
+- `src/data/members.json` — All member data: exec board, chairs, brothers, and alumni.
+- `src/components/Navbar.astro` — Site navigation with mobile menu and theme toggle.
+- `src/pages/membership.astro` — Brothers page with pledge class ordering.
 
+### Adding Members
 
-**INSTRUCTIONS TO UPDATE AFTER RUSH**:
+1. Add headshots to `public/img/brothers/` using the format `First_Last.jpg`.
+2. Update `src/data/members.json` following the established format.
+3. Move graduates to the alumni section under their pledge class.
 
+### Deployment
 
-- Go to the "get_involved_students.html" file
-- Around line 135, there are sections of code labelled "CURRENT RUSH DESCRIPTION", "RUSH IS OVER DESCRIPTION", and "RUSH SCHEDULE TABLE"
-- Uncomment "RUSH IS OVER DESCRIPTION" section and comment out the other sections
+The site deploys to GitHub Pages via GitHub Actions. Merge to `master` only after approval from the Webmaster.
 
+## Commit Format
 
+All commits must follow this format:
 
-**INSTRUCTIONS TO UPDATE MEMBERSHIP AT THE END OF EVERY SEMESTER**:
+```
+[SemYear] Message
+```
 
+Example: `[Fall21] Update Rush Events`
 
-- Update the brother pictures in the directory "assets/img/brothers"
-    - First, add headshots for each of member of the new pledge class
-    - All of these pictures should MUST the naming convention "First_Last.jpg" (for example, the headshot of the new brother John Smith should be named "John_Smith.jpg")
-    - Also, remove any headshots of any brothers who have graduated ot permanently left KTP
-- Modify the list of members in "assets/js/membersList.js"
-    - There are 3 sections for E-Board, Brothers, and Alumni
-    - Add the new brothers to the brothers list section (order does not matter)
-    - Adjust the E-Board and move new E-Board members to their positions and old E-Board members to the brothers or alumni section (a person should not appear in both the E-Board and Brothers section)
-    - Finally, move any graduating brothers to the Alumni section and add them to the appropriate pledge class (you may have to add a new section for a pledge class, make sure the pledge classses are in the correct order)
-    - Most importantly, PLEASE STICK TO THE FORMAT ESTABLISHED
-- Double check everything and then commit and push
+Use the `dev` branch for development. Only merge into `master` after Webmaster approval.
