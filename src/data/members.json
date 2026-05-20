@@ -2,82 +2,82 @@
     "execBoard": [
         {
             "role": "President",
-            "firstName": "Faith",
-            "lastName": "Short",
-            "pledgeClass": "Mu"
-        },
-        {
-            "role": "Vice President",
-            "firstName": "Kadin",
-            "lastName": "Fisher",
-            "pledgeClass": "Lambda"
-        },
-        {
-            "role": "Director of Membership",
-            "firstName": "Liam",
-            "lastName": "Moran",
-            "pledgeClass": "Mu"
-        },
-        {
-            "role": "Director of Engagement",
-            "firstName": "Anu",
-            "lastName": "Daga",
-            "pledgeClass": "Nu"
-        },
-        {
-            "role": "Director of Professional Development",
-            "firstName": "Vahin",
-            "lastName": "Palle",
-            "pledgeClass": "Mu"
-        },
-        {
-            "role": "Director of Technology",
-            "firstName": "Saathu",
-            "lastName": "Nagareddy",
-            "pledgeClass": "Xi"
-        },
-        {
-            "role": "Director of Philanthropy",
             "firstName": "Sanika",
             "lastName": "Pande",
             "pledgeClass": "Mu"
         },
         {
-            "role": "Director of Standards",
-            "firstName": "Ryan",
-            "lastName": "McGowan",
+            "role": "Vice President",
+            "firstName": "Anu",
+            "lastName": "Daga",
             "pledgeClass": "Nu"
         },
         {
-            "role": "Director of Finance",
-            "firstName": "Shreeni",
-            "lastName": "Chikyala",
-            "pledgeClass": "Mu"
-        }
-    ],
-    "chairs": [
-        {
-            "role": "Treasury Chair",
-            "firstName": "Sachin",
-            "lastName": "Ashok",
-            "pledgeClass": "Mu"
-        },
-        {
-            "role": "External Relations Chair",
+            "role": "Director of Engagement",
             "firstName": "Katherine",
             "lastName": "Hall",
             "pledgeClass": "Omicron"
         },
         {
-            "role": "Corporate Chair",
-            "firstName": "Justin",
-            "lastName": "Lee",
+            "role": "Director of Membership",
+            "firstName": "Amaar",
+            "lastName": "Trisal",
+            "pledgeClass": "Mu"
+        },
+        {
+            "role": "Director of Standards",
+            "firstName": "Manan",
+            "lastName": "Zaveri",
+            "pledgeClass": "Xi"
+        },
+        {
+            "role": "Director of Professional Development",
+            "firstName": "Angela",
+            "lastName": "Yu",
             "pledgeClass": "Omicron"
         },
         {
+            "role": "Director of Technology",
+            "firstName": "Harrison",
+            "lastName": "Padgett",
+            "pledgeClass": "Xi"
+        },
+        {
+            "role": "Director of Philanthropy",
+            "firstName": "Amogh",
+            "lastName": "Samaga",
+            "pledgeClass": "Xi"
+        },
+        {
+            "role": "Director of Finance",
+            "firstName": "Nikhil",
+            "lastName": "Shyam",
+            "pledgeClass": "Omicron"
+        }
+    ],
+    "chairs": [
+        {
+            "role": "Treasury Chair",
+            "firstName": "Rakshana",
+            "lastName": "Devalla",
+            "pledgeClass": "Pi"
+        },
+        {
+            "role": "External Relations Chair",
+            "firstName": "Kelly",
+            "lastName": "Barrow",
+            "pledgeClass": "Pi"
+        },
+        {
+            "role": "Corporate Chair",
+            "firstName": "Joshua",
+            "lastName": "Akoda",
+            "pledgeClass": "Pi"
+        },
+        {
             "role": "Marketing Chair",
-            "firstName": "Kavya",
-            "lastName": "Mukkamala",
+            "firstName": "Soumya",
+            "lastName": "Jailwala",
             "pledgeClass": "Xi"
         },
         {
@@ -88,33 +88,33 @@
         },
         {
             "role": "Development Operations Chair",
-            "firstName": "Harrison",
-            "lastName": "Padgett",
-            "pledgeClass": "Xi"
+            "firstName": "Christa",
+            "lastName": "Mathew",
+            "pledgeClass": "Pi"
         },
         {
-            "role": "Community Service Chair",
-            "firstName": "Amogh",
-            "lastName": "Samaga",
-            "pledgeClass": "Xi"
+            "role": "Service Support Chair",
+            "firstName": "Batool",
+            "lastName": "Haider",
+            "pledgeClass": "Pi"
         },
         {
             "role": "Quality Assurance Chair",
-            "firstName": "Aadit",
-            "lastName": "Shah",
-            "pledgeClass": "Nu"
+            "firstName": "Faith",
+            "lastName": "Short",
+            "pledgeClass": "Mu"
         },
         {
             "role": "Education Chair",
-            "firstName": "Michael",
-            "lastName": "Yang",
+            "firstName": "James",
+            "lastName": "Barry",
             "pledgeClass": "Omicron"
         },
         {
             "role": "Communications Chair",
-            "firstName": "Manan",
-            "lastName": "Zaveri",
-            "pledgeClass": "Xi"
+            "firstName": "Rithvik",
+            "lastName": "Juluru",
+            "pledgeClass": "Pi"
         }
     ],
     "brothers": [
