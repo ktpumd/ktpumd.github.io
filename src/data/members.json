@@ -2,82 +2,82 @@
     "execBoard": [
         {
             "role": "President",
-            "firstName": "Faith",
-            "lastName": "Short",
-            "pledgeClass": "Mu"
-        },
-        {
-            "role": "Vice President",
-            "firstName": "Kadin",
-            "lastName": "Fisher",
-            "pledgeClass": "Lambda"
-        },
-        {
-            "role": "Director of Membership",
-            "firstName": "Liam",
-            "lastName": "Moran",
-            "pledgeClass": "Mu"
-        },
-        {
-            "role": "Director of Engagement",
-            "firstName": "Anu",
-            "lastName": "Daga",
-            "pledgeClass": "Nu"
-        },
-        {
-            "role": "Director of Professional Development",
-            "firstName": "Vahin",
-            "lastName": "Palle",
-            "pledgeClass": "Mu"
-        },
-        {
-            "role": "Director of Technology",
-            "firstName": "Saathu",
-            "lastName": "Nagareddy",
-            "pledgeClass": "Xi"
-        },
-        {
-            "role": "Director of Philanthropy",
             "firstName": "Sanika",
             "lastName": "Pande",
             "pledgeClass": "Mu"
         },
         {
-            "role": "Director of Standards",
-            "firstName": "Ryan",
-            "lastName": "McGowan",
+            "role": "Vice President",
+            "firstName": "Anu",
+            "lastName": "Daga",
             "pledgeClass": "Nu"
         },
         {
-            "role": "Director of Finance",
-            "firstName": "Shreeni",
-            "lastName": "Chikyala",
-            "pledgeClass": "Mu"
-        }
-    ],
-    "chairs": [
-        {
-            "role": "Treasury Chair",
-            "firstName": "Sachin",
-            "lastName": "Ashok",
-            "pledgeClass": "Mu"
-        },
-        {
-            "role": "External Relations Chair",
+            "role": "Director of Engagement",
             "firstName": "Katherine",
             "lastName": "Hall",
             "pledgeClass": "Omicron"
         },
         {
-            "role": "Corporate Chair",
-            "firstName": "Justin",
-            "lastName": "Lee",
+            "role": "Director of Membership",
+            "firstName": "Amaar",
+            "lastName": "Trisal",
+            "pledgeClass": "Mu"
+        },
+        {
+            "role": "Director of Standards",
+            "firstName": "Manan",
+            "lastName": "Zaveri",
+            "pledgeClass": "Xi"
+        },
+        {
+            "role": "Director of Professional Development",
+            "firstName": "Angela",
+            "lastName": "Yu",
             "pledgeClass": "Omicron"
         },
         {
+            "role": "Director of Technology",
+            "firstName": "Harrison",
+            "lastName": "Padgett",
+            "pledgeClass": "Xi"
+        },
+        {
+            "role": "Director of Philanthropy",
+            "firstName": "Amogh",
+            "lastName": "Samaga",
+            "pledgeClass": "Xi"
+        },
+        {
+            "role": "Director of Finance",
+            "firstName": "Nikhil",
+            "lastName": "Shyam",
+            "pledgeClass": "Omicron"
+        }
+    ],
+    "chairs": [
+        {
+            "role": "Treasury Chair",
+            "firstName": "Rakshana",
+            "lastName": "Devalla",
+            "pledgeClass": "Pi"
+        },
+        {
+            "role": "External Relations Chair",
+            "firstName": "Kelly",
+            "lastName": "Barrow",
+            "pledgeClass": "Pi"
+        },
+        {
+            "role": "Corporate Chair",
+            "firstName": "Joshua",
+            "lastName": "Akoda",
+            "pledgeClass": "Pi"
+        },
+        {
             "role": "Marketing Chair",
-            "firstName": "Kavya",
-            "lastName": "Mukkamala",
+            "firstName": "Soumya",
+            "lastName": "Jailwala",
             "pledgeClass": "Xi"
         },
         {
@@ -88,33 +88,33 @@
         },
         {
             "role": "Development Operations Chair",
-            "firstName": "Harrison",
-            "lastName": "Padgett",
-            "pledgeClass": "Xi"
+            "firstName": "Christa",
+            "lastName": "Mathew",
+            "pledgeClass": "Pi"
         },
         {
-            "role": "Community Service Chair",
-            "firstName": "Amogh",
-            "lastName": "Samaga",
-            "pledgeClass": "Xi"
+            "role": "Service Support Chair",
+            "firstName": "Batool",
+            "lastName": "Haider",
+            "pledgeClass": "Pi"
         },
         {
             "role": "Quality Assurance Chair",
-            "firstName": "Aadit",
-            "lastName": "Shah",
-            "pledgeClass": "Nu"
+            "firstName": "Faith",
+            "lastName": "Short",
+            "pledgeClass": "Mu"
         },
         {
             "role": "Education Chair",
-            "firstName": "Michael",
-            "lastName": "Yang",
+            "firstName": "James",
+            "lastName": "Barry",
             "pledgeClass": "Omicron"
         },
         {
             "role": "Communications Chair",
-            "firstName": "Manan",
-            "lastName": "Zaveri",
-            "pledgeClass": "Xi"
+            "firstName": "Rithvik",
+            "lastName": "Juluru",
+            "pledgeClass": "Pi"
         }
     ],
     "brothers": [
@@ -124,19 +124,9 @@
             "pledgeClass": "Pi"
         },
         {
-            "firstName": "Joshua",
-            "lastName": "Akoda",
-            "pledgeClass": "Pi"
-        },
-        {
             "firstName": "Vihan",
             "lastName": "Amarasinghe",
             "pledgeClass": "Xi"
-        },
-        {
-            "firstName": "Chinaemelum",
-            "lastName": "Anadu",
-            "pledgeClass": "Nu"
         },
         {
             "firstName": "Julius",
@@ -144,24 +134,14 @@
             "pledgeClass": "Theta"
         },
         {
+            "firstName": "Siri",
+            "lastName": "Bachina",
+            "pledgeClass": "Rho"
+        },
+        {
             "firstName": "Viraj",
             "lastName": "Bala",
             "pledgeClass": "Xi"
-        },
-        {
-            "firstName": "Kelly",
-            "lastName": "Barrow",
-            "pledgeClass": "Pi"
-        },
-        {
-            "firstName": "James",
-            "lastName": "Barry",
-            "pledgeClass": "Omicron"
-        },
-        {
-            "firstName": "Angad",
-            "lastName": "Bedi",
-            "pledgeClass": "Mu"
         },
         {
             "firstName": "Kanhav",
@@ -179,19 +159,9 @@
             "pledgeClass": "Xi"
         },
         {
-            "firstName": "Maya",
-            "lastName": "Chelar",
-            "pledgeClass": "Kappa"
-        },
-        {
             "firstName": "Raymond",
             "lastName": "Chen",
             "pledgeClass": "Pi"
-        },
-        {
-            "firstName": "Nitya",
-            "lastName": "Chigurupati",
-            "pledgeClass": "Nu"
         },
         {
             "firstName": "Lauren",
@@ -199,14 +169,19 @@
             "pledgeClass": "Omicron"
         },
         {
+            "firstName": "Emma",
+            "lastName": "Cho",
+            "pledgeClass": "Rho"
+        },
+        {
+            "firstName": "Lauren",
+            "lastName": "Curtiss",
+            "pledgeClass": "Rho"
+        },
+        {
             "firstName": "Shlok",
             "lastName": "Desai",
             "pledgeClass": "Omicron"
-        },
-        {
-            "firstName": "Rakshana",
-            "lastName": "Devalla",
-            "pledgeClass": "Pi"
         },
         {
             "firstName": "Olivia",
@@ -234,6 +209,11 @@
             "pledgeClass": "Mu"
         },
         {
+            "firstName": "Devin",
+            "lastName": "Gaines",
+            "pledgeClass": "Rho"
+        },
+        {
             "firstName": "Anjali",
             "lastName": "Gallacher",
             "pledgeClass": "Mu"
@@ -249,38 +229,18 @@
             "pledgeClass": "Xi"
         },
         {
-            "firstName": "Himanshu",
-            "lastName": "Gediya",
-            "pledgeClass": "Nu"
-        },
-        {
             "firstName": "Sophia",
             "lastName": "Gonzales",
             "pledgeClass": "Lambda"
         },
         {
+            "firstName": "Eva",
+            "lastName": "Griebl",
+            "pledgeClass": "Rho"
+        },
+        {
             "firstName": "Deena",
             "lastName": "Habash",
-            "pledgeClass": "Mu"
-        },
-        {
-            "firstName": "Batool",
-            "lastName": "Haider",
-            "pledgeClass": "Pi"
-        },
-        {
-            "firstName": "Addison",
-            "lastName": "Hanrattie",
-            "pledgeClass": "Mu"
-        },
-        {
-            "firstName": "Aditya",
-            "lastName": "Hardikar",
-            "pledgeClass": "Xi"
-        },
-        {
-            "firstName": "Bhakti",
-            "lastName": "Hegde",
             "pledgeClass": "Mu"
         },
         {
@@ -289,24 +249,14 @@
             "pledgeClass": "Lambda"
         },
         {
-            "firstName": "Matt",
-            "lastName": "Hullana",
-            "pledgeClass": "Nu"
+            "firstName": "Mahitha",
+            "lastName": "Jasti",
+            "pledgeClass": "Rho"
         },
         {
-            "firstName": "Soumya",
-            "lastName": "Jailwala",
-            "pledgeClass": "Xi"
-        },
-        {
-            "firstName": "Rithvik",
-            "lastName": "Juluru",
-            "pledgeClass": "Pi"
-        },
-        {
-            "firstName": "Harshith",
-            "lastName": "Kukunuru",
-            "pledgeClass": "Xi"
+            "firstName": "Emma",
+            "lastName": "Kim",
+            "pledgeClass": "Rho"
         },
         {
             "firstName": "Jane",
@@ -314,14 +264,24 @@
             "pledgeClass": "Xi"
         },
         {
+            "firstName": "Justin",
+            "lastName": "Lee",
+            "pledgeClass": "Omicron"
+        },
+        {
             "firstName": "Noah",
             "lastName": "Leibovitz",
             "pledgeClass": "Pi"
         },
         {
-            "firstName": "Chetanya",
-            "lastName": "Makkar",
-            "pledgeClass": "Lambda"
+            "firstName": "Kevin",
+            "lastName": "Lyons",
+            "pledgeClass": "Rho"
+        },
+        {
+            "firstName": "Arshia",
+            "lastName": "Mamidanna",
+            "pledgeClass": "Rho"
         },
         {
             "firstName": "Teddy",
@@ -329,24 +289,19 @@
             "pledgeClass": "Pi"
         },
         {
-            "firstName": "Christa",
-            "lastName": "Mathew",
-            "pledgeClass": "Pi"
-        },
-        {
-            "firstName": "Erin",
-            "lastName": "Maynard",
-            "pledgeClass": "Lambda"
-        },
-        {
             "firstName": "Eshita",
             "lastName": "Mehrotra",
             "pledgeClass": "Lambda"
         },
         {
-            "firstName": "Rachel",
-            "lastName": "Park",
-            "pledgeClass": "Omicron"
+            "firstName": "Vivaan",
+            "lastName": "Motwani",
+            "pledgeClass": "Rho"
+        },
+        {
+            "firstName": "Kavya",
+            "lastName": "Mukkamala",
+            "pledgeClass": "Xi"
         },
         {
             "firstName": "Dev",
@@ -364,24 +319,29 @@
             "pledgeClass": "Kappa"
         },
         {
-            "firstName": "Caroline",
-            "lastName": "Perret",
-            "pledgeClass": "Mu"
+            "firstName": "Arya",
+            "lastName": "Patel",
+            "pledgeClass": "Rho"
         },
         {
-            "firstName": "Shriyans",
-            "lastName": "Sairy",
-            "pledgeClass": "Xi"
+            "firstName": "Vidhu",
+            "lastName": "Sampath",
+            "pledgeClass": "Rho"
         },
         {
-            "firstName": "Riya",
-            "lastName": "Shah",
-            "pledgeClass": "Nu"
+            "firstName": "Kayalvili",
+            "lastName": "Saravanan",
+            "pledgeClass": "Rho"
         },
         {
-            "firstName": "Nikhil",
-            "lastName": "Shyam",
-            "pledgeClass": "Omicron"
+            "firstName": "Nimeesh",
+            "lastName": "Sharma",
+            "pledgeClass": "Rho"
+        },
+        {
+            "firstName": "Ayane",
+            "lastName": "Shrestha",
+            "pledgeClass": "Rho"
         },
         {
             "firstName": "Ajay",
@@ -389,19 +349,14 @@
             "pledgeClass": "Pi"
         },
         {
-            "firstName": "Tanveer",
-            "lastName": "Singh",
-            "pledgeClass": "Nu"
+            "firstName": "Rishi",
+            "lastName": "Sinu Pillai",
+            "pledgeClass": "Rho"
         },
         {
-            "firstName": "Sriya",
-            "lastName": "Sogal",
-            "pledgeClass": "Kappa"
-        },
-        {
-            "firstName": "Victor",
-            "lastName": "Su",
-            "pledgeClass": "Lambda"
+            "firstName": "Eliakim",
+            "lastName": "St. Germain",
+            "pledgeClass": "Rho"
         },
         {
             "firstName": "Isabelle",
@@ -414,19 +369,9 @@
             "pledgeClass": "Omicron"
         },
         {
-            "firstName": "Ritvik",
-            "lastName": "Thakur",
-            "pledgeClass": "Omicron"
-        },
-        {
             "firstName": "Izzy",
             "lastName": "Thomas",
             "pledgeClass": "Nu"
-        },
-        {
-            "firstName": "Amaar",
-            "lastName": "Trisal",
-            "pledgeClass": "Mu"
         },
         {
             "firstName": "Samantha",
@@ -449,13 +394,8 @@
             "pledgeClass": "Omicron"
         },
         {
-            "firstName": "Valerie",
-            "lastName": "Yen",
-            "pledgeClass": "Lambda"
-        },
-        {
-            "firstName": "Angela",
-            "lastName": "Yu",
+            "firstName": "Michael",
+            "lastName": "Yang",
             "pledgeClass": "Omicron"
         }
     ],
@@ -520,12 +460,12 @@
                 "lastName": "Irvine"
             },
             {
-                "firstName": "Jessica",
-                "lastName": "Kerry"
-            },
-            {
                 "firstName": "JT",
                 "lastName": "Field"
+            },
+            {
+                "firstName": "Jessica",
+                "lastName": "Kerry"
             },
             {
                 "firstName": "Marc",
@@ -706,6 +646,22 @@
                 "lastName": "Cunniff"
             },
             {
+                "firstName": "Devika",
+                "lastName": "Govindarajan"
+            },
+            {
+                "firstName": "Edmund",
+                "lastName": "Li"
+            },
+            {
+                "firstName": "Emily",
+                "lastName": "Chang"
+            },
+            {
+                "firstName": "Harleen",
+                "lastName": "Kaur"
+            },
+            {
                 "firstName": "Hira",
                 "lastName": "Mahmood"
             },
@@ -736,22 +692,6 @@
             {
                 "firstName": "Val",
                 "lastName": "Arriola-Pomasoncco"
-            },
-            {
-                "firstName": "Edmund",
-                "lastName": "Li"
-            },
-            {
-                "firstName": "Emily",
-                "lastName": "Chang"
-            },
-            {
-                "firstName": "Devika",
-                "lastName": "Govindarajan"
-            },
-            {
-                "firstName": "Harleen",
-                "lastName": "Kaur"
             },
             {
                 "firstName": "Vid",
@@ -804,16 +744,16 @@
                 "lastName": "Bui"
             },
             {
+                "firstName": "Rishi",
+                "lastName": "Parikh"
+            },
+            {
                 "firstName": "Vikram",
                 "lastName": "Adipudi"
             },
             {
                 "firstName": "Yomi",
                 "lastName": "Omogbehin"
-            },
-            {
-                "firstName": "Rishi",
-                "lastName": "Parikh"
             }
         ],
         "Zeta": [
@@ -822,8 +762,20 @@
                 "lastName": "Stehman"
             },
             {
+                "firstName": "Christopher",
+                "lastName": "Tang"
+            },
+            {
                 "firstName": "Diana",
                 "lastName": "Kerr"
+            },
+            {
+                "firstName": "Eric",
+                "lastName": "Gorner"
+            },
+            {
+                "firstName": "Janaki",
+                "lastName": "Patel"
             },
             {
                 "firstName": "Katherine",
@@ -844,21 +796,17 @@
             {
                 "firstName": "Sophie",
                 "lastName": "Jorgensen"
-            },
-            {
-                "firstName": "Janaki",
-                "lastName": "Patel"
-            },
-            {
-                "firstName": "Eric",
-                "lastName": "Gorner"
-            },
-            {
-                "firstName": "Christopher",
-                "lastName": "Tang"
             }
         ],
         "Eta": [
+            {
+                "firstName": "Ananya",
+                "lastName": "Nadig"
+            },
+            {
+                "firstName": "Casey",
+                "lastName": "Puentes"
+            },
             {
                 "firstName": "Grant",
                 "lastName": "Tamrakar"
@@ -868,36 +816,28 @@
                 "lastName": "Hall"
             },
             {
-                "firstName": "Steven",
-                "lastName": "Garrido"
-            },
-            {
-                "firstName": "Casey",
-                "lastName": "Puentes"
-            },
-            {
-                "firstName": "Suraj",
-                "lastName": "Narang"
-            },
-            {
-                "firstName": "Vidit",
-                "lastName": "Makwana"
-            },
-            {
-                "firstName": "Tina",
-                "lastName": "Le"
+                "firstName": "Lily",
+                "lastName": "Etareri"
             },
             {
                 "firstName": "Mahum",
                 "lastName": "Qadeer"
             },
             {
-                "firstName": "Ananya",
-                "lastName": "Nadig"
+                "firstName": "Steven",
+                "lastName": "Garrido"
             },
             {
-                "firstName": "Lily",
-                "lastName": "Etareri"
+                "firstName": "Suraj",
+                "lastName": "Narang"
+            },
+            {
+                "firstName": "Tina",
+                "lastName": "Le"
+            },
+            {
+                "firstName": "Vidit",
+                "lastName": "Makwana"
             },
             {
                 "firstName": "Vivek",
@@ -906,74 +846,86 @@
         ],
         "Theta": [
             {
-                "firstName": "Patrick",
-                "lastName": "Hogan"
-            },
-            {
                 "firstName": "Abby",
                 "lastName": "Miller"
             },
             {
-                "firstName": "Zoey",
-                "lastName": "Anastasiadis"
-            },
-            {
-                "firstName": "Lily",
-                "lastName": "Le"
-            },
-            {
-                "firstName": "Hrishi",
-                "lastName": "Chintagumpala"
-            },
-            {
-                "firstName": "Cassiel",
-                "lastName": "Arcilla"
-            },
-            {
-                "firstName": "Riya",
-                "lastName": "Boyapati"
-            },
-            {
-                "firstName": "Garrett",
-                "lastName": "Amos"
-            },
-            {
-                "firstName": "Rishiraj",
-                "lastName": "Ghosh"
-            },
-            {
-                "firstName": "Tia",
-                "lastName": "Tran"
+                "firstName": "Angad",
+                "lastName": "Singh"
             },
             {
                 "firstName": "Antonio",
                 "lastName": "Farias"
             },
             {
-                "firstName": "Grace",
-                "lastName": "Gellerman"
-            },
-            {
                 "firstName": "Arihant",
                 "lastName": "Gupta"
             },
             {
-                "firstName": "Angad",
-                "lastName": "Singh"
+                "firstName": "Cassiel",
+                "lastName": "Arcilla"
+            },
+            {
+                "firstName": "Garrett",
+                "lastName": "Amos"
+            },
+            {
+                "firstName": "Grace",
+                "lastName": "Gellerman"
+            },
+            {
+                "firstName": "Hrishi",
+                "lastName": "Chintagumpala"
+            },
+            {
+                "firstName": "Lily",
+                "lastName": "Le"
+            },
+            {
+                "firstName": "Patrick",
+                "lastName": "Hogan"
+            },
+            {
+                "firstName": "Rishiraj",
+                "lastName": "Ghosh"
+            },
+            {
+                "firstName": "Riya",
+                "lastName": "Boyapati"
+            },
+            {
+                "firstName": "Tia",
+                "lastName": "Tran"
+            },
+            {
+                "firstName": "Zoey",
+                "lastName": "Anastasiadis"
             }
         ],
         "Iota": [
+            {
+                "firstName": "Akshay",
+                "lastName": "Subramaniam"
+            },
+            {
+                "firstName": "Eddie",
+                "lastName": "Zhang"
+            },
             {
                 "firstName": "Joaquin",
                 "lastName": "Panambo"
             },
             {
-                "firstName": "Tina",
-                "lastName": "Ngo"
-            },
-            {
                 "firstName": "Mickey",
                 "lastName": "Santomartino"
+            },
+            {
+                "firstName": "Nikita",
+                "lastName": "Khapre"
+            },
+            {
+                "firstName": "Noor",
+                "lastName": "Qureshi"
             },
             {
                 "firstName": "Sai",
@@ -984,27 +936,27 @@
                 "lastName": "Choudhry"
             },
             {
-                "firstName": "Eddie",
-                "lastName": "Zhang"
-            },
-            {
-                "firstName": "Noor",
-                "lastName": "Qureshi"
+                "firstName": "Tina",
+                "lastName": "Ngo"
             },
             {
                 "firstName": "Zoe",
                 "lastName": "Cheng"
-            },
-            {
-                "firstName": "Nikita",
-                "lastName": "Khapre"
-            },
-            {
-                "firstName": "Akshay",
-                "lastName": "Subramaniam"
             }
         ],
         "Kappa": [
+            {
+                "firstName": "Andrew",
+                "lastName": "Le"
+            },
+            {
+                "firstName": "Diana",
+                "lastName": "Huynh"
+            },
+            {
+                "firstName": "Jacob",
+                "lastName": "Shapiro"
+            },
             {
                 "firstName": "Janet",
                 "lastName": "Chan"
@@ -1014,72 +966,88 @@
                 "lastName": "Heflin"
             },
             {
+                "firstName": "Maya",
+                "lastName": "Chelar"
+            },
+            {
                 "firstName": "Ron",
                 "lastName": "Reyes"
-            },
-            {
-                "firstName": "Jacob",
-                "lastName": "Shapiro"
-            },
-            {
-                "firstName": "Diana",
-                "lastName": "Huynh"
-            },
-            {
-                "firstName": "Taylor",
-                "lastName": "Wong"
             },
             {
                 "firstName": "Soojee",
                 "lastName": "Fee"
             },
             {
-                "firstName": "Andrew",
-                "lastName": "Le"
+                "firstName": "Sriya",
+                "lastName": "Sogal"
+            },
+            {
+                "firstName": "Taylor",
+                "lastName": "Wong"
             }
         ],
         "Lambda": [
             {
-                "firstName": "Vikram",
-                "lastName": "Jasti"
-            },
-            {
-                "firstName": "Saatvik",
-                "lastName": "Gangavarapu"
+                "firstName": "Abhijay",
+                "lastName": "Shukla"
             },
             {
                 "firstName": "Casey",
                 "lastName": "Majewski"
             },
             {
-                "firstName": "Patrick",
-                "lastName": "Healy"
+                "firstName": "Chetanya",
+                "lastName": "Makkar"
+            },
+            {
+                "firstName": "Erin",
+                "lastName": "Maynard"
+            },
+            {
+                "firstName": "Kadin",
+                "lastName": "Fisher"
             },
             {
                 "firstName": "Michelle",
                 "lastName": "Nguyen"
             },
             {
-                "firstName": "Zane",
-                "lastName": "Rawlings"
+                "firstName": "Patrick",
+                "lastName": "Healy"
+            },
+            {
+                "firstName": "Saatvik",
+                "lastName": "Gangavarapu"
             },
             {
                 "firstName": "Simmi",
                 "lastName": "Nirula"
             },
             {
-                "firstName": "Abhijay",
-                "lastName": "Shukla"
+                "firstName": "Valerie",
+                "lastName": "Yen"
+            },
+            {
+                "firstName": "Victor",
+                "lastName": "Su"
+            },
+            {
+                "firstName": "Vikram",
+                "lastName": "Jasti"
+            },
+            {
+                "firstName": "Zane",
+                "lastName": "Rawlings"
             }
         ],
         "Mu": [
             {
-                "firstName": "Patrick",
-                "lastName": "Hael"
+                "firstName": "Addison",
+                "lastName": "Hanrattie"
             },
             {
-                "firstName": "Claudia",
-                "lastName": "Lujan"
+                "firstName": "Angad",
+                "lastName": "Bedi"
             },
             {
                 "firstName": "Ari",
@@ -1090,18 +1058,110 @@
                 "lastName": "Dhareshwar"
             },
             {
+                "firstName": "Bhakti",
+                "lastName": "Hegde"
+            },
+            {
+                "firstName": "Caroline",
+                "lastName": "Perret"
+            },
+            {
+                "firstName": "Claudia",
+                "lastName": "Lujan"
+            },
+            {
+                "firstName": "Liam",
+                "lastName": "Moran"
+            },
+            {
+                "firstName": "Patrick",
+                "lastName": "Hael"
+            },
+            {
+                "firstName": "Sachin",
+                "lastName": "Ashok"
+            },
+            {
+                "firstName": "Shreeni",
+                "lastName": "Chikyala"
+            },
+            {
+                "firstName": "Vahin",
+                "lastName": "Palle"
+            },
+            {
                 "firstName": "Yusuf",
                 "lastName": "Khalid"
             }
         ],
         "Nu": [
             {
-                "firstName": "Siya",
-                "lastName": "Patel"
+                "firstName": "Aadit",
+                "lastName": "Shah"
+            },
+            {
+                "firstName": "Chinaemelum",
+                "lastName": "Anadu"
+            },
+            {
+                "firstName": "Himanshu",
+                "lastName": "Gediya"
             },
             {
                 "firstName": "Ishita",
                 "lastName": "Singh"
+            },
+            {
+                "firstName": "Matt",
+                "lastName": "Hullana"
+            },
+            {
+                "firstName": "Nitya",
+                "lastName": "Chigurupati"
+            },
+            {
+                "firstName": "Riya",
+                "lastName": "Shah"
+            },
+            {
+                "firstName": "Ryan",
+                "lastName": "McGowan"
+            },
+            {
+                "firstName": "Siya",
+                "lastName": "Patel"
+            },
+            {
+                "firstName": "Tanveer",
+                "lastName": "Singh"
+            }
+        ],
+        "Xi": [
+            {
+                "firstName": "Aditya",
+                "lastName": "Hardikar"
+            },
+            {
+                "firstName": "Harshith",
+                "lastName": "Kukunuru"
+            },
+            {
+                "firstName": "Saathu",
+                "lastName": "Nagareddy"
+            },
+            {
+                "firstName": "Shriyans",
+                "lastName": "Sairy"
+            }
+        ],
+        "Omicron": [
+            {
+                "firstName": "Rachel",
+                "lastName": "Park"
+            },
+            {
+                "firstName": "Ritvik",
+                "lastName": "Thakur"
             }
         ]
     },
